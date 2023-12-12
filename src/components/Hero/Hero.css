@@ -1,0 +1,21 @@
+
+.hero {
+  position: relative;
+  top: 300px; 
+  width: 20%;
+  height: 20px; 
+  background-image: src('./Home_Hero_x2.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+#heroImage{
+    position: relative;
+    top: 20px; 
+    width: 1301px;
+    height: 786px; 
+    background-image: src('./Home_Hero_x2.jpg'); 
+    background-size: cover;
+    background-position: center;
+
+}
