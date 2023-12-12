@@ -1,4 +1,7 @@
-nav ul {
+nav {
     list-style-type: none;
     display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
