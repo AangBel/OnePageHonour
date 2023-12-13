@@ -13,11 +13,10 @@ function Nav() {
       <div className="logo">
         <img src={HONOUR_PRIMARY_logo} alt="Honour Coffee Logo" />
       </div>
-      <div className="navList">
-        <ul>
-          <li>THE BLENDS</li>
-          <li>OUR STORY</li>
-        </ul>
+      <div className="navAnchors">
+        <a href="#TheBlends" className="navAnchor1">THE BLENDS</a>
+        
+        <a href="#OurStory" className="navAnchor2">OUR STORY</a>
       </div>
     </div>
   );
