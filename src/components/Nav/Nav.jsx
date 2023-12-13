@@ -14,9 +14,13 @@ function Nav() {
         <img src={HONOUR_PRIMARY_logo} alt="Honour Coffee Logo" />
       </div>
       <div className="navAnchors">
-        <a href="#TheBlends" className="navAnchor1">THE BLENDS</a>
-        
-        <a href="#OurStory" className="navAnchor2">OUR STORY</a>
+        <a href="#TheBlends" className="navAnchor1">
+          THE BLENDS
+        </a>
+
+        <a href="#OurStory" className="navAnchor2">
+          OUR STORY
+        </a>
       </div>
     </div>
   );

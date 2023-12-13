@@ -7,8 +7,8 @@
 } */
 
 @font-face {
-  font-family: 'flama medium';
-  src: url('/public/Fonts/flama medium_1596466164.otf') format('opentype');
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -17,37 +17,39 @@
   display: flex;
   justify-content: space-between;
   align-items: left;
-  padding: 10px 20px; 
+  padding: 10px 20px;
 }
 
 .logo {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .navAnchors {
+  display: flex;
   list-style-type: none;
   text-decoration: none;
-  display: flex;
   margin: 20px;
 }
 
 .navAnchors {
+  display: flex;
+  text-decoration: none;
   margin-left: 90px;
-  cursor: pointer; 
-  font-family: 'flama medium';
-
+  cursor: pointer;
+  font-family: "flama medium";
 }
 
 .navAnchor1 {
+  display: flex;
   text-decoration: none;
-  padding-left:30px;
-  color:white;
-
+  padding-left: 30px;
+  color: white;
+  grid-area: span;
 }
 
 .navAnchor2 {
+  display: flex;
   text-decoration: none;
-  color:white;
-  padding-left:50px;
+  color: white;
+  padding-left: 50px;
 }
-
