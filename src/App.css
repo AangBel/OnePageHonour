@@ -6,7 +6,7 @@
 
 
 
-.App-header {
+.AppHeader {
   background-color: black;
 
   display: flex;
@@ -15,6 +15,10 @@
   padding: 40px;
   padding-bottom:6px;
 
+}
+
+.AppBody{
+  
 }
 
 .App-link {

@@ -15,6 +15,15 @@ body {
   font-style: normal;
 }
 
+.rectangularSection {
+  background-color: #ffffff;
+  height: 100%;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .accordionHeader {
   background-color: white;
   font-family: "flama medium";
@@ -28,27 +37,29 @@ body {
   margin-top: 60px;
 }
 
-.accordion {
+.accordionContent {
   max-width: 990px;
   background: rgba(0, 0, 0, 0.1);
-  height: 300px;
+  width: 385px;
+  height: 708px;
   margin: 20px auto;
   display: flex;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
   flex-direction: row;
   cursor: pointer;
   margin-bottom: 100px;
+  /* padding-left: 15px; */
 }
 
-.accordionContent {
+/* .accordionContent {
     width: 385px;
     height: 708px;
     flex-shrink: 0;
     /* padding-left: 228px; */
-    padding-bottom:28px;
-    border: 2px;
+/* padding-bottom:28px; */
+/* border: 2px; */
 
-}
+/* } */
 
 .box {
   position: relative;

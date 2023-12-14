@@ -9,10 +9,10 @@ import OurBlends from "./components/OurBlends/OurBlends";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="AppHeader">
         <Nav />
       </header>
-      <div className="App-body">
+      <div className="AppBody">
         <Hero />
         <Quote />
         <OurBlends />

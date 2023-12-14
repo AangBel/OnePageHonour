@@ -18,7 +18,7 @@ function OurBlends(){
   };
 
   return (
-    <div className="rectangularSsection" style={{ width: '100%' }}>
+    <div className="rectangularSection" style={{ width: '100%' }}>
       <div className="accordionHeader" onClick={handleToggle}>
         OUR BLENDS
       </div>
