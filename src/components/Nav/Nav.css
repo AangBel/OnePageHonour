@@ -14,13 +14,13 @@
 }
 
 .logoImage {
-  display: flex;
+  /* display: flex; */
   text-decoration: none;
   margin-right: 10px;
 }
 
 .navAnchors {
-  display: flex;
+  /* display: flex; */
 
   text-decoration: none;
   justify-content: space-between;
@@ -63,12 +63,14 @@
   border: 3px solid #de6328;
   border-radius: 25px;
   /* SPACING */
-  top:56px;
+  position:relative;
+  top:-32px;
   margin-top: 2px;
-  margin-left: 800px;
+  margin-left: 1065px;
   justify-content: center;
   align-items: stretch;
   padding-top:10px;
+  left:10px;
   color: #de6328;
   cursor: pointer;
 }
