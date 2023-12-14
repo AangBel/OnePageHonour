@@ -25,6 +25,7 @@ function Nav() {
         <a href="#OurStory" className="navAnchor2">
           OUR STORY
         </a>
+        <p className="shopSymbol">SHOP</p>
       </div>
     </div>
   );
