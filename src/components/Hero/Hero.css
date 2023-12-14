@@ -14,12 +14,22 @@
   background-color: black;
 }
 
-.heroTitle {
-  color: var(--White, #fff);
+.heroContainer{
+
+  padding: 30px;
+  top:445px;
+
+}
+
+.heroText {
+
+  color: var(--White, #ffffff);
   font-family: 'flama medium';
   font-size: 75px;
   font-style: normal;
   font-weight: 650;
   line-height: 85px; /* 113.333% */
   letter-spacing: 15px;
+  position:absolute;
+  top:445px;
 }

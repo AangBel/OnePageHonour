@@ -11,8 +11,8 @@ function Hero() {
         src={HomeHeroImage}
         alt="Hero Image of a Coffee Receptacle"
       />
-      <div className="heroText">
-        <h1 className="heroTitle">START YOUR DAY WITH HONOUR</h1>
+      <div className="heroContainer">
+        <h1 className="heroText">START YOUR DAY WITH HONOUR</h1>
       </div>
     </div>
   );
