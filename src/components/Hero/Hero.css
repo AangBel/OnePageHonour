@@ -6,19 +6,27 @@
 }
 
 #heroImage {
+  background: url('./Home_Hero_x2.jpg'), lightgray 50% / no-repeat;
+  opacity: 0.8;
+  filter:contrast(1.3);
+  /* filter:brightness(0.9); */
   width: 90%;
   height: auto;
   display: center;
+  padding-left:90px;
 }
+
+
 .hero {
   background-color: black;
 }
 
 .heroContainer{
-
+  position: relative;
   padding: 30px;
-  top:445px;
-
+  width: 50%;
+  top:62px;
+  height:auto;
 }
 
 .heroText {
@@ -31,5 +39,11 @@
   line-height: 85px; /* 113.333% */
   letter-spacing: 15px;
   position:absolute;
-  top:445px;
+  bottom:2px;
+
+
+
+
+  /* top:75px; */
+
 }
