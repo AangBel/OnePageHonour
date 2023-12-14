@@ -11,12 +11,10 @@ function Quote() {
           snaps cotton candy topping tiramisu chupa chups candy canes apple pie
           muffin. Sweet roll tootsie roll wafer donut bonbon cake chocolate
           macaroon ice cream. Halvah cake liquorice marshmallow pastry cotton
-          candy topping chupa chups bonbon. Pie dessert jelly-o candy soufflé
-          pie lollipop. Gummies cotton candy gummi bears candy canes wafer
+          candy topping chupa chups bonbon. Pie dessert candy soufflé
+          pie lollipop. Gummies cotton candy gummi bears candy canes     wafer
           bonbon. Gummi bears sweet caramels chupa chups liquorice wafer gummi
           bears. Sesame snaps donut macaroon macaroon bonbon jujubes jelly beans
-          oat cake. Dessert cotton candy tart pie gummies oat cake icing bear
-          claw tootsie roll.
         </p>
         <p className="quoteEllipse"></p>
         <div className="ownerNameTitleBox">
