@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "flama book";
+  src: url("/public/Fonts/flama book_1596466159.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.quoteSection {
+  background-color: black;
+  color: white;
+  font-family: "flama book";
+  text-align: center;
+  padding: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.quoteBox {
+  text-align: center;
+  background-color: black;
+  padding: 20 40 20 40;
+  text-align: left;
+  color: white;
+  font-family: "flama book";
+}
+.quotePText {
+  background-color: black;
+
+  color: white;
+  font-family: "flama book";
+  font-size: 35px;
+}
+
+.quoteAuthorText {
+  background-color: black;
+
+  color: white;
+  font-family: "flama medium";
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.quoteAuthorTitle {
+  font-family: "flama book";
+  font-size: 20px;
+  color: white;
+}

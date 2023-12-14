@@ -3,7 +3,7 @@ import "./App.css";
 
 import Nav from "../src/components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
-// import "../public/Fonts/FontAwesome5BrandsRegular.ttf";
+import Quote from "./components/Quote/Quote";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       </header>
       <div className="App-body">
         <Hero />
+        <Quote />
       </div>
     </div>
   );
