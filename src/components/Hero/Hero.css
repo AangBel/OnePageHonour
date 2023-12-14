@@ -1,13 +1,25 @@
+@font-face {
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-#heroImage{
-    /* position: relative;
-    top: 20px; 
-    width: 1301px;
-    height: 786px; 
-    background-image: src('./Home_Hero_x2.jpg'); 
-    background-size: cover; */
-    /* background-position: center; */
-    width: 100%;
-    height: auto;
+#heroImage {
+  width: 90%;
+  height: auto;
+  display: center;
+}
+.hero {
+  background-color: black;
+}
 
+.heroTitle {
+  color: var(--White, #fff);
+  font-family: 'flama medium';
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 85px; /* 113.333% */
+  letter-spacing: 15px;
 }

@@ -11,7 +11,9 @@ function App() {
       <header className="App-header">
         <Nav />
       </header>
-      <Hero />
+      <div className="App-body">
+        <Hero />
+      </div>
     </div>
   );
 }
