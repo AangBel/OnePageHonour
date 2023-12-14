@@ -22,10 +22,12 @@
 .navAnchors {
   display: flex;
   text-decoration: none;
+  justify-content: space-between;
   padding-top: 20px;
   font-size: 18px;
   cursor: pointer;
   font-family: "flama medium";
+  letter-spacing: 3px;
 }
 
 .navAnchor1 {
@@ -59,7 +61,7 @@
   border-radius: 25px;
   /* SPACING */
   margin-top:2px;
-  margin-left:900px;
+  margin-left:800px;
   justify-content: center;
   align-items: center;
 
