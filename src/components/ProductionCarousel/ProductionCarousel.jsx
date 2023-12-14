@@ -10,6 +10,14 @@ import './CarouselImagery/5 Quality assured.jpg';
 //
 
 // Cambia esto a function 
+
+const images = [
+    './CarouselImagery/1 Hand selected.jpg',
+    './CarouselImagery/2 Ethically sourced.jpg',
+    './CarouselImagery/3 Locally roasted.jpg',
+    './CarouselImagery/4 Small batched.jpg',
+    './CarouselImagery/5 Quality assured.jpg'
+]
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
