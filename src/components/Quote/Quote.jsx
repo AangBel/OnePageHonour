@@ -18,6 +18,7 @@ function Quote() {
           oat cake. Dessert cotton candy tart pie gummies oat cake icing bear
           claw tootsie roll.
         </p>
+        <p className="quoteEllipse"></p>
         <p className="quoteAuthorText">JOHANNES STOLZ </p>
         <p className="quoteAuthorTitle">OWNER</p>
       </div>
