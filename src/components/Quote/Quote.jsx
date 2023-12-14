@@ -19,8 +19,10 @@ function Quote() {
           claw tootsie roll.
         </p>
         <p className="quoteEllipse"></p>
-        <p className="quoteAuthorText">JOHANNES STOLZ </p>
-        <p className="quoteAuthorTitle">OWNER</p>
+        <div className="ownerNameTitleBox">
+          <p className="quoteAuthorText">JOHANNES STOLZ </p>
+          <p className="quoteAuthorTitle">OWNER</p>
+        </div>
       </div>
     </div>
   );
