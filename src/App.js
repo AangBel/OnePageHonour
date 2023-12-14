@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "../src/components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Quote from "./components/Quote/Quote";
+import OurBlends from "./components/OurBlends/OurBlends";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App-body">
         <Hero />
         <Quote />
+        <OurBlends />
       </div>
     </div>
   );
