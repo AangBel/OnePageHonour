@@ -1,0 +1,116 @@
+html {
+  height: 100vh;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  background: linear-gradient(#fff, #fefefe, #eaeaea);
+}
+
+@font-face {
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.accordionHeader {
+  background-color: white;
+  font-family: "flama medium";
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 8px;
+  padding-left: 100px;
+  margin-top: 60px;
+}
+
+.accordion {
+  max-width: 990px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+
+.accordionContent {
+    width: 385px;
+    height: 708px;
+    flex-shrink: 0;
+    /* padding-left: 228px; */
+    padding-bottom:28px;
+    border: 2px;
+
+}
+
+.box {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  background-position: left;
+  background-size: cover;
+  transition: 0.7s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.box:hover {
+  flex: 7;
+  height: 400px;
+}
+.a1 {
+  background-image: url("./BlendIconography/Apex.svg");
+}
+.a2 {
+  background-image: url("./BlendIconography/Canopy.svg");
+}
+.a3 {
+  background-image: url("./BlendIconography/Coastal.svg");
+  color: #fff;
+}
+.a4 {
+  background-image: url("./BlendIconography/Howler.svg");
+  color: #fff;
+}
+.a5 {
+  background-image: url("./BlendIconography/Restful.svg");
+}
+p {
+  font-weight: normal;
+  font-family: "Exo 2", sans-serif;
+}
+.text {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 10px;
+}
+.box:hover .text {
+  opacity: 1;
+}
+h1 {
+  width: 250px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+  }
+  .accordion {
+    flex-direction: column;
+    height: 700px;
+    box-shadow: none;
+  }
+  .box {
+    box-shadow: none;
+  }
+  .box:hover {
+    flex: 7;
+  }
+}

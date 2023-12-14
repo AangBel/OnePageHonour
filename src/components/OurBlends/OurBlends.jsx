@@ -18,17 +18,17 @@ function OurBlends(){
   };
 
   return (
-    <div className="rectangular-section" style={{ width: '100%' }}>
-      <div className="accordion-header" onClick={handleToggle}>
-        Click to toggle
+    <div className="rectangularSsection" style={{ width: '100%' }}>
+      <div className="accordionHeader" onClick={handleToggle}>
+        OUR BLENDS
       </div>
       {isOpen && (
-        <div className="accordion-content">
-          <img src="image1.jpg" alt="Image 1" />
-          <img src="image2.jpg" alt="Image 2" />
-          <img src="image3.jpg" alt="Image 3" />
-          <img src="image4.jpg" alt="Image 4" />
-          <img src="image5.jpg" alt="Image 5" />
+        <div className="accordionContent">
+          <img src={Apex} alt="Apex Blend image" />
+          <img src={Canopy} alt="Canopy Blend image" />
+          <img src={Coastal} alt="Coastal Blend image" />
+          <img src={Howler} alt="Howler Blend image" />
+          <img src={Restful} alt="Restful Blend image" />
         </div>
       )}
     </div>
@@ -36,3 +36,4 @@ function OurBlends(){
 };
 
 export default OurBlends;
+
