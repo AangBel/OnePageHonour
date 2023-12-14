@@ -4,9 +4,17 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Fjalla One", sans-serif;
+  font-family: "flama book"
   /* background: linear-gradient(#fff, #fefefe, #eaeaea); */
 }
+
+@font-face {
+    font-family: "flama book";
+    src: url("/public/Fonts/flama book_1596466159.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
 
 @font-face {
   font-family: "flama medium";
@@ -96,6 +104,8 @@ body {
 .a5 {
   background-image: url("./BlendIconography/Restful.svg");
 }
+
+/* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
 .blendName {
   font-weight: normal;
   font-family: "flama medium";
@@ -106,24 +116,24 @@ body {
   font-weight: 650;
   line-height: normal;
   letter-spacing: 3.6px;
+  /* writing-mode:vertical-rl; */
   writing-mode:vertical-lr;
-  text-orientation:mixed;
-}
 
+  text-orientation:mixed;
+  text-combine-upright: none;
+  transform: rotate(0.5turn);
+}
+/* 
 .text {
   position: absolute;
   bottom: 0;
   opacity: 0;
   padding: 10px;
-}
-.box:hover .text {
+} */
+/* .box:hover .text {
   opacity: 1;
-}
-h1 {
-  width: 250px;
-  text-align: center;
-  margin: 100px auto 20px auto;
-}
+} */
+
 @media screen and (max-width: 800px) {
   body {
     margin: 0;
