@@ -1,4 +1,5 @@
 .carousel-container {
+    background-color: black;
     position: relative;
     width: 100%;
     max-width: 600px; /* Adjust the maximum width as needed */
@@ -7,6 +8,8 @@
   
   .carousel {
     overflow: hidden;
+    background-color: black;
+
   }
   
   .carousel img {

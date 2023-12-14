@@ -17,7 +17,7 @@ function App() {
         <Hero />
         <Quote />
         <OurBlends />
-        {/* <Carousel /> */}
+        <Carousel />
       </div>
     </div>
   );

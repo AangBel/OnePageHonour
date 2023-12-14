@@ -32,12 +32,12 @@ const Carousel = ({ images }) => {
   return (
     <div className="carousel-container">
       <div className="carousel">
-        <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+        {/* <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} /> */}
       </div>
-      <div className="arrows">
+      {/* <div className="arrows">
         <button onClick={prevImage}>&#8249;</button>
         <button onClick={nextImage}>&#8250;</button>
-      </div>
+      </div> */}
     </div>
   );
 };

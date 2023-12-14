@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Fjalla One", sans-serif;
-  background: linear-gradient(#fff, #fefefe, #eaeaea);
+  /* background: linear-gradient(#fff, #fefefe, #eaeaea); */
 }
 
 @font-face {
@@ -14,18 +14,18 @@ body {
   font-weight: normal;
   font-style: normal;
 }
-/* OUR BLENDS HEADER TEXT */
+/* THE CONTAINER FOR THE BLENDS HEADER TEXT */
 .rectangularSection {
   background-color: #ffffff;
   height: 100%;
   /* width: 100%; */
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   align-items: flex-start;
   padding-left: 100px;
 }
-
+/* OUR BLENDS HEADER TEXT */
 .accordionHeader {
   background-color: white;
   font-family: "flama medium";
@@ -40,17 +40,19 @@ body {
   right:100px;
 }
 
+/* THE IMAGES WITHIN THE ACCORDION */
 .accordionContent {
-  max-width: 990px;
-  background: rgba(0, 0, 0, 0.1);
-  width: 385px;
+  /* max-width: 990px; */
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* width: 385px; */
+  width:1440px;
   height: 708px;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   display: flex;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+  /* box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47); */
   flex-direction: row;
-  cursor: pointer;
-  margin-bottom: 100px;
+  /* cursor: pointer; */
+  /* margin-bottom: 100px; */
   /* padding-left: 15px; */
 }
 
