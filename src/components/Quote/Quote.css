@@ -35,18 +35,20 @@
   color: white;
   font-family: "flama book";
   font-size: 35px;
+  font-weight: 550;
   padding-left: 150px;
   padding-right: 150px;
-  margin-top:100px;
+  margin-top: 50px;
   text-transform: uppercase;
-  line-height: 1.5;
-
+  line-height: 55px;
+  letter-spacing: 3px;
+  
 }
 
 .ownerNameTitleBox {
   display: flex;
   margin-top: 60px;
-  letter-spacing: 3px;
+  letter-spacing: 4.4px;
 }
 
 .quoteEllipse {
@@ -57,7 +59,7 @@
   width: 10px;
   background-color: white;
   margin-left: 150px;
-  margin-top:75px;
+  margin-top: 75px;
 }
 
 .quoteAuthorText {
@@ -66,15 +68,18 @@
   color: white;
   font-family: "flama medium";
   font-size: 25px;
+  font-weight: 650;
   padding-top: 0px;
   padding-bottom: 20px;
   padding-left: 150px;
+  letter-spacing: 4.4;
+
 }
 
 .quoteAuthorTitle {
   font-family: "flama book";
-  font-size: 20px;
+  font-size: 22px;
   color: white;
-  margin-top: 30px;
+  margin-top: 28px;
   padding-left: 10px;
 }
