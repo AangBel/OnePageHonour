@@ -11,9 +11,9 @@ function Hero() {
         src={HomeHeroImage}
         alt="Hero Image of a Coffee Receptacle"
       />
-      {/* <div className="heroContainer"> */}
+      <div className="heroContainer">
         <h1 className="heroText">START YOUR DAY WITH HONOUR</h1>
-      {/* </div> */}
+      </div>
     </div>
   );
 }
