@@ -5,6 +5,7 @@ import Nav from "../src/components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Quote from "./components/Quote/Quote";
 import OurBlends from "./components/OurBlends/OurBlends";
+import Carousel from "./components/ProductionCarousel/ProductionCarousel";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Hero />
         <Quote />
         <OurBlends />
+        {/* <Carousel /> */}
       </div>
     </div>
   );
