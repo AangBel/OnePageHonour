@@ -10,9 +10,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Nav />
-        <Hero />
-        
       </header>
+      <Hero />
     </div>
   );
 }

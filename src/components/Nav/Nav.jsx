@@ -11,7 +11,11 @@ function Nav() {
   return (
     <div className="nav">
       <div className="logo">
-        <img src={HONOUR_PRIMARY_logo} alt="Honour Coffee Logo" />
+        <img
+          src={HONOUR_PRIMARY_logo}
+          className="logoImage"
+          alt="Honour Coffee Logo"
+        />
       </div>
       <div className="navAnchors">
         <a href="#TheBlends" className="navAnchor1">
