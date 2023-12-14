@@ -11,7 +11,7 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/* THE CONTAINER THAT HOLDS THE QUOTE  */
 .quoteSection {
   background-color: black;
   color: white;
@@ -51,6 +51,7 @@
   letter-spacing: 4.4px;
 }
 
+/* THE LITTLE CIRCLE SYMBOL BETWEEN THE QUOTE AND THE AUTHOR */
 .quoteEllipse {
   color: white;
   border: 2px solid white;
@@ -62,21 +63,22 @@
   margin-top: 75px;
 }
 
+/* THE CONTAINER FOR THE AUTHOR TEXT */
 .quoteAuthorText {
   background-color: black;
-
   color: white;
   font-family: "flama medium";
   font-size: 25px;
   font-weight: 650;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 100px;
   /* padding-left: 150px; */
   margin-left:261px;
   letter-spacing: 4.4;
 
 }
 
+/* THE TITLE OF THE AUTHOR (OWNER) */
 .quoteAuthorTitle {
   font-family: "flama book";
   font-size: 22px;

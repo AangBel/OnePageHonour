@@ -11,18 +11,20 @@ import Restful from './BlendIconography/Restful.svg';
 
 
 function OurBlends(){
-  const [isOpen, setIsOpen] = useState(false);
+//   const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+//   const handleToggle = () => {
+//     setIsOpen(!isOpen);
+//   };
 
   return (
     <div className="rectangularSection" style={{ width: '100%' }}>
-      <div className="accordionHeader" onClick={handleToggle}>
+        {/* REMOVING THE ON CLICK FROM THIS LINE BELOW - {handleToggle} */}
+      <div className="accordionHeader">
         OUR BLENDS
       </div>
-      {isOpen && (
+      {/* REMOVING IS OPEN FROM THIS LINE BELOW - isOpen && */}
+      { (
         <div className="accordionContent">
           <img src={Apex} alt="Apex Blend image" />
           <img src={Canopy} alt="Canopy Blend image" />
