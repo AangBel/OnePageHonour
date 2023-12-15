@@ -79,12 +79,12 @@ body {
 
 
 .panel {
-  position: relative;
-
-  flex: 1;
-
-  background-position: center;
+  /* position: relative; */
+  /* width:216px; */
+  /* flex: 0.5; */
+  cursor: pointer;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   transition: 0.7s;
   border-left:2px solid;
@@ -93,6 +93,7 @@ body {
   text-orientation:mixed;
   text-combine-upright: none;
   padding-bottom: 5px;
+  opacity:20%;
   
 }
 /* transform: rotate(0.5turn); */
@@ -100,11 +101,14 @@ body {
 /* bottom:20px; */
 /* height: 100%; */
 
-.panel:hover {
-  flex: 7;
-  width:573;
-}
+/* .panel:hover {
+  /* flex: 7; */
+  /* width:573; */
+/* } */
 
+.panel.active{
+  flex:5;
+}
 .a1 {
   background-image: url("./BlendIconography/Apex.svg");
 }
