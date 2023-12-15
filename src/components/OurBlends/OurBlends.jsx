@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./OurBlends.css";
 
 // BLEND IMAGES
@@ -10,43 +10,41 @@ import Restful from "./BlendIconography/Restful.svg";
 //
 
 function OurBlends() {
-  //   const [isOpen, setIsOpen] = useState(false);
+  const [activePanel, setActivePanel] = useState(null);
 
-  //   const handleToggle = () => {
-  //     setIsOpen(!isOpen);
-  //   };
+  const panels = [
+    { id: 1, image: Apex, label: 'Apex' },
+    { id: 2, image: Canopy, label: 'Canopy' },
+    { id: 3, image: Coastal, label: 'Coastal' },
+    { id: 4, image: Howler, label: 'Howler' },
+    { id: 5, image: Restful, label: 'Restful' },
+  ];
+
+  const handlePanelClick = (panelId) => {
+    setActivePanel((prevActivePanel) =>
+    prevActivePanel === panelId ? null : panelId
+  );
+  
+  };
 
   return (
     <div className="rectangularSection" style={{ width: "100%" }}>
-      {/* REMOVING THE ON CLICK FROM THIS LINE BELOW - {handleToggle} */}
       <div className="accordionHeader">OUR BLENDS</div>
-      {/* REMOVING IS OPEN FROM THIS LINE BELOW - isOpen && */}
-
       <div className="accordionContainer">
-        <div className="panel" alt="Apex Blend image">
-          <img src={Apex} alt="Apex Blend image" />
-          <p className="blendName">Apex</p>
-        </div>
-        <div className="panel active" alt="Canopy Blend image">
-          <img src={Canopy} alt="Canopy Blend image" />
-          <p className="blendName">Canopy</p>
-        </div>
-        <div className="panel" alt="Coastal Blend image">
-          <img src={Coastal} alt="Coastal Blend image" />
-          <p className="blendName">Coastal</p>
-        </div>
-
-        <div className="panel" alt="Howler Blend image">
-          <img src={Howler} alt="Howler Blend image" />
-          <p className="blendName">Howler</p>
-        </div>
-
-        <div className="panel" alt="Restful Blend image">
-          <img src={Restful} alt="Restful Blend image" />
-          <p className="blendName">Restful</p>
-        </div>
+        {panels.map((panel) => (
+          <div
+            key={panel.id}
+            className={`panel ${activePanel === panel.id ? 'active' : ''}`}
+            style={{ flex: activePanel === panel.id ? 5 : 1 }}
+            onClick={() => handlePanelClick(panel.id)}
+          >
+            <img src={panel.image} alt={panel.label} />
+            <p className="blendName">{panel.label}</p>
+          </div>
+        ))}
       </div>
     </div>
+  
   );
 }
 
