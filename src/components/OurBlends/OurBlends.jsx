@@ -22,17 +22,29 @@ function OurBlends() {
       <div className="accordionHeader">OUR BLENDS</div>
       {/* REMOVING IS OPEN FROM THIS LINE BELOW - isOpen && */}
       {
-        <div className="accordionContent">
-          <p className="blendName">Apex</p>
-          <img src={Apex} alt="Apex Blend image" />
-          <p className="blendName">Canopy</p>
-          <img src={Canopy} alt="Canopy Blend image" />
-          <p className="blendName">Coastal</p>
-          <img src={Coastal} alt="Coastal Blend image" />
-          <p className="blendName">Howler</p>
-          <img src={Howler} alt="Howler Blend image" />
+        <div className="accordionContainer">
+          {/* <img src={Apex} alt="Apex Blend image" /> */}
+          <div className="panel" style={{Apex}} alt="Apex Blend image">
+            <p className="blendName">Apex</p>
+          </div>
+          {/* <img src={Canopy} alt="Canopy Blend image" /> */}
+          <div className="panel" style={{Canopy}} alt="Canopy Blend image">
+            <p className="blendName">Canopy</p>
+          </div>
+          {/* <img src={Coastal} alt="Coastal Blend image" /> */}
+          <div className="panel" style={{Coastal}} alt="Coastal Blend image">
+            <p className="blendName">Coastal</p>
+          </div>
+
+          {/* <img src={Howler} alt="Howler Blend image" /> */}
+          <div className="panel" style={{Howler}} alt="Howler Blend image">
+            <p className="blendName">Howler</p>
+          </div>
+
+          {/* <img src={Restful} alt="Restful Blend image" /> */}
+          <div className="panel" style={{Restful}} alt="Restful Blend image">
           <p className="blendName">Restful</p>
-          <img src={Restful} alt="Restful Blend image" />
+          </div>
         </div>
       }
     </div>
