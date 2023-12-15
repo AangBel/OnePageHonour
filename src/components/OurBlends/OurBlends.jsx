@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./OurBlends.css";
 
 // BLEND IMAGES
@@ -21,32 +21,32 @@ function OurBlends() {
       {/* REMOVING THE ON CLICK FROM THIS LINE BELOW - {handleToggle} */}
       <div className="accordionHeader">OUR BLENDS</div>
       {/* REMOVING IS OPEN FROM THIS LINE BELOW - isOpen && */}
-      {
+      
         <div className="accordionContainer">
-          <div className="panel" style={{Apex}} alt="Apex Blend image">
+          <div className="panel"  alt="Apex Blend image">
           <img src={Apex} alt="Apex Blend image" />
             <p className="blendName">Apex</p>
           </div>
-          <div className="panel" style={{Canopy}} alt="Canopy Blend image">
+          <div className="panel"  alt="Canopy Blend image">
           <img src={Canopy} alt="Canopy Blend image" />
             <p className="blendName">Canopy</p>
           </div>
-          <div className="panel" style={{Coastal}} alt="Coastal Blend image">
+          <div className="panel" alt="Coastal Blend image">
           <img src={Coastal} alt="Coastal Blend image" />
             <p className="blendName">Coastal</p>
           </div>
 
-          <div className="panel" style={{Howler}} alt="Howler Blend image">
+          <div className="panel"  alt="Howler Blend image">
           <img src={Howler} alt="Howler Blend image" />
             <p className="blendName">Howler</p>
           </div>
 
-          <div className="panel" style={{Restful}} alt="Restful Blend image">
+          <div className="panel"  alt="Restful Blend image">
           <img src={Restful} alt="Restful Blend image" />
           <p className="blendName">Restful</p>
           </div>
         </div>
-      }
+      
     </div>
   );
 }
