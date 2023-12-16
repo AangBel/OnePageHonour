@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "flama book";
+  src: url("/public/Fonts/flama book_1596466159.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.footerHonourText {
+  color: var(--White, #fff);
+  background-color: black;
+  font-family: "flama medium";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 34px; /* 113.333% */
+  letter-spacing: 6px;
+
+  padding: 50px 970px 319px 100px;
+  border-top: 1px solid #AAA;
+
+ 
+}
