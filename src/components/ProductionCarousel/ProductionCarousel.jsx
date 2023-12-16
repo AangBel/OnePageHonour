@@ -7,12 +7,18 @@ import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
 import LocallyRoasted from "./CarouselImagery/3 Locally roasted.jpg";
 import SmallBatched from "./CarouselImagery/4 Small batched.jpg";
 import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
-// 
+//
 
 import Arrow from "./Arrow.svg";
 
 function ProductionCarousel() {
-  const images = [HandSelected, EthicallySourced, LocallyRoasted, SmallBatched, QualityAssured];
+  const images = [
+    HandSelected,
+    EthicallySourced,
+    LocallyRoasted,
+    SmallBatched,
+    QualityAssured,
+  ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
@@ -34,14 +40,36 @@ function ProductionCarousel() {
         <div className="carousel">
           <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         </div>
-        <div className={Arrow}>
-          <img src={Arrow} style={{ transform: 'rotate(180deg)' }} alt="Arrow" onClick={prevImage}/>
-          <img src={Arrow} onClick={nextImage}></img>
-        </div>
+       
       </div>
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
+        <div className={Arrow}>
+          <button
+            onClick={prevImage}
+            style={{ background: "none", border: "none", padding: 0 }}
+          >
+            <img
+              src={Arrow}
+              alt="Arrow"
+              style={{ transform: "rotate(180deg)" }}
+            />
+          </button>
+        <button
+            onClick={nextImage}
+            style={{ background: "none", border: "none", padding: 0 }}
+          >
+            <img
+              src={Arrow}
+              alt="Arrow"
+            />
+          </button>
+          
+
+
+        </div>
       </div>
+      
       <div className="sourcedPText">
         <p>
           Donut sweet roll shortbread candy canes sugar plum biscuit. Halvah

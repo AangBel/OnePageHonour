@@ -19,6 +19,9 @@ import SingleOrigin from "./RoastIconography/SingleOrigin.svg";
 import WholeBean from "./RoastIconography/WholeBean.svg";
 //
 
+import Plus from "./Plus.svg";
+
+
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
   const [infoVisible, setInfoVisible] = useState(false);
@@ -125,9 +128,19 @@ function OurBlends() {
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
+            <button onClick={handlePanelClick} style={{ background:"none", border:"none", padding:0 }}>
+              <img src={Plus} alt="PlusSign" />
+            </button>
 
             {infoVisible[panel.id] && (
+            <>
             
+            
+            <button onClick={handlePanelClick} style={{ background:"none", border:"none", padding:0 }}>
+
+            <img src={Plus} alt="PlusSign" style={{transform:"rotate(45deg)"}} />
+          </button>
+
             <div className="coffeeInfoBox">
               <div className="topCoffeeInfo">
                 <div className="blendTitle">{panel.blendName}</div>
@@ -148,6 +161,7 @@ function OurBlends() {
                 {panel.description}
               </div>
             </div>
+            </>
 
             )}
 
