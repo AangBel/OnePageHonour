@@ -125,15 +125,17 @@ function OurBlends() {
                 {panel.blendType}
               </div>
               <div className="bottomCoffeeInfo">
-                {panel.roastType}
-                <img src={panel.roastIcon} />
+                <div className="quickInfo">
+                  <img src={panel.roastIcon} />
+                  {panel.roastType}
 
-                {panel.beanType}
-                <img src={panel.beanIcon} />
+                  <img src={panel.beanIcon} />
+                  {panel.beanType}
 
-                {panel.region}
-                <img src={panel.regionIcon} />
-        
+                  <img src={panel.regionIcon} />
+                  {panel.region}
+                </div>
+              
                 {panel.description}
               </div>
             </div>
