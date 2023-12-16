@@ -18,16 +18,68 @@ import MultiOrigin from "./RoastIconography/MultiOrigin.svg";
 import SingleOrigin from "./RoastIconography/SingleOrigin.svg";
 import WholeBean from "./RoastIconography/WholeBean.svg";
 
-
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
 
   const panels = [
-    { id: 1, image: Apex, label: "Apex" },
-    { id: 2, image: Canopy, label: "Canopy" },
-    { id: 3, image: Coastal, label: "Coastal" },
-    { id: 4, image: Howler, label: "Howler" },
-    { id: 5, image: Restful, label: "Restful" },
+    {
+      id: 1,
+      image: Apex,
+      label: "Apex",
+      blendName: "Apex Blend",
+      blendType: "Cold Brew",
+      roastType: "Dark Roast",
+      beanType: "Whole Bean",
+      region: "Multi Region",
+      description:"Rich and complex, dark chocolate and dried fruit"
+    },
+    {
+      id: 2,
+      image: Canopy,
+      label: "Canopy",
+      blendName: "Canopy Roast",
+      blendType: "Costa Rica",
+      roastType: "Light Roast",
+      beanType: "Whole Bean",
+      region: "Single Origin",
+      description:"Delicate citrus and floral notes with brown sugar sweetness"
+
+    },
+    {
+      id: 3,
+      image: Coastal,
+      label: "Coastal",
+      blendName: "Coastal Roast",
+      blendType: "Papa New Guinea",
+      roastType: "Medium Roast",
+      beanType: "Whole Bean",
+      region: "Single Origin",
+      description:"Earthy and heavy bodied, dark fruit with notes of spice and tobacco"
+      
+    },
+    {
+      id: 4,
+      image: Howler,
+      label: "Howler",
+      blendName: "Howler Blend",
+      blendType: "Espresso",
+      roastType: "Dark Roast",
+      beanType: "Ground Coffee",
+      region: "Multi Origin",
+      description:"A balanced and approachable blend with orange, cocoa, and notes of red fruit"
+
+    },
+    {
+      id: 5,
+      image: Restful,
+      label: "Restful",
+      blendName: "Restful Blend",
+      blendType: "Decaf",
+      roastType: "Light Roast",
+      beanType: "Whole Bean",
+      region: "Multi Origin",
+      description:"Brown sugar and candied nuts with a round and smooth body"
+    },
   ];
 
   const handlePanelClick = (panelId) => {
@@ -49,18 +101,15 @@ function OurBlends() {
           >
             <img src={panel.image} alt={panel.label} />
 
-            
             <div className="coffeeInfo">
               <div className="apexInfo">
-                <h2>Apex Blend</h2>
-                <h3>Cold Brew</h3>
+               
                 <img src={DarkRoast}></img>
-                <p>Dark Roast</p>
+              
                 <img src={WholeBean}></img>
-                <p>Whole Bean</p>
+                
                 <img src={MultiOrigin}></img>
-                <p>Multi Origin</p>
-                <p>Rich and complex, dark chocolate and dried fruit</p>
+                
               </div>
             </div>
 
