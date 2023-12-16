@@ -121,8 +121,8 @@ function OurBlends() {
 
             <div className="coffeeInfoBox">
               <div className="topCoffeeInfo">
-                {panel.blendName}
-                {panel.blendType}
+                <div className="blendTitle">{panel.blendName}</div>
+                <div className="blendTypeTitle">{panel.blendType}</div>
               </div>
               <div className="bottomCoffeeInfo">
                 <div className="quickInfo">
@@ -135,7 +135,7 @@ function OurBlends() {
                   <img src={panel.regionIcon} />
                   {panel.region}
                 </div>
-              
+
                 {panel.description}
               </div>
             </div>

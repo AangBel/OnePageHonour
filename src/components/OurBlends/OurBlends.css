@@ -184,7 +184,7 @@ opacity: 1;
   border-radius: 12px 0px 0px 0px;
 
   width: 427px;
-  height: 169px;
+  height: 338px;
   flex-shrink: 0;
   background: linear-gradient(to bottom, black 50%, #fff200 50%);
   color: rgb(175, 38, 38);
@@ -202,11 +202,41 @@ opacity: 1;
   padding: 20px;
 }
 
+.topCoffeeInfo {
+  font-family: "flama medium";
+  color: var(--White, #fff);
+  font-family: Flama;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 7px;
+}
+
+.blendTitle {
+  font-family: "flama medium";
+  color: var(--White, #fff);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 7px;
+}
+
+.blendTypeTitle {
+  font-family: "flama book";
+  color: var(--White, #fff);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
 .bottomCoffeeInfo {
   font-family: "flama book";
 
   color: #000;
-
 
   font-size: 16px;
   font-style: normal;
@@ -214,7 +244,7 @@ opacity: 1;
   line-height: 22px; /* 137.5% */
   letter-spacing: 1.6px;
 
-  padding-top:50px;
+  padding-top: 140px;
 }
 
 .quickInfo {
