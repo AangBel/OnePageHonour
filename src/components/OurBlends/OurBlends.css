@@ -204,6 +204,8 @@ opacity: 1;
 
 .topCoffeeInfo {
   font-family: "flama medium";
+  text-transform: uppercase;
+
   color: var(--White, #fff);
   font-family: Flama;
   font-size: 35px;
@@ -249,7 +251,7 @@ opacity: 1;
 
 .quickInfo {
   color: #000;
-  font-family: "flama medium";
+  font-family: "flama book";
 
   font-size: 12px;
   font-style: normal;
@@ -257,6 +259,9 @@ opacity: 1;
   line-height: 15px; /* 125% */
   letter-spacing: 2.4px;
   padding-bottom: 10px;
+  text-transform: uppercase;
+  
+
 }
 /* INFO BOX SPECIFIC TO THE APEX BLEND */
 
