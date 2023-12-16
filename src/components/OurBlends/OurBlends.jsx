@@ -126,13 +126,13 @@ function OurBlends() {
               </div>
               <div className="bottomCoffeeInfo">
                 <div className="quickInfo">
-                  <img src={panel.roastIcon} />
+                  <img src={panel.roastIcon} className="quickInfoImg" />
                   {panel.roastType}
 
-                  <img src={panel.beanIcon} />
+                  <img src={panel.beanIcon} className="quickInfoImg"/>
                   {panel.beanType}
 
-                  <img src={panel.regionIcon} />
+                  <img src={panel.regionIcon} className="quickInfoImg"/>
                   {panel.region}
                 </div>
 

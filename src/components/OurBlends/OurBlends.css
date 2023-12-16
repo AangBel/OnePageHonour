@@ -213,6 +213,9 @@ opacity: 1;
   font-weight: 650;
   line-height: normal;
   letter-spacing: 7px;
+
+  /* display: flex; */
+
 }
 
 .blendTitle {
@@ -246,7 +249,9 @@ opacity: 1;
   line-height: 22px; /* 137.5% */
   letter-spacing: 1.6px;
 
-  padding-top: 140px;
+  padding-top: 100px;
+  /* display: flex; */
+  align-items: center;
 }
 
 .quickInfo {
@@ -260,8 +265,17 @@ opacity: 1;
   letter-spacing: 2.4px;
   padding-bottom: 10px;
   text-transform: uppercase;
-  
 
+  padding-bottom:36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.quickInfoImg{
+  padding-right:13.75px;
+  
 }
 /* INFO BOX SPECIFIC TO THE APEX BLEND */
 
