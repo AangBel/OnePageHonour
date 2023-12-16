@@ -7,6 +7,9 @@ import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
 import LocallyRoasted from "./CarouselImagery/3 Locally roasted.jpg";
 import SmallBatched from "./CarouselImagery/4 Small batched.jpg";
 import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
+// 
+
+import Arrow from "./Arrow.svg";
 
 function ProductionCarousel() {
   const images = [HandSelected, EthicallySourced, LocallyRoasted, SmallBatched, QualityAssured];
@@ -31,9 +34,9 @@ function ProductionCarousel() {
         <div className="carousel">
           <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
         </div>
-        <div className="arrows">
-          <button onClick={prevImage}>&#8249;</button>
-          <button onClick={nextImage}>&#8250;</button>
+        <div className={Arrow}>
+          <img src={Arrow} style={{ transform: 'rotate(180deg)' }} alt="Arrow" onClick={prevImage}/>
+          <img src={Arrow} onClick={nextImage}></img>
         </div>
       </div>
       <div className="sourcedTitleBox">

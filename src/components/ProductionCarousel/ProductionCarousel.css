@@ -28,13 +28,11 @@
   padding: 126px 753px 50px 100px;
 }
 
-
-
 .carousel-container {
   background-color: black;
   position: relative;
   width: 100%;
-  max-width: 600px; 
+  max-width: 600px;
   margin: auto;
 }
 
@@ -46,17 +44,22 @@
 .carousel img {
   width: 100%;
   height: auto;
-} 
+}
 
 .arrows {
   position: absolute;
-  color:aquamarine;
+  color: aquamarine;
   bottom: 10px;
   right: 10px;
+
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  flex-shrink: 0;
 }
 
 .arrows button {
-  background: none;
+  background: white;
   border: none;
   font-size: 24px;
   cursor: pointer;
@@ -76,8 +79,7 @@
   line-height: normal;
   letter-spacing: 4.4px;
 
-  padding:50px 931px 10px 217px;
-
+  padding: 50px 931px 10px 217px;
 }
 
 .sourcedPText {
@@ -91,5 +93,5 @@
   line-height: 22px; /* 137.5% */
   letter-spacing: 1.6px;
 
-  padding:10px 562px 100px 217px;
+  padding: 10px 562px 100px 217px;
 }
