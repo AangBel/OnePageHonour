@@ -1,19 +1,17 @@
 /* html {
   height: 100vh;
 } */
-*{
+* {
   padding: 0;
-  margin:0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-
-
 body {
-font-family: "flama book";
-display:flex;
-align-items: center;
-justify-content: center;
+  font-family: "flama book";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* height:100vh; */
 /* background: linear-gradient(#fff, #fefefe, #eaeaea); */
@@ -25,85 +23,80 @@ justify-content: center;
   font-style: normal;
 }
 
-
 @font-face {
-font-family: "flama medium";
-src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
-font-weight: normal;
-font-style: normal;
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* THE CONTAINER FOR THE BLENDS HEADER TEXT */
 .rectangularSection {
-background-color: #ffffff;
-height: 100%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-/* padding-left: 100px; */
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* padding-left: 100px; */
 }
 /* align-items: center; */
 /* width: 100%; */
 /* ------------- */
 /* "OUR BLENDS" HEADER TEXT */
 .accordionHeader {
-background-color: white;
-font-family: "flama medium";
-color: #000;
-font-size: 40px;
-font-style: normal;
-font-weight: 650;
-line-height: normal;
-letter-spacing: 8px;
-margin-top: 60px;
-margin-bottom:60px;
-/* right: 100px; */
-padding-left: 100px;
-
+  background-color: white;
+  font-family: "flama medium";
+  color: #000;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 8px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /* right: 100px; */
+  padding-left: 100px;
 }
 /* padding-left: 100px; */
 
 /* THE CONTAINER FOR THE ACCORDION */
 .accordionContainer {
   display: flex;
-  width:100%;
-  max-width:1440px;
+  width: 100%;
+  max-width: 1440px;
   /* margin:0 auto; */
   /* flex-shrink: 0; */
 }
 
-
-
 .panel {
-position: relative;
-/* width:171px; */
-cursor: pointer;
-width:50%;
-max-width: 100%;
-flex: 1;
-background-size: cover;
-/* align-items: center; */
-/* background-position:left; */
-background-repeat: no-repeat;
-transition: 0.7s;
-border-left:2px solid;
-border-left-color: #A2A8AA;
-writing-mode:vertical-lr;
-text-orientation:mixed;
-text-combine-upright: none;
-padding-bottom: 19px;
-/* padding-right:37px; */
-opacity:20%;
-/* if overflow x is hidden then animation kinda jumpy but spaces correctly and doesnt go off the page
+  position: relative;
+  /* width:171px; */
+  cursor: pointer;
+  width: 50%;
+  max-width: 100%;
+  flex: 1;
+  background-size: cover;
+  /* align-items: center; */
+  /* background-position:left; */
+  background-repeat: no-repeat;
+  transition: 0.7s;
+  border-left: 2px solid;
+  border-left-color: #a2a8aa;
+
+  /* padding-right:37px; */
+  opacity: 20%;
+  /* if overflow x is hidden then animation kinda jumpy but spaces correctly and doesnt go off the page
 BUT it cuts off the blend type text */
-/* overflow-x:hidden; */
-float: left;
-
-
+  /* overflow-x:hidden; */
+  float: left;
 }
 
-.blendAccordionName{
-  
+/* the coffee name that is vertical */
+.blendAccordionName {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  text-combine-upright: none;
+  padding-bottom: 19px;
 }
 /* transform: rotate(0.5turn); */
 /* box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47); */
@@ -115,7 +108,6 @@ float: left;
 /* width:573; */
 /* } */
 
-
 /* @keyframes scale {
   from {
     transform: scale(1);
@@ -125,18 +117,16 @@ float: left;
   }
 } */
 
-.panel.active{
-flex:3;
-transform-origin: left top;
-transform: scaleX(1);
-transition: transform 0.7s ease-in-out;
-opacity: 100%;
-max-width: 562px;
-float: left;
+.panel.active {
+  flex: 3;
+  transform-origin: left top;
+  transform: scaleX(1);
+  transition: transform 0.7s ease-in-out;
+  opacity: 100%;
+  max-width: 562px;
+  float: left;
 
-
-/* padding-right:50px; */
-
+  /* padding-right:50px; */
 }
 
 /* .a1 {
@@ -159,17 +149,17 @@ background-image: url("./BlendIconography/Restful.svg");
 
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
 .blendName {
-font-weight: normal;
-font-family: "flama medium";
-text-transform: uppercase;
-color: #000;
-font-size: 18px;
-font-style: normal;
-font-weight: 650;
-line-height: normal;
-letter-spacing: 3.6px;
-transform: rotate(0.5turn);
-} 
+  font-weight: normal;
+  font-family: "flama medium";
+  text-transform: uppercase;
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  transform: rotate(0.5turn);
+}
 /* ---------- */
 /* writing-mode:vertical-rl; */
 /* writing-mode:vertical-lr;
@@ -179,58 +169,65 @@ transform: rotate(0.5turn);
 bottom:10px; */
 
 .text {
-position: absolute;
-bottom: 0;
-opacity: 0;
-padding: 10px;
-} 
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 10px;
+}
 /* .box:hover .text {
 opacity: 1;
 } */
 
 /* THE POP UP THAT HOLDS THE COFFEE INFO WHEN THE ACCORDION PANEL IS CLICKED */
-.coffeeInfo{
-font-family: "flama medium";
-border-radius: 12px 0px 0px 0px;
+.coffeeInfoBox {
+  font-family: "flama medium";
+  border-radius: 12px 0px 0px 0px;
 
-width: 427px;
-height: 169px;
-flex-shrink: 0;
-background:linear-gradient(to bottom, black 50%, #FFF200 50%);
-color: rgb(175, 38, 38);
-writing-mode:horizontal-tb;
+  width: 427px;
+  height: 169px;
+  flex-shrink: 0;
+  background: linear-gradient(to bottom, black 50%, #fff200 50%);
+  color: rgb(175, 38, 38);
+  writing-mode: horizontal-tb;
 
-/* TEXT */
-color: #000;
-font-size: 16px;
-font-style: normal;
-font-weight: 550;
-line-height: 22px; /* 137.5% */
-letter-spacing: 1.6px;
-/*  */
+  /* TEXT */
+  color: #f6f4f4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 1.6px;
+  /*  */
 
-padding:20px;
+  padding: 20px;
 }
+
+.bottomCoffeeInfo {
+  font-family: "flama book";
+  color: #000000;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: 15px; /* 125% */
+  letter-spacing: 2.4px;
+  padding-top: 50px;
+}
+
 /* INFO BOX SPECIFIC TO THE APEX BLEND */
-.apexInfo{
-color:white;
-background-color: #a23030;
-}
 
 @media screen and (max-width: 800px) {
-body {
-  margin: 0;
+  body {
+    margin: 0;
+  }
+  .accordion {
+    flex-direction: column;
+    height: 700px;
+    box-shadow: none;
+  }
+  .box {
+    box-shadow: none;
+  }
+  .box:hover {
+    flex: 7;
+  }
 }
-.accordion {
-  flex-direction: column;
-  height: 700px;
-  box-shadow: none;
-}
-.box {
-  box-shadow: none;
-}
-.box:hover {
-  flex: 7;
-}
-}
-

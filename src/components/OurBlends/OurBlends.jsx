@@ -17,9 +17,11 @@ import MediumRoast from "./RoastIconography/MediumRoast.svg";
 import MultiOrigin from "./RoastIconography/MultiOrigin.svg";
 import SingleOrigin from "./RoastIconography/SingleOrigin.svg";
 import WholeBean from "./RoastIconography/WholeBean.svg";
+//
 
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
+  const [isInfoVisible, setInfoVisible] = useState(false);
 
   const panels = [
     {
@@ -29,8 +31,11 @@ function OurBlends() {
       blendName: "Apex Blend",
       blendType: "Cold Brew",
       roastType: "Dark Roast",
+      roastIcon: DarkRoast,
       beanType: "Whole Bean",
+      beanIcon: WholeBean,
       region: "Multi Region",
+      regionIcon: MultiOrigin,
       description: "Rich and complex, dark chocolate and dried fruit",
     },
     {
@@ -40,8 +45,11 @@ function OurBlends() {
       blendName: "Canopy Roast",
       blendType: "Costa Rica",
       roastType: "Light Roast",
+      roastIcon: LightRoast,
       beanType: "Whole Bean",
+      beanIcon: WholeBean,
       region: "Single Origin",
+      regionIcon: SingleOrigin,
       description:
         "Delicate citrus and floral notes with brown sugar sweetness",
     },
@@ -52,8 +60,11 @@ function OurBlends() {
       blendName: "Coastal Roast",
       blendType: "Papa New Guinea",
       roastType: "Medium Roast",
+      roastIcon: MediumRoast,
       beanType: "Whole Bean",
+      beanIcon: WholeBean,
       region: "Single Origin",
+      regionIcon: SingleOrigin,
       description:
         "Earthy and heavy bodied, dark fruit with notes of spice and tobacco",
     },
@@ -64,8 +75,11 @@ function OurBlends() {
       blendName: "Howler Blend",
       blendType: "Espresso",
       roastType: "Dark Roast",
+      roastIcon: DarkRoast,
       beanType: "Ground Coffee",
+      beanIcon: GroundCoffee,
       region: "Multi Origin",
+      regionIcon: MultiOrigin,
       description:
         "A balanced and approachable blend with orange, cocoa, and notes of red fruit",
     },
@@ -76,8 +90,11 @@ function OurBlends() {
       blendName: "Restful Blend",
       blendType: "Decaf",
       roastType: "Light Roast",
+      roastIcon: LightRoast,
       beanType: "Whole Bean",
+      beanIcon: WholeBean,
       region: "Multi Origin",
+      regionIcon: MultiOrigin,
       description: "Brown sugar and candied nuts with a round and smooth body",
     },
   ];
@@ -92,6 +109,7 @@ function OurBlends() {
     <div className="rectangularSection" style={{ width: "100%" }}>
       <div className="accordionHeader">OUR BLENDS</div>
       <div className="accordionContainer">
+        <></>
         {panels.map((panel) => (
           <div
             key={panel.id}
@@ -100,14 +118,24 @@ function OurBlends() {
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
-            <div className="topCoffeeInfo">
-              {panel.blendName}
-              {panel.blendType}
-            </div>
-            <div className="bottomCoffeeInfo">
-              {panel.roastType}
-              {panel.beanType}
-              {panel.region}
+
+            <div className="coffeeInfoBox">
+              <div className="topCoffeeInfo">
+                {panel.blendName}
+                {panel.blendType}
+              </div>
+              <div className="bottomCoffeeInfo">
+                {panel.roastType}
+                <img src={panel.roastIcon} />
+
+                {panel.beanType}
+                <img src={panel.beanIcon} />
+
+                {panel.region}
+                <img src={panel.regionIcon} />
+        
+                {panel.description}
+              </div>
             </div>
             <div className="blendAccordionName">
               <p>{panel.label}</p>
