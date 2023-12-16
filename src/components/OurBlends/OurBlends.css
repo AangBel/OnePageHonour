@@ -96,10 +96,14 @@ padding-bottom: 19px;
 opacity:20%;
 /* if overflow x is hidden then animation kinda jumpy but spaces correctly and doesnt go off the page
 BUT it cuts off the blend type text */
-overflow-x:hidden;
+/* overflow-x:hidden; */
 float: left;
 
 
+}
+
+.blendAccordionName{
+  
 }
 /* transform: rotate(0.5turn); */
 /* box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47); */
@@ -188,7 +192,11 @@ opacity: 1;
 .coffeeInfo{
 font-family: "flama medium";
 border-radius: 12px 0px 0px 0px;
-background-color: #18573f;
+
+width: 427px;
+height: 169px;
+flex-shrink: 0;
+background:linear-gradient(to bottom, black 50%, #FFF200 50%);
 color: rgb(175, 38, 38);
 writing-mode:horizontal-tb;
 

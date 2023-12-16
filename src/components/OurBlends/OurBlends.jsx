@@ -31,7 +31,7 @@ function OurBlends() {
       roastType: "Dark Roast",
       beanType: "Whole Bean",
       region: "Multi Region",
-      description:"Rich and complex, dark chocolate and dried fruit"
+      description: "Rich and complex, dark chocolate and dried fruit",
     },
     {
       id: 2,
@@ -42,8 +42,8 @@ function OurBlends() {
       roastType: "Light Roast",
       beanType: "Whole Bean",
       region: "Single Origin",
-      description:"Delicate citrus and floral notes with brown sugar sweetness"
-
+      description:
+        "Delicate citrus and floral notes with brown sugar sweetness",
     },
     {
       id: 3,
@@ -54,8 +54,8 @@ function OurBlends() {
       roastType: "Medium Roast",
       beanType: "Whole Bean",
       region: "Single Origin",
-      description:"Earthy and heavy bodied, dark fruit with notes of spice and tobacco"
-      
+      description:
+        "Earthy and heavy bodied, dark fruit with notes of spice and tobacco",
     },
     {
       id: 4,
@@ -66,8 +66,8 @@ function OurBlends() {
       roastType: "Dark Roast",
       beanType: "Ground Coffee",
       region: "Multi Origin",
-      description:"A balanced and approachable blend with orange, cocoa, and notes of red fruit"
-
+      description:
+        "A balanced and approachable blend with orange, cocoa, and notes of red fruit",
     },
     {
       id: 5,
@@ -78,7 +78,7 @@ function OurBlends() {
       roastType: "Light Roast",
       beanType: "Whole Bean",
       region: "Multi Origin",
-      description:"Brown sugar and candied nuts with a round and smooth body"
+      description: "Brown sugar and candied nuts with a round and smooth body",
     },
   ];
 
@@ -100,20 +100,16 @@ function OurBlends() {
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
-
-            <div className="coffeeInfo">
-              <div className="apexInfo">
-               
-                <img src={DarkRoast}></img>
-              
-                <img src={WholeBean}></img>
-                
-                <img src={MultiOrigin}></img>
-                
-              </div>
+            <div className="topCoffeeInfo">
+              {panel.blendName}
+              {panel.blendType}
             </div>
-
-            <div className="blendName">
+            <div className="bottomCoffeeInfo">
+              {panel.roastType}
+              {panel.beanType}
+              {panel.region}
+            </div>
+            <div className="blendAccordionName">
               <p>{panel.label}</p>
             </div>
           </div>
