@@ -21,7 +21,7 @@ import WholeBean from "./RoastIconography/WholeBean.svg";
 
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
-  const [isInfoVisible, setInfoVisible] = useState(false);
+  const [infoVisible, setInfoVisible] = useState(false);
 
   const panels = [
     {
@@ -103,7 +103,14 @@ function OurBlends() {
     setActivePanel((prevActivePanel) =>
       prevActivePanel === panelId ? null : panelId
     );
+
+    setInfoVisible((prevInfoVisible) => ({
+      ...prevInfoVisible,
+      [panelId]: !prevInfoVisible[panelId],
+    }))
   };
+
+  
 
   return (
     <div className="rectangularSection" style={{ width: "100%" }}>
@@ -113,12 +120,14 @@ function OurBlends() {
         {panels.map((panel) => (
           <div
             key={panel.id}
-            className={`panel ${activePanel === panel.id ? "active" : ""}`}
+            className={`panel ${activePanel === panel.id ? "active" : "inactive"}`}
             style={{ flex: activePanel === panel.id ? 5 : 1 }}
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
 
+            {infoVisible[panel.id] && (
+            
             <div className="coffeeInfoBox">
               <div className="topCoffeeInfo">
                 <div className="blendTitle">{panel.blendName}</div>
@@ -139,6 +148,9 @@ function OurBlends() {
                 {panel.description}
               </div>
             </div>
+
+            )}
+
             <div className="blendAccordionName">
               <p>{panel.label}</p>
             </div>
