@@ -39,8 +39,11 @@ function OurBlends() {
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
-            <p className="blendName">{panel.label}</p>
+            <div className="blendName">
+            <p>{panel.label}</p>
           </div>
+          </div>
+
         ))}
       </div>
     </div>

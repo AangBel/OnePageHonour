@@ -31,17 +31,18 @@
 }
 .quotePText {
   background-color: black;
-
+  /* max-width: 1004px; */
   color: white;
   font-family: "flama book";
   font-size: 35px;
+  font-style: normal;
   font-weight: 550;
+  line-height: 55px;
+  letter-spacing: 3.5px;
   padding-left: 260px;
   padding-right: 176px;
   margin-top: 150px;
   text-transform: uppercase;
-  line-height: 55px;
-  letter-spacing: 3px;
   
 }
 

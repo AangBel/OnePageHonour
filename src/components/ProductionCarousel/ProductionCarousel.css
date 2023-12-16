@@ -1,34 +1,92 @@
-.carousel-container {
-    background-color: black;
-    position: relative;
-    width: 100%;
-    max-width: 600px; /* Adjust the maximum width as needed */
-    margin: auto;
-  }
-  
-  .carousel {
-    overflow: hidden;
-    background-color: black;
+@font-face {
+  font-family: "flama book";
+  src: url("/public/Fonts/flama book_1596466159.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-  }
-  
-  .carousel img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .arrows {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-  
-  .arrows button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 5px;
-    margin: 0 5px;
-  }
-  
+@font-face {
+  font-family: "flama medium";
+  src: url("/public/Fonts/flama medium_1596466164.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.excellenceTextBox {
+  background-color: black;
+  color: purple;
+  font-family: "flama book";
+
+  color: var(--White, #fff);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+
+  padding: 126px 753px 50px 100px;
+}
+
+/* .carousel-container {
+  background-color: black;
+  position: relative;
+  width: 100%;
+  max-width: 600px; 
+  margin: auto;
+} */
+
+/* .carousel {
+  overflow: hidden;
+  background-color: black;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+} */
+
+/* .arrows {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+} */
+
+/* .arrows button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px;
+  margin: 0 5px;
+} */
+
+.sourcedTitleBox {
+  color: var(--White, #fff);
+
+  background-color: black;
+
+  font-family: "flama medium";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 4.4px;
+
+  padding:50px 931px 10px 217px;
+
+}
+
+.sourcedPText {
+  font-family: "flama book";
+
+  background-color: black;
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 22px; /* 137.5% */
+  letter-spacing: 1.6px;
+
+  padding:10px 562px 100px 217px;
+}
