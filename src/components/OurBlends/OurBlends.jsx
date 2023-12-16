@@ -109,7 +109,7 @@ function OurBlends() {
     <div className="rectangularSection" style={{ width: "100%" }}>
       <div className="accordionHeader">OUR BLENDS</div>
       <div className="accordionContainer">
-        <></>
+      
         {panels.map((panel) => (
           <div
             key={panel.id}
