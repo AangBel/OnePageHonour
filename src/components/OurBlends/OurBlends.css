@@ -226,6 +226,8 @@ opacity: 1;
   font-weight: 650;
   line-height: normal;
   letter-spacing: 7px;
+
+  padding-bottom: 13px;
 }
 
 .blendTypeTitle {
@@ -250,6 +252,7 @@ opacity: 1;
   letter-spacing: 1.6px;
 
   padding-top: 100px;
+  padding-bottom:43px;
   /* display: flex; */
   align-items: center;
 }
@@ -267,6 +270,7 @@ opacity: 1;
   text-transform: uppercase;
 
   padding-bottom:36px;
+  /* padding-top: 29px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
