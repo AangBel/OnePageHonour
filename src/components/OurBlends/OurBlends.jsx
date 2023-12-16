@@ -120,8 +120,8 @@ function OurBlends() {
         {panels.map((panel) => (
           <div
             key={panel.id}
-            className={`panel ${activePanel === panel.id ? "active" : "inactive"}`}
-            style={{ flex: activePanel === panel.id ? 5 : 1 }}
+            className={`panel ${activePanel === panel.id ? "active" : ""}`}
+            style={{ flex: activePanel === panel.id ? 3 : 1 }}
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />

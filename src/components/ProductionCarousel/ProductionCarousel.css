@@ -28,15 +28,17 @@
   padding: 126px 753px 50px 100px;
 }
 
-/* .carousel-container {
+
+
+.carousel-container {
   background-color: black;
   position: relative;
   width: 100%;
   max-width: 600px; 
   margin: auto;
-} */
+}
 
-/* .carousel {
+.carousel {
   overflow: hidden;
   background-color: black;
 }
@@ -44,22 +46,23 @@
 .carousel img {
   width: 100%;
   height: auto;
-} */
+} 
 
-/* .arrows {
+.arrows {
   position: absolute;
+  color:aquamarine;
   bottom: 10px;
   right: 10px;
-} */
+}
 
-/* .arrows button {
+.arrows button {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
   margin: 0 5px;
-} */
+}
 
 .sourcedTitleBox {
   color: var(--White, #fff);
