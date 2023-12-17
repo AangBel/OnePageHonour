@@ -22,12 +22,11 @@ function Footer() {
   return (
     <>
       <div className="footerHonourText">
-        <img src={SecondaryLogo}></img>
         <h3>START YOUR DAY WITH HONOUR</h3>
       </div>
+
       <div className="footerEmailInput">
         <label for="email">Email address</label>
-
         <input
           type="email"
           id="email"
@@ -37,27 +36,28 @@ function Footer() {
         />
       </div>
 
-      <div className="contactLinks">
-        <h3>Help Desk</h3>
-        <h3>Press</h3>
-        <h3>Carry Us</h3>
+      <div className="linksAndLogo">
+        <div className="contactLinks">
+          <h3>Help Desk</h3>
+          <h3>Press</h3>
+          <h3>Carry Us</h3>
+        </div>
+        <img src={SecondaryLogo}></img>
       </div>
 
-<div className="bottomLineFooterContent">
+      <div className="bottomLineFooterContent">
+        <div className="legaleseFooter">
+          <p>©2023 HONOUR COFFEE</p>
+          <p>PRIVACY POLICY</p>
+          <p>TERMS & CONDITIONS</p>
+        </div>
 
-      <div className="legaleseFooter">
-        <p>©2023 HONOUR COFFEE</p>
-        <p>PRIVACY POLICY</p>
-        <p>TERMS & CONDITIONS</p>
+        <div className="socialLinks">
+          <FontAwesomeIcon icon={faFacebookF} />
+          <FontAwesomeIcon icon={faTwitter} />
+          <FontAwesomeIcon icon={faYoutube} />
+        </div>
       </div>
-
-      <div className="socialLinks">
-        <FontAwesomeIcon icon={faFacebookF} />
-        <FontAwesomeIcon icon={faTwitter} />
-        <FontAwesomeIcon icon={faYoutube} />
-      </div>
-
-</div>
     </>
   );
 }

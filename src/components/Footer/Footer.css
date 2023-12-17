@@ -26,6 +26,13 @@
   border-top: 1px solid #aaa;
 }
 
+.linksAndLogo{
+  display: flex;
+  position: relative;
+  background-color: black;
+}
+
+
 .contactLinks {
   font-family: "flama medium";
   background-color: black;
@@ -37,6 +44,8 @@
   line-height: 50px; /* 227.273% */
   letter-spacing: 4.4px;
 }
+
+
 
 
 .footerEmailInput {
