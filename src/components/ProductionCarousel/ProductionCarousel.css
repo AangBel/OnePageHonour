@@ -11,14 +11,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+/* 
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
+} */
 
 .excellenceTextBox {
-  background-color: black;
+  background-color: rgb(213, 79, 79);
   color: purple;
   font-family: "flama book";
 
@@ -34,10 +34,10 @@
 }
 
 .carousel-container {
-  background-color: black;
+  /* background-color: black;
   position: relative;
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; */
   /* margin: auto; */
   /* overflow:hidden ; */
 }
@@ -63,10 +63,10 @@
 
 /* } */
 
-.setOfImages {
+/* .setOfImages {
   width:100px;
   height: 100px;
-}
+} */
 .arrows {
   position: absolute;
   color: aquamarine;
@@ -90,6 +90,7 @@
 
 .sourcedTitleBox {
   color: var(--White, #fff);
+  display: relative;
 
   background-color: black;
 

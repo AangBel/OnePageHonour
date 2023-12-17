@@ -43,15 +43,16 @@ function ProductionCarousel() {
         <h2>Produced with excellence</h2>
       </div>
 
-      <div className="carousel-container">
+      <div className="carouselContainer">
         <div className="carousel">
           <img
             src={carouselImages[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
-            className="setOfImages"
           />
         </div>
       </div>
+
+
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
         <div className={Arrow}>
