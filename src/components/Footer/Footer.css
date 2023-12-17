@@ -38,6 +38,51 @@
   letter-spacing: 4.4px;
 }
 
+
+.footerEmailInput {
+  color: var(--White, #fff);
+
+  background-color: black;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.bottomLineFooterContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px; 
+}
+
+
+.legaleseFooter {
+  color: var(--White, #fff);
+
+  background-color: black;
+  font-family: "flama book";
+
+  display: flex;
+  position: relative;
+
+
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 22px; /* 200% */
+  letter-spacing: 2.2px;
+
+  /* padding: 5px 30px 5px 30px; */
+
+}
+
+.legaleseFooter p{
+  padding-left:100px;
+  padding-right:30px;
+}
+
+
 .socialLinks {
 
   display: flex;
@@ -61,36 +106,5 @@ justify-content: flex-end;
 .socialLinks svg {
   padding:24px;
 
-}
 
-.footerEmailInput {
-  color: var(--White, #fff);
-
-  background-color: black;
-  padding-bottom: 100px;
-  padding-left: 100px;
-}
-
-.legaleseFooter {
-  color: var(--White, #fff);
-
-  background-color: black;
-  font-family: "flama book";
-
-  display: flex;
-  position: relative;
-
-  font-size: 11px;
-  font-style: normal;
-  font-weight: 550;
-  line-height: 22px; /* 200% */
-  letter-spacing: 2.2px;
-
-  /* padding: 5px 30px 5px 30px; */
-
-}
-
-.legaleseFooter p{
-  padding-left:100px;
-  padding-right:30px;
 }

@@ -43,6 +43,8 @@ function Footer() {
         <h3>Carry Us</h3>
       </div>
 
+<div className="bottomLineFooterContent">
+
       <div className="legaleseFooter">
         <p>©2023 HONOUR COFFEE</p>
         <p>PRIVACY POLICY</p>
@@ -54,6 +56,8 @@ function Footer() {
         <FontAwesomeIcon icon={faTwitter} />
         <FontAwesomeIcon icon={faYoutube} />
       </div>
+
+</div>
     </>
   );
 }
