@@ -1,9 +1,12 @@
 import React, { useState, useRef, useEffect } from "react";
+import { ReactDOM } from "react";
+
+
 // import Flickity from "flickity";
 // import Flickity from "react-flickity-component";
 
 // // CSS
-// import "./ProductionCarousel.css";
+import "./ProductionCarousel.css";
 // import "flickity/css/flickity.css";
 
 // IMAGES
@@ -39,19 +42,14 @@ function ProductionCarousel() {
 
   return (
     <>
-      <div className="excellenceTextBox">
-        <h2>Produced with excellence</h2>
-      </div>
-
       <div className="carouselContainer">
-        <div className="carousel">
+        <div className="carouselSlide">
           <img
             src={carouselImages[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
           />
         </div>
       </div>
-
 
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>

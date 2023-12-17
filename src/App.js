@@ -5,6 +5,7 @@ import Nav from "../src/components/Nav/Nav";
 import Hero from "./components/Hero/Hero";
 import Quote from "./components/Quote/Quote";
 import OurBlends from "./components/OurBlends/OurBlends";
+import Excellence from "./components/Excellence/Excellence";
 import ProductionCarousel from "./components/ProductionCarousel/ProductionCarousel";
 import Footer from "./components/Footer/Footer";
 
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <Quote />
         <OurBlends />
+        <Excellence />
         <ProductionCarousel />
       </div>
       <div className="AppFooter">
