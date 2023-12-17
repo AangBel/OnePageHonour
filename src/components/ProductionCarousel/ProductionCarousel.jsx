@@ -1,25 +1,15 @@
-import React, { useState, useRef, useEffect } from "react";
-import { ReactDOM } from "react";
+import React from "react";
+import Carousel from "nuka-carousel";
 
-
-// import Flickity from "flickity";
-// import Flickity from "react-flickity-component";
-
-// // CSS
-import "./ProductionCarousel.css";
-// import "flickity/css/flickity.css";
-
-// IMAGES
+// import "./ProductionCarousel.css";
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
 import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
 import LocallyRoasted from "./CarouselImagery/3 Locally roasted.jpg";
 import SmallBatched from "./CarouselImagery/4 Small batched.jpg";
 import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
-//
-
 import Arrow from "./Arrow.svg";
 
-function ProductionCarousel() {
+const ProductionCarousel = () => {
   const carouselImages = [
     HandSelected,
     EthicallySourced,
@@ -27,50 +17,37 @@ function ProductionCarousel() {
     SmallBatched,
     QualityAssured,
   ];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + carouselImages.length) % carouselImages.length
-    );
-  };
 
   return (
-    <>
-      <div className="carouselContainer">
-        <div className="carouselSlide">
+    <div className="carouselContainer">
+      <Carousel
+        wrapAround={true}
+        slidesToShow={3}
+        cellSpacing={35} 
+        renderCenterLeftControls={({ previousSlide }) => (
+          <button onClick={previousSlide} className="carousel-control">
+            <img src={Arrow} alt="Previous" style={{ transform: "rotate(180deg)" }} />
+          </button>
+        )}
+        renderCenterRightControls={({ nextSlide }) => (
+          <button onClick={nextSlide} className="carousel-control">
+            <img src={Arrow} alt="Next" />
+          </button>
+        )}
+      >
+        {carouselImages.map((image, index) => (
           <img
-            src={carouselImages[currentIndex]}
-            alt={`Slide ${currentIndex + 1}`}
+            key={index}
+            src={image}
+            alt={`Slide ${index + 1}`}
+            className="carouselImage"
+            style={{ height: "100%", width: "100%"}}
           />
-        </div>
-      </div>
+        ))}
+      </Carousel>
 
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
-        <div className={Arrow}>
-          <button
-            onClick={prevImage}
-            style={{ background: "none", border: "none", padding: 0 }}
-          >
-            <img
-              src={Arrow}
-              alt="Arrow"
-              style={{ transform: "rotate(180deg)" }}
-            />
-          </button>
-          <button
-            onClick={nextImage}
-            style={{ background: "none", border: "none", padding: 0 }}
-          >
-            <img src={Arrow} alt="Arrow" />
-          </button>
-        </div>
       </div>
 
       <div className="sourcedPText">
@@ -79,8 +56,8 @@ function ProductionCarousel() {
           biscuit muffin dessert carrot cake marshmallow donut ice cream.
         </p>
       </div>
-    </>
+    </div>
   );
-}
+};
 
 export default ProductionCarousel;
