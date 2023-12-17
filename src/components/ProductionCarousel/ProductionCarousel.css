@@ -68,7 +68,7 @@
   width:100px;
   height: 100px;
 } */
-.arrows {
+/* .arrows {
   position: absolute;
   background-color: aquamarine;
   bottom: 10px;
@@ -78,16 +78,16 @@
   height: 30px;
   transform: rotate(45deg);
   flex-shrink: 0;
-}
+} */
 
-.arrows button {
+/* .arrows button {
   background: white;
   border: none;
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
   /* margin: 0 5px; */
-}
+/* }  */
 
 .sourcedTitleBox {
   color: var(--White, #fff);

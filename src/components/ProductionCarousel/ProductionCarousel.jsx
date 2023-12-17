@@ -66,13 +66,13 @@ function ProductionCarousel() {
         ))}
       </Carousel>
 
-      <button onClick={prevImage} className="arrows">
+      {/* <button onClick={prevImage} className="arrows">
         <img
           src={Arrow}
           alt="Previous"
           style={{ transform: "rotate(180deg)" }}
         />
-      </button>
+      </button> */}
 
       {/* <button onClick={nextImage} className="carousel-control">
         <img src={Arrow} alt="Next" />
