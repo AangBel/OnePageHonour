@@ -85,7 +85,7 @@
   /* margin: 0 5px; */
 }
 
-/* .sourcedTitleBox {
+.sourcedTitleBox {
   color: var(--White, #fff);
   display: relative;
 
@@ -100,9 +100,9 @@
   text-transform: uppercase;
 
   padding: 50px 931px 10px 217px;
-} */
+}
 
-/* .sourcedPText {
+.sourcedPText {
   font-family: "flama book";
 
   background-color: black;
@@ -113,5 +113,5 @@
   line-height: 22px; /* 137.5% */
   /* letter-spacing: 1.6px; */
 
-  /* padding: 10px 562px 100px 217px; */
-/* }  */
+  padding: 10px 562px 100px 217px;
+ } 
