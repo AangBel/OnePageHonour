@@ -1,5 +1,18 @@
 import React from "react";
 
+
+// import {icon} from '@fortawesome/fontawesome-svg-core/import.macro';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+// import { solid, icon } from '@fortawesome/fontawesome-svg-core/import.macro' 
+
+
+
+import "./SocialIcons/facebook-f.svg";
+import "./SocialIcons/x-twitter.svg";
+import "./SocialIcons/youtube.svg";
+
+
 import "./Footer.css";
 
 import SecondaryLogo from "./SecondaryLogo.svg";
@@ -27,6 +40,13 @@ function Footer() {
 
       </div>
 
+    
+      <div className="socialLinks">
+        <FontAwesomeIcon icon={faFacebookF} />
+        <FontAwesomeIcon icon={faTwitter} />
+        <FontAwesomeIcon icon={faYoutube} />
+      </div>
+    
 
 
       <div className="legaleseFooter">
