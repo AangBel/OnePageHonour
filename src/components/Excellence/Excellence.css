@@ -2,7 +2,7 @@
   background-color: rgb(0, 0, 0);
 
   /* TEXT */
-  font-family: "flama book";
+  font-family: "flama medium";
   color: var(--White, #fff);
   font-size: 40px;
   font-style: normal;
@@ -10,7 +10,7 @@
   line-height: normal;
   letter-spacing: 8px;
   text-transform: uppercase;
-
+  text-align: left;
   /* SPACING */
-  padding: 126px 753px 50px 100px;
+  padding: 126px 753px 100px 100px;
 }

@@ -60,6 +60,10 @@
 
 /* } */
 
+.carouselControl{
+  background-color: rgb(0, 0, 0);
+}
+
 /* .setOfImages {
   width:100px;
   height: 100px;
@@ -111,7 +115,7 @@
   font-style: normal;
   font-weight: 550;
   line-height: 22px; /* 137.5% */
-  /* letter-spacing: 1.6px; */
+  letter-spacing: 1.6px;
 
   padding: 10px 562px 100px 217px;
  } 

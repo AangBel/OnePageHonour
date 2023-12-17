@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
-import "./ProductionCarousel.css"; // Include your CSS file
+import "./ProductionCarousel.css"; 
 
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
 import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
@@ -40,7 +40,7 @@ function ProductionCarousel() {
         slidesToShow={3}
         cellSpacing={35}
         renderCenterLeftControls={({ previousSlide }) => (
-          <button onClick={previousSlide} className="carousel-control">
+          <button onClick={previousSlide} className="carouselControl">
             <img
               src={Arrow}
               alt="Previous"
@@ -49,7 +49,7 @@ function ProductionCarousel() {
           </button>
         )}
         renderCenterRightControls={({ nextSlide }) => (
-          <button onClick={nextSlide} className="carousel-control">
+          <button onClick={nextSlide} className="carouselControl">
             <img src={Arrow} alt="Next" />
           </button>
         )}
@@ -74,9 +74,9 @@ function ProductionCarousel() {
         />
       </button>
 
-      <button onClick={nextImage} className="carousel-control">
+      {/* <button onClick={nextImage} className="carousel-control">
         <img src={Arrow} alt="Next" />
-      </button>
+      </button> */}
 
 
       <div className="sourcedTitleBox">
