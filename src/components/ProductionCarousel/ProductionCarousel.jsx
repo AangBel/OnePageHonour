@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "nuka-carousel";
+import "./ProductionCarousel.css"; // Include your CSS file
 
-// import "./ProductionCarousel.css";
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
 import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
 import LocallyRoasted from "./CarouselImagery/3 Locally roasted.jpg";
@@ -9,7 +9,7 @@ import SmallBatched from "./CarouselImagery/4 Small batched.jpg";
 import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
 import Arrow from "./Arrow.svg";
 
-const ProductionCarousel = () => {
+function ProductionCarousel(){
   const carouselImages = [
     HandSelected,
     EthicallySourced,
@@ -23,7 +23,7 @@ const ProductionCarousel = () => {
       <Carousel
         wrapAround={true}
         slidesToShow={3}
-        cellSpacing={35} 
+        cellSpacing={35}
         renderCenterLeftControls={({ previousSlide }) => (
           <button onClick={previousSlide} className="carousel-control">
             <img src={Arrow} alt="Previous" style={{ transform: "rotate(180deg)" }} />
@@ -34,6 +34,8 @@ const ProductionCarousel = () => {
             <img src={Arrow} alt="Next" />
           </button>
         )}
+
+        renderBottomCenterControls={null}
       >
         {carouselImages.map((image, index) => (
           <img
@@ -41,7 +43,7 @@ const ProductionCarousel = () => {
             src={image}
             alt={`Slide ${index + 1}`}
             className="carouselImage"
-            style={{ height: "100%", width: "100%"}}
+            style={{ height: "100%", width: "100%" }}
           />
         ))}
       </Carousel>
