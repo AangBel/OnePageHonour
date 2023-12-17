@@ -1,5 +1,10 @@
-import React, { useState } from "react";
-import "./ProductionCarousel.css";
+import React, { useState, useRef, useEffect } from "react";
+// import Flickity from "flickity";
+// import Flickity from "react-flickity-component";
+
+// // CSS
+// import "./ProductionCarousel.css";
+// import "flickity/css/flickity.css";
 
 // IMAGES
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
@@ -12,7 +17,7 @@ import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
 import Arrow from "./Arrow.svg";
 
 function ProductionCarousel() {
-  const images = [
+  const carouselImages = [
     HandSelected,
     EthicallySourced,
     LocallyRoasted,
@@ -22,12 +27,13 @@ function ProductionCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
   };
 
   const prevImage = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      (prevIndex) =>
+        (prevIndex - 1 + carouselImages.length) % carouselImages.length
     );
   };
 
@@ -36,11 +42,15 @@ function ProductionCarousel() {
       <div className="excellenceTextBox">
         <h2>Produced with excellence</h2>
       </div>
+
       <div className="carousel-container">
         <div className="carousel">
-          <img src={images[currentIndex]} alt={`Slide ${currentIndex + 1}`} />
+          <img
+            src={carouselImages[currentIndex]}
+            alt={`Slide ${currentIndex + 1}`}
+            className="setOfImages"
+          />
         </div>
-       
       </div>
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
@@ -55,21 +65,15 @@ function ProductionCarousel() {
               style={{ transform: "rotate(180deg)" }}
             />
           </button>
-        <button
+          <button
             onClick={nextImage}
             style={{ background: "none", border: "none", padding: 0 }}
           >
-            <img
-              src={Arrow}
-              alt="Arrow"
-            />
+            <img src={Arrow} alt="Arrow" />
           </button>
-          
-
-
         </div>
       </div>
-      
+
       <div className="sourcedPText">
         <p>
           Donut sweet roll shortbread candy canes sugar plum biscuit. Halvah

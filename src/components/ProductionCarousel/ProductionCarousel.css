@@ -12,6 +12,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .excellenceTextBox {
   background-color: black;
   color: purple;
@@ -33,19 +38,35 @@
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: auto;
+  /* margin: auto; */
+  /* overflow:hidden ; */
 }
 
-.carousel {
+/* .carousel {
+  display: flex;
   overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+
   background-color: black;
-}
+  justify-content: center;
+} */
 
-.carousel img {
-  width: 100%;
-  height: auto;
-}
+/* .carousel img {
+ 
+  /* width: 1003px; */
+/* width:auto;
+  height: 1003px;
+  display: inline; */
+/* flex-shrink: 0; */
+/* margin-right:10px; */
+/* background-size: cover; */
 
+/* } */
+
+.setOfImages {
+  width:100px;
+  height: 100px;
+}
 .arrows {
   position: absolute;
   color: aquamarine;
@@ -64,7 +85,7 @@
   font-size: 24px;
   cursor: pointer;
   padding: 5px;
-  margin: 0 5px;
+  /* margin: 0 5px; */
 }
 
 .sourcedTitleBox {
@@ -78,6 +99,7 @@
   font-weight: 650;
   line-height: normal;
   letter-spacing: 4.4px;
+  text-transform: uppercase;
 
   padding: 50px 931px 10px 217px;
 }

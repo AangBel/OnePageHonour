@@ -21,7 +21,6 @@ import WholeBean from "./RoastIconography/WholeBean.svg";
 
 import Plus from "./Plus.svg";
 
-
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
   const [infoVisible, setInfoVisible] = useState(false);
@@ -110,16 +109,13 @@ function OurBlends() {
     setInfoVisible((prevInfoVisible) => ({
       ...prevInfoVisible,
       [panelId]: !prevInfoVisible[panelId],
-    }))
+    }));
   };
-
-  
 
   return (
     <div className="rectangularSection" style={{ width: "100%" }}>
       <div className="accordionHeader">OUR BLENDS</div>
       <div className="accordionContainer">
-      
         {panels.map((panel) => (
           <div
             key={panel.id}
@@ -128,41 +124,47 @@ function OurBlends() {
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
-            <button onClick={handlePanelClick} style={{ background:"none", border:"none", padding:0 }}>
+            <button
+              onClick={handlePanelClick}
+              style={{ background: "none", border: "none", padding: 0 }}
+            >
               <img src={Plus} alt="PlusSign" />
             </button>
 
             {infoVisible[panel.id] && (
-            <>
-            
-            
-            <button onClick={handlePanelClick} style={{ background:"none", border:"none", padding:0 }}>
+              <>
+                <button
+                  onClick={handlePanelClick}
+                  style={{ background: "none", border: "none", padding: 0 }}
+                >
+                  <img
+                    src={Plus}
+                    alt="PlusSign"
+                    style={{ transform: "rotate(45deg)" }}
+                  />
+                </button>
 
-            <img src={Plus} alt="PlusSign" style={{transform:"rotate(45deg)"}} />
-          </button>
+                <div className="coffeeInfoBox">
+                  <div className="topCoffeeInfo">
+                    <div className="blendTitle">{panel.blendName}</div>
+                    <div className="blendTypeTitle">{panel.blendType}</div>
+                  </div>
+                  <div className="bottomCoffeeInfo">
+                    <div className="quickInfo">
+                      <img src={panel.roastIcon} className="quickInfoImg" />
+                      {panel.roastType}
 
-            <div className="coffeeInfoBox">
-              <div className="topCoffeeInfo">
-                <div className="blendTitle">{panel.blendName}</div>
-                <div className="blendTypeTitle">{panel.blendType}</div>
-              </div>
-              <div className="bottomCoffeeInfo">
-                <div className="quickInfo">
-                  <img src={panel.roastIcon} className="quickInfoImg" />
-                  {panel.roastType}
+                      <img src={panel.beanIcon} className="quickInfoImg" />
+                      {panel.beanType}
 
-                  <img src={panel.beanIcon} className="quickInfoImg"/>
-                  {panel.beanType}
+                      <img src={panel.regionIcon} className="quickInfoImg" />
+                      {panel.region}
+                    </div>
 
-                  <img src={panel.regionIcon} className="quickInfoImg"/>
-                  {panel.region}
+                    {panel.description}
+                  </div>
                 </div>
-
-                {panel.description}
-              </div>
-            </div>
-            </>
-
+              </>
             )}
 
             <div className="blendAccordionName">
