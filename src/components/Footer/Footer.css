@@ -55,8 +55,9 @@
   background-color: black;
 
   width: auto;
-  padding-top: 38px;
-  padding-left: 100px;
+  padding:38px 127px 0 100px;
+  /* padding-top: 38px;
+  padding-left: 100px; */
   align-items: flex-start;
 
   color: var(--White, #fff);
