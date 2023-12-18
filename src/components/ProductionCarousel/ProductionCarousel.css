@@ -84,10 +84,10 @@
 /* } */
 
 .carouselControl {
-  background-color: rgb(9, 39, 174);
+  background-color: rgb(0, 0, 0);
 }
 
-.arrows {
+/* .arrows {
   position: absolute;
   background-color: aquamarine;
   bottom: 10px;
@@ -95,9 +95,9 @@
 
   width: 70px;
   height: 70px;
-  /* transform: rotate(45deg); */
-  /* flex-shrink: 0; */
-}
+  transform: rotate(45deg); 
+  flex-shrink: 0;
+} */
 
 /* ETHICALLY SOURCED SECTION ----------------- */
 

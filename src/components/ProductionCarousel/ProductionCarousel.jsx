@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import Carousel from "nuka-carousel";
 import "./ProductionCarousel.css";
 
+// IMAGES
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
 import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
 import LocallyRoasted from "./CarouselImagery/3 Locally roasted.jpg";
 import SmallBatched from "./CarouselImagery/4 Small batched.jpg";
 import QualityAssured from "./CarouselImagery/5 Quality assured.jpg";
 import Arrow from "./Arrow.svg";
+//
 
 function ProductionCarousel() {
   const carouselImages = [
@@ -22,18 +24,18 @@ function ProductionCarousel() {
   //Might be worth looking into for the accordion
   const imageWidth = "100%";
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrentIndex((nextSlide) => (nextSlide + 1) % carouselImages.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentIndex((nextSlide) => (nextSlide + 1) % carouselImages.length);
+  // };
 
-  const prevImage = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + carouselImages.length) % carouselImages.length
-    );
-  };
+  // const prevIndex = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) =>
+  //       (prevIndex - 1 + carouselImages.length) % carouselImages.length
+  //   );
+  // };
 
   return (
     <div className="carouselContainer">
@@ -42,7 +44,12 @@ function ProductionCarousel() {
         slidesToShow={2.5}
         cellSpacing={20}
         centerMode={true}
-        withoutControls={({ previousSlide }) => (
+
+        renderBottomCenterControls={false}
+        renderCenterLeftControls={false}
+        renderCenterRightControls={false}
+
+        renderBottomLeftControls={({ previousSlide }) => (
           <button onClick={previousSlide} className="carouselControl">
             <img
               src={Arrow}
@@ -56,7 +63,7 @@ function ProductionCarousel() {
             <img src={Arrow} alt="Next" />
           </button>
         )}
-        renderBottomCenterControls={null}
+    
       >
         {carouselImages.map((image, index) => (
           <img
@@ -70,7 +77,8 @@ function ProductionCarousel() {
         ))}
       </Carousel>
 
-      <div className="arrowContainer">
+      {/* THESE  ARE AROUND WHERE THE ARROWS SHOULD BE ARE CURRENTLY NON FUNCTIONAL */}
+      {/* <div className="arrowContainer">
         <button onClick={prevImage} className="arrowLeft">
           <img
             src={Arrow}
@@ -82,7 +90,7 @@ function ProductionCarousel() {
         <button onClick={nextImage} className="arrowRight">
           <img src={Arrow} alt="Next" />
         </button>
-      </div>
+      </div> */}
 
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
