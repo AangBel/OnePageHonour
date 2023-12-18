@@ -105,7 +105,7 @@
   padding-left: 0px;
 
   border-bottom: 1px solid #aaa;
-  margin-right: 300px;
+  margin-right: 356px;
   margin-left:50px;
 
   margin-bottom: 100px;
@@ -115,12 +115,7 @@
 
 .emailInputBox {
   background-color: black;
-
   border:none;
-  /* border-color:black;
-  border-left-color: black;
-  border-right-color: black;
-  border-top-color: black; */
 }
 
 .emailArrow{
@@ -157,7 +152,7 @@
 }
 
 .legaleseFooter p {
-  padding-left: 57px;
+  padding-left: 25px;
   padding-right: 30px;
   /* font-family: "flama book"; */
   /* padding: 0 30px 0 30px; */
