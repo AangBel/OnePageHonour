@@ -128,7 +128,7 @@ function OurBlends() {
               onClick={handlePanelClick}
               style={{ background: "none", border: "none", padding: 0 }}
             >
-              <img src={Plus} alt="PlusSign" />
+              {/* <img src={Plus} alt="PlusSign" /> */}
             </button>
 
             {infoVisible[panel.id] && (
@@ -137,11 +137,12 @@ function OurBlends() {
                   onClick={handlePanelClick}
                   style={{ background: "none", border: "none", padding: 0 }}
                 >
-                  <img
+                  {/* WILL COME BACK TO WORKING ON TOGGLE FOR THE PLUS/X SIGN TO OPEN/CLOSE ACCORDION PANEL */}
+                  {/* <img
                     src={Plus}
                     alt="PlusSign"
                     style={{ transform: "rotate(45deg)" }}
-                  />
+                  /> */}
                 </button>
 
                 <div className="coffeeInfoBox">
