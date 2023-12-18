@@ -54,7 +54,7 @@ function Footer() {
 
       <div className="bottomLineFooterContent">
         <div className="legaleseFooter">
-          <p>©2023 HONOUR COFFEE</p>
+          <p className="copyrightText">©2023 HONOUR COFFEE</p>
           <p>PRIVACY POLICY</p>
           <p>TERMS & CONDITIONS</p>
         </div>
