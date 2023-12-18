@@ -13,6 +13,8 @@ import "./SocialIcons/facebook-f.svg";
 import "./SocialIcons/x-twitter.svg";
 import "./SocialIcons/youtube.svg";
 
+// import "./Arrow.svg";
+
 import "./Footer.css";
 
 import SecondaryLogo from "./SecondaryLogo.svg";
@@ -36,8 +38,10 @@ function Footer() {
             id="email"
             pattern=".+@example\.com"
             size="30"
-            placeholder="Email Address"
+            // placeholder="Email Address"
+            className="emailInputBox"
           />
+          {/* <img src="./Arrow.svg"></img> */}
         </div>
       </div>
 
