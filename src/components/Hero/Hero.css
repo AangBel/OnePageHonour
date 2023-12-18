@@ -14,6 +14,14 @@
   height: auto;
   display: center;
   padding-left: 90px;
+
+  animation: fadeIn 10s; 
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0.8; }
 }
 
 .hero {
@@ -38,6 +46,10 @@
   letter-spacing: 15px;
   position: absolute;
   bottom: 2px;
+  padding-bottom: 50px;
+
+
+
 }
 
 
@@ -70,7 +82,7 @@
     border-radius: 50%;
     animation: animate 5s linear infinite;
     opacity: 0;
-    filter: blur(10px);
+    filter: blur(8px);
 
     /* ORIGINALLY 0.5s */
     animation-delay: calc(var(--v) * 0.5s);
@@ -80,7 +92,7 @@
 
 .hero.loaded .vapour span {
   /* originally 1 */
-  opacity: 15;
+  opacity: 1;
 }
 
 
