@@ -18,6 +18,8 @@ function ProductionCarousel() {
     QualityAssured,
   ];
 
+  // Kind of like how "zoomed the individual images are"
+  //Might be worth looking into for the accordion
   const imageWidth = "100%";
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -37,9 +39,9 @@ function ProductionCarousel() {
     <div className="carouselContainer">
       <Carousel
         wrapAround={true}
-        slidesToShow={2.5} 
-        cellSpacing={10}
-        centerMode={false}
+        slidesToShow={2.5}
+        cellSpacing={20}
+        centerMode={true}
         withoutControls={({ previousSlide }) => (
           <button onClick={previousSlide} className="carouselControl">
             <img

@@ -1,13 +1,11 @@
 import React from "react";
 
-// import {icon} from '@fortawesome/fontawesome-svg-core/import.macro';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-// import { solid, icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 import "./SocialIcons/facebook-f.svg";
 import "./SocialIcons/x-twitter.svg";
@@ -23,38 +21,34 @@ function Footer() {
   console.log("stuff");
   return (
     <>
+      <div className="footerTopHalf">
+        <div className="footerLeftTextAndEmail">
+          <div className="footerHonourText">
+            <h3>START YOUR DAY WITH HONOUR</h3>
+          </div>
 
-    <div className="footerTopHalf">
-
-      <div className="footerLeftTextAndEmail">
-        <div className="footerHonourText">
-          <h3>START YOUR DAY WITH HONOUR</h3>
+          <div className="footerEmailInput">
+            <label for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              pattern=".+@example\.com"
+              size="30"
+              className="emailInputBox"
+            />
+            <img src={ArrowSvg} className="emailArrow"></img>
+          </div>
         </div>
 
-        <div className="footerEmailInput">
-          <label for="email">Email address</label>
-          <input
-            type="email"
-            id="email"
-            pattern=".+@example\.com"
-            size="30"
-            // placeholder="Email Address"
-            className="emailInputBox"
-          />
-          <img src={ArrowSvg} className="emailArrow"></img>
+        <div className="linksAndLogo">
+          <div className="contactLinks">
+            <h3 className="helpDeskLink">Help Desk</h3>
+            <h3>Press</h3>
+            <h3>Carry Us</h3>
+          </div>
+          <img src={SecondaryLogo}></img>
         </div>
       </div>
-
-      <div className="linksAndLogo">
-        <div className="contactLinks">
-          <h3 className="helpDeskLink">Help Desk</h3>
-          <h3>Press</h3>
-          <h3>Carry Us</h3>
-        </div>
-        <img src={SecondaryLogo}></img>
-      </div>
-
-    </div>
 
       <div className="bottomLineFooterContent">
         <div className="legaleseFooter">

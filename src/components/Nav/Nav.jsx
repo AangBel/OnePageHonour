@@ -25,7 +25,6 @@ function Nav() {
         <a href="#OurStory" className="navAnchor2">
           OUR STORY
         </a>
-
       </div>
       <div className="shopContainer">
         <p className="shopSymbol">SHOP</p>

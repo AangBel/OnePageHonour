@@ -6,38 +6,36 @@
 }
 
 #heroImage {
-  background: url('./Home_Hero_x2.jpg'), lightgray 50% / no-repeat;
+  background: url("./Home_Hero_x2.jpg"), lightgray 50% / no-repeat;
   opacity: 0.8;
-  filter:contrast(1.3);
+  filter: contrast(1.3);
   /* filter:brightness(0.9); */
   width: 90%;
   height: auto;
   display: center;
-  padding-left:90px;
+  padding-left: 90px;
 }
-
 
 .hero {
   background-color: black;
 }
 
-.heroContainer{
+.heroContainer {
   position: relative;
   padding: 30px;
   width: 50%;
-  top:62px;
-  height:auto;
+  top: 62px;
+  height: auto;
 }
 
 .heroText {
-
   color: var(--White, #ffffff);
-  font-family: 'flama medium';
+  font-family: "flama medium";
   font-size: 75px;
   font-style: normal;
   font-weight: 650;
   line-height: 85px; /* 113.333% */
   letter-spacing: 15px;
-  position:absolute;
-  bottom:2px;
+  position: absolute;
+  bottom: 2px;
 }

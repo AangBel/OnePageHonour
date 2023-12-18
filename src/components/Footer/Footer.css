@@ -55,7 +55,7 @@
 
   width: auto;
   padding-top: 38px;
-  padding-left:100px;
+  padding-left: 100px;
   align-items: flex-start;
 
   color: var(--White, #fff);
@@ -64,8 +64,6 @@
   font-weight: 650;
   line-height: 50px; /* 227.273% */
   letter-spacing: 4.4px;
-
-
 }
 
 .linksAndLogo img {
@@ -89,12 +87,10 @@
 .contactLinks h3 {
   /* width: auto; */
   display: flex;
-
 }
 
-.helpDeskLink{
+.helpDeskLink {
   width: max-content;
-
 }
 
 .footerEmailInput {
@@ -116,20 +112,19 @@
 
   border-bottom: 1px solid #aaa;
   margin-right: 356px;
-  margin-left:50px;
+  margin-left: 50px;
 
   margin-bottom: 100px;
-  
+
   /* border:#aaa; */
 }
 
 .emailInputBox {
   background-color: black;
-  border:none;
+  border: none;
 }
 
-.emailArrow{
-  /* padding-left:50px; */
+.emailArrow {
   transform: rotate(314deg);
 }
 
@@ -164,8 +159,6 @@
 .legaleseFooter p {
   padding-left: 25px;
   padding-right: 30px;
-  /* font-family: "flama book"; */
-  /* padding: 0 30px 0 30px; */
 }
 
 .copyrightText {
@@ -190,5 +183,5 @@
 
 .socialLinks svg {
   /* padding: 24px; */
-  padding-right:113px;
+  padding-right: 113px;
 }

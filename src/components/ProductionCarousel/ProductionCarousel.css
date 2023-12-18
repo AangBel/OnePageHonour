@@ -19,9 +19,9 @@
 
 .carouselContainer {
   background-color: rgb(0, 0, 0);
-  position: relative;
+  /* position: relative; */
   height: auto;
-  /* width: auto; */
+  width: auto;
   /* max-width: 1000px;  */
   /* display: flex; */
   /* margin: auto; */
@@ -29,6 +29,9 @@
 }
 .arrowContainer{
   background-color: black;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .arrowLeft{
@@ -38,12 +41,12 @@
   background-color: black;
 }
 
-/* .carouselSlide{
+.carouselSlide{
   background-color: aqua;
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
-} */
+} 
 
 /* .carouselSlide img {
   /* width: 100%; */
@@ -52,19 +55,12 @@
 /* }  */
 
 
-.carouselSlide img {
-  max-width: 1003px; /* Set the maximum width */
-  width: 100%; /* Allow images to scale within the maximum width */
-  height: auto; /* Maintain aspect ratio */
-  margin: auto; /* Center the images horizontally */
-}
 
-.carouselImage {
-  /* width: 900px; */
-}
+
+
 
 .carouselImage img {
-  width: 1003px;
+  width: 103px;
 }
 /* .carousel {
   display: flex;
@@ -91,10 +87,6 @@
   background-color: rgb(9, 39, 174);
 }
 
-/* .setOfImages {
-  width:100px;
-  height: 100px;
-} */
 .arrows {
   position: absolute;
   background-color: aquamarine;
@@ -107,14 +99,7 @@
   /* flex-shrink: 0; */
 }
 
-/* .arrows button {
-  background-color: rgb(190, 23, 93);
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 5px;
-  /* margin: 0 5px; */
-/* }  */
+/* ETHICALLY SOURCED SECTION ----------------- */
 
 .sourcedTitleBox {
   color: var(--White, #fff);
