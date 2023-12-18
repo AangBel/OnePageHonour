@@ -21,19 +21,21 @@ function Footer() {
   console.log("stuff");
   return (
     <>
-      <div className="footerHonourText">
-        <h3>START YOUR DAY WITH HONOUR</h3>
-      </div>
+      <div className="footerLeftTextAndEmail">
+        <div className="footerHonourText">
+          <h3>START YOUR DAY WITH HONOUR</h3>
+        </div>
 
-      <div className="footerEmailInput">
-        <label for="email">Email address</label>
-        <input
-          type="email"
-          id="email"
-          pattern=".+@example\.com"
-          size="30"
-          placeholder="Email Address"
-        />
+        <div className="footerEmailInput">
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            id="email"
+            pattern=".+@example\.com"
+            size="30"
+            placeholder="Email Address"
+          />
+        </div>
       </div>
 
       <div className="linksAndLogo">
