@@ -13,7 +13,7 @@ import "./SocialIcons/facebook-f.svg";
 import "./SocialIcons/x-twitter.svg";
 import "./SocialIcons/youtube.svg";
 
-// import "./Arrow.svg";
+import ArrowSvg from "./Arrow.svg";
 
 import "./Footer.css";
 
@@ -41,7 +41,7 @@ function Footer() {
             // placeholder="Email Address"
             className="emailInputBox"
           />
-          {/* <img src="./Arrow.svg"></img> */}
+          <img src={ArrowSvg} className="emailArrow"></img>
         </div>
       </div>
 

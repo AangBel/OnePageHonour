@@ -123,6 +123,11 @@
   border-top-color: black; */
 }
 
+.emailArrow{
+  padding-left:50px;
+  transform: rotate(312deg);
+}
+
 .bottomLineFooterContent {
   display: flex;
 
