@@ -189,5 +189,6 @@
 }
 
 .socialLinks svg {
-  padding: 24px;
+  /* padding: 24px; */
+  padding-right:113px;
 }
