@@ -39,3 +39,71 @@
   position: absolute;
   bottom: 2px;
 }
+
+
+
+/* ------------ VAPOUR*/
+/* https://github.com/ruvictor/starbucks-hot-coffee/blob/master/style.css */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+
+  .vapour {
+    position: absolute;
+    top: 50px;
+    left: 61%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .vapour span {
+    position: relative;
+    bottom: 50px;
+    display: block;
+    margin: 0 2px 50px;
+    min-width: 8px;
+    height: 120px;
+    background: #fff;
+    border-radius: 50%;
+    animation: animate 5s linear infinite;
+    opacity: 0;
+    filter: blur(10px);
+
+    /* ORIGINALLY 0.5s */
+    animation-delay: calc(var(--v) * 0.5s);
+  }
+  
+
+
+.hero.loaded .vapour span {
+  /* originally 1 */
+  opacity: 15;
+}
+
+
+.hero.loaded .vapour {
+  z-index: 3;
+}
+
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
+}
