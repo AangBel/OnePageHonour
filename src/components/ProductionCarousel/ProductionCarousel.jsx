@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
-import "./ProductionCarousel.css"; 
+import "./ProductionCarousel.css";
 
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
 import EthicallySourced from "./CarouselImagery/2 Ethically sourced.jpg";
@@ -23,7 +23,7 @@ function ProductionCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselImages.length);
+    setCurrentIndex((nextSlide) => (nextSlide + 1) % carouselImages.length);
   };
 
   const prevImage = () => {
@@ -37,9 +37,10 @@ function ProductionCarousel() {
     <div className="carouselContainer">
       <Carousel
         wrapAround={true}
-        slidesToShow={3}
-        cellSpacing={35}
-        renderCenterLeftControls={({ previousSlide }) => (
+        slidesToShow={2.5} 
+        cellSpacing={10}
+        centerMode={false}
+        withoutControls={({ previousSlide }) => (
           <button onClick={previousSlide} className="carouselControl">
             <img
               src={Arrow}
@@ -48,7 +49,7 @@ function ProductionCarousel() {
             />
           </button>
         )}
-        renderCenterRightControls={({ nextSlide }) => (
+        renderBottomRightControls={({ nextSlide }) => (
           <button onClick={nextSlide} className="carouselControl">
             <img src={Arrow} alt="Next" />
           </button>
@@ -62,22 +63,24 @@ function ProductionCarousel() {
             alt={`Slide ${index + 1}`}
             className="carouselImage"
             style={{ width: imageWidth }}
+            adaptiveHeight={true}
           />
         ))}
       </Carousel>
 
-      {/* <button onClick={prevImage} className="arrows">
-        <img
-          src={Arrow}
-          alt="Previous"
-          style={{ transform: "rotate(180deg)" }}
-        />
-      </button> */}
+      <div className="arrowContainer">
+        <button onClick={prevImage} className="arrowLeft">
+          <img
+            src={Arrow}
+            alt="Previous"
+            style={{ transform: "rotate(180deg)" }}
+          />
+        </button>
 
-      {/* <button onClick={nextImage} className="carousel-control">
-        <img src={Arrow} alt="Next" />
-      </button> */}
-
+        <button onClick={nextImage} className="arrowRight">
+          <img src={Arrow} alt="Next" />
+        </button>
+      </div>
 
       <div className="sourcedTitleBox">
         <h3>Ethically Sourced</h3>
