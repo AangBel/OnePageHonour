@@ -21,6 +21,9 @@ function Footer() {
   console.log("stuff");
   return (
     <>
+
+    <div className="footerTopHalf">
+
       <div className="footerLeftTextAndEmail">
         <div className="footerHonourText">
           <h3>START YOUR DAY WITH HONOUR</h3>
@@ -46,6 +49,8 @@ function Footer() {
         </div>
         <img src={SecondaryLogo}></img>
       </div>
+
+    </div>
 
       <div className="bottomLineFooterContent">
         <div className="legaleseFooter">

@@ -12,6 +12,15 @@
   font-style: normal;
 }
 
+.footerTopHalf{
+  background-color: black;
+  display: flex;
+  position: relative;
+
+  border-top: 1px solid #aaa;
+
+}
+
 .footerLeftTextAndEmail{
   display: flex;
   flex-direction: column;
@@ -35,7 +44,6 @@
 
   padding:80px;
   /* padding: 50px 970px 50px 100px; */
-  border-top: 1px solid #aaa;
 }
 
 .footerHonourText h3{
@@ -46,6 +54,8 @@
   display: flex;
   position: relative;
   background-color: black;
+
+  padding-top:71px;
 }
 
 .linksAndLogo img {
