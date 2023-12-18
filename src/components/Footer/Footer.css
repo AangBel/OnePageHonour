@@ -54,7 +54,9 @@
   background-color: black;
 
   width: auto;
-  padding-top: 71px;
+  padding-top: 38px;
+  padding-left:100px;
+  align-items: flex-start;
 
   color: var(--White, #fff);
   font-size: 22px;
@@ -62,6 +64,8 @@
   font-weight: 650;
   line-height: 50px; /* 227.273% */
   letter-spacing: 4.4px;
+
+
 }
 
 .linksAndLogo img {
@@ -85,6 +89,12 @@
 .contactLinks h3 {
   /* width: auto; */
   display: flex;
+
+}
+
+.helpDeskLink{
+  width: max-content;
+
 }
 
 .footerEmailInput {
@@ -120,7 +130,7 @@
 
 .emailArrow{
   /* padding-left:50px; */
-  transform: rotate(312deg);
+  transform: rotate(314deg);
 }
 
 .bottomLineFooterContent {
@@ -130,7 +140,7 @@
   align-items: center;
   background-color: black;
   color: white;
-  padding: 20px;
+  padding: 0 20px 0 20px;
 }
 
 .legaleseFooter {

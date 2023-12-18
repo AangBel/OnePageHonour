@@ -47,7 +47,7 @@ function Footer() {
 
       <div className="linksAndLogo">
         <div className="contactLinks">
-          <h3>Help Desk</h3>
+          <h3 className="helpDeskLink">Help Desk</h3>
           <h3>Press</h3>
           <h3>Carry Us</h3>
         </div>
