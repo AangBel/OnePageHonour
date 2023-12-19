@@ -331,8 +331,25 @@ body {
     flex-direction: column;
     height: 700px;
     box-shadow: none;
-    width: 100%vw;
+    width: 100%;
     height: auto;
     /* max-width: 1467px; */
   }
+
+  .panel{
+    border-bottom: 2px solid; 
+    border-left-color: #a2a8aa;
+    /* border-width: 90%vw; */
+  }
+
+  .panel.active{
+    display: flex;
+    padding:10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  
+}
+
 }
