@@ -189,20 +189,66 @@
 }
 
 @media screen and (max-width: 800px) {
+
   .footerTopHalf{
+    background-color: black;
     display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10%;
     /* justify-content: left; */
     position: relative;
     width: 100%;
 
-    padding-left:20%;
+    padding-left:40%;
 
   }
 
   .footerHonourText{
-    font-size: 20%;
+    width: 100%;
+    font-size: 100%;
     display: flex;
+    flex-direction: column;
+
     justify-content: flex-start;
+    /* padding-left: 45%; */
+
+  }
+
+  .footerEmailInput{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footerEmailInput img{
+    width: 10%;
+    padding-left: 50%;
+    font-size: 100%;
+    margin:auto;
+    align-items: flex-start;
+  }
+  .linksAndLogo{
+    display: flex;
+    justify-content: center;
+    padding-left: 50%;
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .linksAndLogo img{
+    display: flex;
+    justify-content: center;
+    padding-left: 50%;
+  }
+
+  .contactLinks{
+    display: flex;
+    position: relative;
+    
+    width: 100%;
+    padding-left: 50%;
+    justify-content: center;
 
   }
 }
