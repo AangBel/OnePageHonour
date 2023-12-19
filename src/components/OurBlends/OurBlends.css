@@ -63,15 +63,15 @@ body {
 /* THE CONTAINER FOR THE ACCORDION */
 .accordionContainer {
   display: flex;
+  position: relative;
   /* if i change flex wrap here to wrap it pushes the last two blends to a second row  */
   /* flex-wrap: no-wrap; */
   width: 100%;
-  /* max-width: 1440px; */
   max-width: 1487px;
+  /* padding-left: 10px; */
 
   overflow: hidden;
-  /* margin:0 auto; */
-  /* flex-shrink: 0; */
+  margin: 0 auto;
 }
 
 .panel {
@@ -125,7 +125,7 @@ body {
 
   overflow: visible;
   /* float: left; */
-  padding-left:55px;
+  padding-left: 55px;
   /* padding: 100px; */
 }
 
@@ -153,11 +153,13 @@ body {
 /* THE POP UP THAT HOLDS THE COFFEE INFO WHEN THE ACCORDION PANEL IS CLICKED------------------------------------------- */
 .coffeeInfoBox {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 12px 0px 0px 0px;
   width: 100%;
   width: 427px;
   height: 338px;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   background: linear-gradient(to bottom, black 50%, #fff200 50%);
   color: rgb(175, 38, 38);
   writing-mode: horizontal-tb;
@@ -171,23 +173,20 @@ body {
   line-height: 22px; /* 137.5% */
   letter-spacing: 1.6px;
 
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
 }
-
+/* THE BLACK PART OF THE COFFEE INFO CONTAINER */
 .topCoffeeInfo {
+  /* TEXT */
   font-family: "flama medium";
   text-transform: uppercase;
-
   color: var(--White, #fff);
-  font-family: Flama;
   font-size: 35px;
   font-style: normal;
   font-weight: 650;
   line-height: normal;
   letter-spacing: 7px;
-
-  /* display: flex; */
 }
 
 .blendTitle {
@@ -211,39 +210,43 @@ body {
   line-height: normal;
   letter-spacing: 4px;
 }
-
+/* THE YELLOW PART OF THE COFFEE INFO CONTAINER */
 .bottomCoffeeInfo {
+  /* TEXT */
   font-family: "flama book";
-
   color: #000;
-
   font-size: 16px;
   font-style: normal;
   font-weight: 550;
   line-height: 22px; /* 137.5% */
   letter-spacing: 1.6px;
 
-  padding-top: 100px;
+  /* padding-top: 10px; */
   padding-bottom: 43px;
   /* display: flex; */
+  position: relative;
   align-items: center;
 }
 
 .quickInfo {
+
+  /* TEXT */
   color: #000;
   font-family: "flama book";
-
   font-size: 12px;
   font-style: normal;
   font-weight: 650;
   line-height: 15px; /* 125% */
   letter-spacing: 2.4px;
-  padding-bottom: 10px;
   text-transform: uppercase;
 
-  padding-bottom: 36px;
+  padding-top:64px;
+  padding-bottom: 10px;
+
+  /* padding-bottom: 36px; */
   /* padding-top: 29px; */
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-between;
 }
