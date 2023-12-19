@@ -47,11 +47,12 @@ function ProductionCarousel() {
         centerMode={true}
         renderCenterLeftControls={({ previousSlide }) => null}
         renderCenterRightControls={({ nextSlide }) => null}
+        sliderControlBottomCenter={null}
       
         renderBottomRightControls={(props) => (
           <CustomControls {...props} />
         )}
-        renderBottomLeftControls={() => null}
+        renderBottomCenterControls={false}
         // renderCenterBottomControls={(props) => null}
       
       >
