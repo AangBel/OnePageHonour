@@ -106,21 +106,32 @@ function OurBlends() {
       prevActivePanel === panelId ? null : panelId
     );
 
-    setInfoVisible((prevInfoVisible) => ({
-      ...prevInfoVisible,
-      [panelId]: !prevInfoVisible[panelId],
-    }));
+    setInfoVisible((prevInfoVisible) => {
+
+      // ***************************
+      const newInfoVisible = {};
+  
+      Object.keys(prevInfoVisible).forEach((id) => {
+        newInfoVisible[id] = false;
+      });
+    
+      newInfoVisible[panelId] = !prevInfoVisible[panelId];
+      return newInfoVisible;
+    });
   };
+
+
 
   return (
     <div className="rectangularSection" style={{ width: "100%" }}>
-      <div className="accordionHeader">OUR BLENDS</div>
+      <div className="accordionHeader">Our Blends</div>
       <div className="accordionContainer">
         {panels.map((panel) => (
           <div
             key={panel.id}
             className={`panel ${activePanel === panel.id ? "active" : ""}`}
-            style={{ flex: activePanel === panel.id ? 3 : 1 }}
+            // style={{ flex: activePanel === panel.id ? 3 : 1 }}
+            style={{ flex: 1 }}
             onClick={() => handlePanelClick(panel.id)}
           >
             <img src={panel.image} alt={panel.label} />
@@ -169,7 +180,8 @@ function OurBlends() {
             )}
 
             <div className="blendAccordionName">
-              <p>{panel.label}</p>
+              {/* WILL COME BACK TO ACTIVATE THIS ONCE IVE GOTTEN THE PANELS WORKING CORRECTLY */}
+              {/* <p>{panel.label}</p> */}
             </div>
           </div>
         ))}
