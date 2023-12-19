@@ -93,7 +93,6 @@
 
 /* TESTING */
 
-/* Add these styles to your existing CSS */
 .custom-controls {
   display: flex;
   justify-content: space-between;
@@ -112,11 +111,21 @@
 }
 
 .arrow-button img {
-  width: 20px; /* Adjust the size as needed */
-  height: 20px; /* Adjust the size as needed */
+  width: 20px; 
+  height: 20px; 
   display: block;
 }
 
+.arrow-button:hover {
+  background-color:#DE6328 ;
+  border-radius: 50%;
+  /* NEED TO GET THIS TO BE A BLACK ARROW */
+  color:rgb(78, 62, 222);
+}
+
+.arrow-button:hover img {
+ color:black;
+}
 
 /* .arrows {
   position: absolute;
