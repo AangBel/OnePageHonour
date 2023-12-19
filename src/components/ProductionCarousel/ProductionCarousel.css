@@ -131,3 +131,36 @@
 
   padding: 10px 562px 100px 217px;
 }
+
+@media screen and (max-width: 800px) {
+.carouselContainer{
+  width: 100%vw;
+  max-width: 100%vw;
+
+}
+.carouselSlide img{
+  display: flex;
+  position:center;
+  width:100%;
+}
+
+.sourcedTitleBox{
+  display: flex;
+  justify-content: center;
+  font-size:100%;
+  width: 100%;
+  padding-left: 45%;
+}
+.sourcedTitleBox h3{
+  font-size:100%;
+  /* width: 100%; */
+}
+
+.sourcedPText{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 100%;
+  padding-left: 40%;
+}
+}
