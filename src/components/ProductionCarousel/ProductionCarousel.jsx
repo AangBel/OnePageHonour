@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
 import "./ProductionCarousel.css";
+import CustomControls from "./CustomControls";
 
 // IMAGES
 import HandSelected from "./CarouselImagery/1 Hand selected.jpg";
@@ -39,32 +40,22 @@ function ProductionCarousel() {
 
   return (
     <div className="carouselContainer">
-      <Carousel
+     <Carousel
         wrapAround={true}
         slidesToShow={2.5}
         cellSpacing={20}
         centerMode={true}
-
-        renderBottomCenterControls={false}
-        renderCenterLeftControls={false}
-        renderCenterRightControls={false}
-
-        renderBottomLeftControls={({ previousSlide }) => (
-          <button onClick={previousSlide} className="carouselControl">
-            <img
-              src={Arrow}
-              alt="Previous"
-              style={{ transform: "rotate(180deg)" }}
-            />
-          </button>
+        renderCenterLeftControls={({ previousSlide }) => null}
+        renderCenterRightControls={({ nextSlide }) => null}
+      
+        renderBottomRightControls={(props) => (
+          <CustomControls {...props} />
         )}
-        renderBottomRightControls={({ nextSlide }) => (
-          <button onClick={nextSlide} className="carouselControl">
-            <img src={Arrow} alt="Next" />
-          </button>
-        )}
-    
+        renderBottomLeftControls={() => null}
+        // renderCenterBottomControls={(props) => null}
+      
       >
+      
         {carouselImages.map((image, index) => (
           <img
             key={index}

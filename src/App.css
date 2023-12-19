@@ -15,7 +15,7 @@
   padding: 40px;
   padding-bottom:6px;
   /* cheat way to get things to align better on laptop */
-  padding-left: 20%;
+  /* padding-left: 20%; */
 
 
 }
@@ -23,7 +23,7 @@
 .AppBody{
   background-color: black;
   /* cheat way to get things to align better on laptop */
-  padding-left: 20%;
+  /* padding-left: 20%; */
   /* overflow: hidden; */
   
 }
@@ -34,7 +34,7 @@
 
 .AppFooter{
   /* cheat way to get things to align better on laptop */
-  padding-left: 17%;
+  /* padding-left: 17%; */
 
   width: 100%;
 

@@ -19,7 +19,7 @@
 
 .carouselContainer {
   background-color: rgb(0, 0, 0);
-  /* position: relative; */
+  position: relative;
   height: auto;
   width: auto;
   /* max-width: 1000px;  */
@@ -27,40 +27,43 @@
   /* margin: auto; */
   /* overflow:hidden ; */
 }
-.arrowContainer{
+.arrowContainer {
+  /* position: absolute; */
+  bottom: 50px;
+  width: 100%;
+
   background-color: black;
   border: none;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+
+  /* justify-content: flex-end; */
 }
 
-.arrowLeft{
-  background-color: black;
-}
-.arrowRight{
+
+.arrowLeft,
+.arrowRight {
   background-color: black;
 }
 
-.carouselSlide{
+.carouselSlide {
   background-color: aqua;
-  display: flex;
+  /* display: flex; */
   width: 100%;
   transition: transform 0.5s ease-in-out;
-} 
+}
 
 /* .carouselSlide img {
   /* width: 100%; */
-  /* width: 1003px; */
-  /* flex: 0 0 100%; */
+/* width: 1003px; */
+/* flex: 0 0 100%; */
 /* }  */
 
-
-
-
-
-
 .carouselImage img {
-  width: 103px;
+  /* width: 103px; */
+  position:relative;
+  width: 100%;
+  bottom: 50px;
 }
 /* .carousel {
   display: flex;
@@ -86,6 +89,32 @@
 .carouselControl {
   background-color: rgb(0, 0, 0);
 }
+
+
+/* TESTING */
+
+/* Add these styles to your existing CSS */
+.custom-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom:50px;
+  padding-top: 20px;
+}
+
+.arrow-button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.arrow-button img {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  display: block;
+}
+
 
 /* .arrows {
   position: absolute;
@@ -133,37 +162,36 @@
 }
 
 @media screen and (max-width: 800px) {
-.carouselContainer{
-  width: 100%vw;
-  max-width: 100%vw;
+  .carouselContainer {
+    width: 100%vw;
+    max-width: 100%vw;
+  }
+  .carouselSlide img {
+    display: flex;
+    position: center;
+    width: 100%;
+  }
 
-}
-.carouselSlide img{
-  display: flex;
-  position:center;
-  width:100%;
-}
+  .sourcedTitleBox {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    width: 100%;
+    /* max-width: 100%; */
+    /* text appears when padding left 45% but it also throws off stuff to the right side  */
+    /* padding-left: 45%; */
+    overflow: hidden;
+  }
+  .sourcedTitleBox h3 {
+    font-size: 100%;
+    /* width: 100%; */
+  }
 
-.sourcedTitleBox{
-  display: flex;
-  justify-content: center;
-  font-size:100%;
-  width: 100%;
-  /* max-width: 100%; */
-  /* text appears when padding left 45% but it also throws off stuff to the right side  */
-  /* padding-left: 45%; */
-  overflow: hidden;
-}
-.sourcedTitleBox h3{
-  font-size:100%;
-  /* width: 100%; */
-}
-
-.sourcedPText{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-size: 100%;
-  padding-left: 40%;
-}
+  .sourcedPText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left: 40%;
+  }
 }
