@@ -87,7 +87,7 @@ body {
   /* background-position:left; */
   background-repeat: no-repeat;
   transition: flex 0.7s ease-in-out;
-  border-left: 2px solid;
+  border-left: 2px solid; 
   border-left-color: #a2a8aa;
 
   padding-right: 100px;
@@ -105,21 +105,41 @@ body {
   /* flex-shrink: 1; */
 }
 
-.panel img{
+.panel img {
   opacity: 20%;
-
 }
 
 /* the coffee name that is vertical */
 .blendAccordionName {
+  /* TEXT */
   font-family: "flama medium";
+  color: #000;
   writing-mode: vertical-lr;
   text-transform: uppercase;
   text-orientation: mixed;
   text-combine-upright: none;
-  padding-bottom: 19px;
-  color:#000;
+  transform: rotate(180deg);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 3.6px;
+
+  padding: 0 61px 500px 30px;
+
+  /* border-left: 2px solid; */
+
+
+
+  /* padding-bottom: 19px; */
 }
+
+/* .testBorder{
+  border-left: 2px solid;
+  border-right-color: #1f81a1;
+
+
+} */
 
 .panel.active {
   position: relative;
@@ -140,12 +160,12 @@ body {
   /* padding: 100px; */
 }
 
-.panel.active img{
+.panel.active img {
   opacity: 100%;
 }
 /* just quick fix for now */
-.panel.active .blendAccordionName{
-  opacity:0;
+.panel.active .blendAccordionName {
+  opacity: 0;
 }
 
 .panel:not(.inactive) {
@@ -174,7 +194,6 @@ body {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-
 
   border-radius: 12px 0px 0px 0px;
   width: 100%;
@@ -252,7 +271,6 @@ body {
 }
 
 .quickInfo {
-
   /* TEXT */
   color: #000;
   font-family: "flama book";
@@ -263,7 +281,7 @@ body {
   letter-spacing: 2.4px;
   text-transform: uppercase;
 
-  padding-top:64px;
+  padding-top: 64px;
   padding-bottom: 10px;
 
   /* padding-bottom: 36px; */
