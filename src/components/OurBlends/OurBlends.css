@@ -13,8 +13,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* height:100vh; */
-/* background: linear-gradient(#fff, #fefefe, #eaeaea); */
+
 
 @font-face {
   font-family: "flama book";
@@ -308,7 +307,26 @@ body {
 @media screen and (max-width: 800px) {
   body {
     margin: 0;
+    height:20vh;
+    justify-content: center;
+    padding-left:30%;
   }
+
+  .rectangularSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30%;
+  }
+
+  .accordionHeader{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+    font-size: 50%;
+  }
+
   .accordionContainer {
     flex-direction: column;
     height: 700px;

@@ -14,3 +14,21 @@
   /* SPACING */
   padding: 126px 753px 100px 100px;
 }
+
+@media screen and (max-width: 800px) {
+  .excellenceTextBox{
+    display: flex;
+    justify-content: center;
+    font-size: 100%vw;
+  
+    padding-left:40%;
+
+  }
+
+  .excellenceTextBox h2{
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left:80%;
+  }
+}
