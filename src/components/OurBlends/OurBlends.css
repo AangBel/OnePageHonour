@@ -67,7 +67,8 @@ body {
   /* if i change flex wrap here to wrap it pushes the last two blends to a second row  */
   /* flex-wrap: no-wrap; */
   width: 100%;
-  max-width: 1487px;
+  /* removing max width allows for this to be 100% on large monitor for e.g. */
+  /* max-width: 1487px; */
   /* padding-left: 10px; */
 
   overflow: hidden;
@@ -91,18 +92,16 @@ body {
   border-left-color: #a2a8aa;
 
   padding-right: 100px;
-  /* opacity: 20%; */
-  /* margin-right: 100px; */
+
 
   overflow: hidden;
 
-  /* float: left; */
   display: flex;
   align-items: center;
   justify-content: center;
 
   box-sizing: border-box;
-  /* flex-shrink: 1; */
+
 }
 
 .panel img {
@@ -129,21 +128,10 @@ body {
   height: 500px;
   padding:0 0 0 50px;
 
-  /* padding: 0 61px 500px 30px; */
 
-  /* border-left: 2px solid; */
-
-
-
-  /* padding-bottom: 19px; */
 }
 
-/* .testBorder{
-  border-left: 2px solid;
-  border-right-color: #1f81a1;
 
-
-} */
 
 .panel.active {
   position: relative;
@@ -154,11 +142,9 @@ body {
   transform-origin: left top;
   transform: scaleX(1);
   transition: transform 0.7s ease-in-out, transform 0.7s ease-in-out;
-  /* opacity: 100%; */
   max-width: 562px;
 
-  overflow: visible;
-  /* float: left; */
+
   padding-left: 20px;
   padding-right: 150px;
   /* padding: 100px; */
@@ -176,6 +162,7 @@ body {
   flex: 1;
   /* transform: scaleX(1); */
   transition: flex 0.7s ease-in-out;
+  /* padding-right:200px; */
 }
 
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
@@ -288,8 +275,6 @@ body {
   padding-top: 64px;
   padding-bottom: 10px;
 
-  /* padding-bottom: 36px; */
-  /* padding-top: 29px; */
   display: flex;
   position: relative;
   align-items: center;
@@ -299,9 +284,28 @@ body {
 .quickInfoImg {
   padding-right: 13.75px;
 }
-/* INFO BOX SPECIFIC TO THE APEX BLEND */
 
-@media screen and (max-width: 800px) {
+
+@media screen and (max-width: 1200px) {
+  .panel {
+    flex: 1; /* Adjust as needed for smaller screens */
+    padding-right: 50px; /* Adjust padding for smaller screens */
+  }
+
+  .panel.active {
+    padding-left: 10px;
+    padding-right: 50px;
+  }
+
+  .accordion {
+    flex-direction: column;
+    height: 700px;
+    box-shadow: none;
+  }
+}
+
+
+/* @media screen and (max-width: 800px) {
   body {
     margin: 0;
   }
@@ -310,10 +314,4 @@ body {
     height: 700px;
     box-shadow: none;
   }
-  .box {
-    box-shadow: none;
-  }
-  .box:hover {
-    flex: 7;
-  }
-}
+} */

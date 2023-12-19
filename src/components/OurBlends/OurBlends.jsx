@@ -179,7 +179,6 @@ function OurBlends() {
             <div className="blendAccordionName">
               <p>{panel.label}</p>
             </div>
-            {/* <div className="testBorder"></div> */}
           </div>
         ))}
       </div>
