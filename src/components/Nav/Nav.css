@@ -83,3 +83,18 @@
   color: #de6328;
   cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+  .nav{
+    width: 100%;
+  }
+
+  .logoImage{
+    width: 20%;
+    justify-content: left;
+  }
+
+  .navAnchors{
+    
+  }
+}
