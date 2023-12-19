@@ -57,7 +57,6 @@ body {
   margin-bottom: 60px;
   /* right: 100px; */
   padding-left: 100px;
-
 }
 /* padding-left: 100px; */
 
@@ -65,9 +64,11 @@ body {
 .accordionContainer {
   display: flex;
   /* if i change flex wrap here to wrap it pushes the last two blends to a second row  */
-  flex-wrap: no-wrap;
+  /* flex-wrap: no-wrap; */
   width: 100%;
-  max-width: 1440px;
+  /* max-width: 1440px; */
+  max-width: 1487px;
+
   overflow: hidden;
   /* margin:0 auto; */
   /* flex-shrink: 0; */
@@ -89,17 +90,16 @@ body {
   border-left: 2px solid;
   border-left-color: #a2a8aa;
 
-  /* padding:100px; */
+  padding-right: 100px;
   opacity: 20%;
-  margin-right:100px;
-
-  
+  /* margin-right: 100px; */
 
   overflow: hidden;
 
   /* float: left; */
   display: flex;
   align-items: center;
+  justify-content: center;
 
   box-sizing: border-box;
   /* flex-shrink: 1; */
@@ -113,7 +113,6 @@ body {
   padding-bottom: 19px;
 }
 
-
 .panel.active {
   position: relative;
 
@@ -126,16 +125,14 @@ body {
 
   overflow: visible;
   /* float: left; */
-
-  padding-right:50px;
+  padding-left:55px;
+  /* padding: 100px; */
 }
 
-.panel:not(.inactive){
+.panel:not(.inactive) {
   flex: 1;
   /* transform: scaleX(1); */
   transition: flex 0.7s ease-in-out;
-
-
 }
 
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
@@ -153,20 +150,18 @@ body {
 }
 /* ---------- */
 
-
 /* THE POP UP THAT HOLDS THE COFFEE INFO WHEN THE ACCORDION PANEL IS CLICKED------------------------------------------- */
 .coffeeInfoBox {
-
   position: absolute;
   border-radius: 12px 0px 0px 0px;
-  width:100%;
+  width: 100%;
   width: 427px;
   height: 338px;
   flex-shrink: 0;
   background: linear-gradient(to bottom, black 50%, #fff200 50%);
   color: rgb(175, 38, 38);
   writing-mode: horizontal-tb;
-  
+
   /* TEXT */
   font-family: "flama medium";
   color: #f6f4f4;
@@ -193,7 +188,6 @@ body {
   letter-spacing: 7px;
 
   /* display: flex; */
-
 }
 
 .blendTitle {
@@ -230,7 +224,7 @@ body {
   letter-spacing: 1.6px;
 
   padding-top: 100px;
-  padding-bottom:43px;
+  padding-bottom: 43px;
   /* display: flex; */
   align-items: center;
 }
@@ -247,17 +241,15 @@ body {
   padding-bottom: 10px;
   text-transform: uppercase;
 
-  padding-bottom:36px;
+  padding-bottom: 36px;
   /* padding-top: 29px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.quickInfoImg{
-  padding-right:13.75px;
-  
+.quickInfoImg {
+  padding-right: 13.75px;
 }
 /* INFO BOX SPECIFIC TO THE APEX BLEND */
 
