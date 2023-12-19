@@ -125,7 +125,11 @@ body {
   line-height: normal;
   letter-spacing: 3.6px;
 
-  padding: 0 61px 500px 30px;
+  /* LAYOUT */
+  height: 500px;
+  padding:0 0 0 50px;
+
+  /* padding: 0 61px 500px 30px; */
 
   /* border-left: 2px solid; */
 
