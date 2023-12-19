@@ -100,6 +100,8 @@
     display:flex;
     position: center;
     padding-left:20%;
+    font-size: 5rem;
+    width:10%;
 
   }
 }
