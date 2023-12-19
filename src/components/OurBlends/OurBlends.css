@@ -91,7 +91,7 @@ body {
   border-left-color: #a2a8aa;
 
   padding-right: 100px;
-  opacity: 20%;
+  /* opacity: 20%; */
   /* margin-right: 100px; */
 
   overflow: hidden;
@@ -105,12 +105,20 @@ body {
   /* flex-shrink: 1; */
 }
 
+.panel img{
+  opacity: 20%;
+
+}
+
 /* the coffee name that is vertical */
 .blendAccordionName {
+  font-family: "flama medium";
   writing-mode: vertical-lr;
+  text-transform: uppercase;
   text-orientation: mixed;
   text-combine-upright: none;
   padding-bottom: 19px;
+  color:#000;
 }
 
 .panel.active {
@@ -122,7 +130,7 @@ body {
   transform-origin: left top;
   transform: scaleX(1);
   transition: transform 0.7s ease-in-out, transform 0.7s ease-in-out;
-  opacity: 100%;
+  /* opacity: 100%; */
   max-width: 562px;
 
   overflow: visible;
@@ -130,6 +138,14 @@ body {
   padding-left: 20px;
   padding-right: 150px;
   /* padding: 100px; */
+}
+
+.panel.active img{
+  opacity: 100%;
+}
+/* just quick fix for now */
+.panel.active .blendAccordionName{
+  opacity:0;
 }
 
 .panel:not(.inactive) {
@@ -179,7 +195,8 @@ body {
   letter-spacing: 1.6px;
 
   margin-bottom: 50px;
-  padding: 40px;
+  /* further padding on coffee box makes the blend name in box become two lines */
+  padding: 30px;
   box-sizing: border-box;
 }
 /* THE BLACK PART OF THE COFFEE INFO CONTAINER */

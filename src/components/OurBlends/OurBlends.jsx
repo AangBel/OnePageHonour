@@ -107,20 +107,17 @@ function OurBlends() {
     );
 
     setInfoVisible((prevInfoVisible) => {
-
       // ***************************
       const newInfoVisible = {};
-  
+
       Object.keys(prevInfoVisible).forEach((id) => {
         newInfoVisible[id] = false;
       });
-    
+
       newInfoVisible[panelId] = !prevInfoVisible[panelId];
       return newInfoVisible;
     });
   };
-
-
 
   return (
     <div className="rectangularSection" style={{ width: "100%" }}>
@@ -180,8 +177,7 @@ function OurBlends() {
             )}
 
             <div className="blendAccordionName">
-              {/* WILL COME BACK TO ACTIVATE THIS ONCE IVE GOTTEN THE PANELS WORKING CORRECTLY */}
-              {/* <p>{panel.label}</p> */}
+              <p>{panel.label}</p>
             </div>
           </div>
         ))}
