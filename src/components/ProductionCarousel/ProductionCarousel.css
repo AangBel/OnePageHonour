@@ -150,7 +150,9 @@
   font-size:100%;
   width: 100%;
   /* max-width: 100%; */
-  padding-left: 45%;
+  /* text appears when padding left 45% but it also throws off stuff to the right side  */
+  /* padding-left: 45%; */
+  overflow: hidden;
 }
 .sourcedTitleBox h3{
   font-size:100%;

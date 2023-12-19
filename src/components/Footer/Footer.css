@@ -55,7 +55,7 @@
   background-color: black;
 
   width: auto;
-  padding:38px 127px 0 100px;
+  padding: 38px 127px 0 100px;
   /* padding-top: 38px;
   padding-left: 100px; */
   align-items: flex-start;
@@ -189,10 +189,9 @@
 }
 
 @media screen and (max-width: 800px) {
-
-  .footerTopHalf{
+  .footerTopHalf {
     background-color: black;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 10%;
@@ -200,11 +199,10 @@
     position: relative;
     width: 100%;
 
-    padding-left:40%;
-
+    padding-left: 40%;
   }
 
-  .footerHonourText{
+  .footerHonourText {
     width: 100%;
     font-size: 100%;
     display: flex;
@@ -212,23 +210,22 @@
 
     justify-content: flex-start;
     /* padding-left: 45%; */
-
   }
 
-  .footerEmailInput{
+  .footerEmailInput {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-  .footerEmailInput img{
+  .footerEmailInput img {
     width: 10%;
     padding-left: 50%;
     font-size: 100%;
-    margin:auto;
+    margin: auto;
     align-items: flex-start;
   }
-  .linksAndLogo{
+  .linksAndLogo {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
@@ -237,28 +234,52 @@
     font-size: 100%;
   }
 
-  .linksAndLogo img{
+  .linksAndLogo img {
     display: flex;
     justify-content: center;
     padding-left: 90%;
   }
 
-  .helpDeskLink{
+  .helpDeskLink {
     width: 100%;
     display: flex;
     justify-content: center;
-
   }
-  .contactLinks{
+  .contactLinks {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     flex-direction: column;
-    
-    
+
     width: 100%;
     padding-left: 50%;
     justify-content: center;
+  }
 
+  .bottomLineFooterContent {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left: 50%;
+  }
+
+  .legaleseFooter {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left: 50%;
+  }
+
+  .copyrightText {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left: 50%;
+  }
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    padding-left: 50%;
   }
 }

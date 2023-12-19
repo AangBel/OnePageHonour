@@ -20,10 +20,11 @@
     display: flex;
     justify-content: center;
     font-size: 100%vw;
+    width: 100%;
   
 
-  
-    padding-left:50%;
+  /* same with this if i remove padding left 50% then the text dissapears off to the left i presume but if i put it back then it throws things off to the right */
+    /* padding-left:50%; */
 
   }
 
