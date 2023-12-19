@@ -105,7 +105,7 @@
 .arrow-button {
   /* background-color: rgb(163, 27, 27); */
   background-color: transparent;
-
+  color:#fff;
   border: none;
   cursor: pointer;
   padding: 10px;

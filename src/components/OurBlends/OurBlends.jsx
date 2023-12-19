@@ -136,7 +136,7 @@ function OurBlends() {
               onClick={handlePanelClick}
               style={{ background: "none", border: "none", padding: 0 }}
             >
-              {/* <img src={Plus} alt="PlusSign" /> */}
+              <img src={Plus} alt="PlusSign" />
             </button>
 
             {infoVisible[panel.id] && (
