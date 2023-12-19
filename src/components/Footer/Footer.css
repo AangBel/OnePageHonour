@@ -231,7 +231,8 @@
   .linksAndLogo{
     display: flex;
     justify-content: center;
-    padding-left: 50%;
+    flex-direction: column-reverse;
+    padding-left: 10%;
     width: 100%;
     font-size: 100%;
   }
@@ -239,12 +240,21 @@
   .linksAndLogo img{
     display: flex;
     justify-content: center;
-    padding-left: 50%;
+    padding-left: 90%;
   }
 
+  .helpDeskLink{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
   .contactLinks{
     display: flex;
     position: relative;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     
     width: 100%;
     padding-left: 50%;
