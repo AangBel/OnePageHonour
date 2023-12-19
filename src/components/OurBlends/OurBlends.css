@@ -305,13 +305,14 @@ body {
 }
 
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   body {
     margin: 0;
   }
-  .accordion {
+  .accordionContainer {
     flex-direction: column;
     height: 700px;
     box-shadow: none;
+    max-width: 1467px;
   }
-} */
+}
