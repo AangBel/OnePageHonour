@@ -348,6 +348,12 @@ body {
     /* border-width: 90%vw; */
   }
 
+  .panel img{
+    display: flex;
+    justify-content: center;
+    padding:0;
+  }
+
   .panel.active{
     display: flex;
     padding:10%;
@@ -356,6 +362,13 @@ body {
     align-items: center;
     max-width: 100%;
   
+}
+
+.panel.active img {
+  opacity: 100%;
+  display: flex;
+  justify-content: center;
+  width: 50%vw;
 }
 
 .blendName{
@@ -376,5 +389,11 @@ body {
   flex-wrap: wrap;
   flex-direction: column-reverse;
 
+}
+
+.coffeeInfoBox{
+  display: flex;
+  justify-content: center;
+  top:70%;
 }
 }
