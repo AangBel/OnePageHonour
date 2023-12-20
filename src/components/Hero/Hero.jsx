@@ -15,6 +15,9 @@ function Hero() {
   }, []);
 
   return (
+
+    <div className="heroImageContainer">
+
     <div className={`hero ${loaded ? "loaded" : ""}`}>
       <img
         id="heroImage"
@@ -31,6 +34,8 @@ function Hero() {
         <span style={{ "--v": 4 }}></span>
         <span style={{ "--v": 5 }}></span>
       </div>
+    </div>
+
     </div>
   );
 }
