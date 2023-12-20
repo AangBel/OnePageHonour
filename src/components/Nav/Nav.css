@@ -10,7 +10,9 @@
   text-decoration: none;
   justify-content: space-between;
   /* align-items: left; */
-  padding-left: 15px;
+  /* padding-left: 15px; */
+  padding-left: 22%;
+
 }
 
 .logoImage {
