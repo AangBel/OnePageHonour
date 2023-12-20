@@ -37,10 +37,7 @@ flex-shrink: 0;
   /* width: auto; */
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 0.8; }
-}
+
 
 .hero {
   background-color: black;
@@ -117,6 +114,13 @@ flex-shrink: 0;
 /* .hero.loaded .vapour {
   z-index: 3;
 }  */
+
+
+/* keyframes for hero image fade in  */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 0.8; }
+}
 
 
 @keyframes animate {
