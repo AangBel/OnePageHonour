@@ -12,53 +12,76 @@
   /* align-items: left; */
   /* padding-left: 15px; */
   padding-left: 22%;
-
 }
 
 .logoImage {
   /* display: flex; */
   text-decoration: none;
   margin-right: 10px;
+  padding: 36px 0 35px 45px;
 }
 
 .navAnchors {
-  /* display: flex; */
-
+  display: flex;
+  cursor: pointer;
   text-decoration: none;
   justify-content: space-between;
+  align-items: center;
   padding-right: 40px;
   padding-top: 20px;
-  font-size: 18px;
+  padding-bottom: 20px;
+  padding: 20px 40px 20px 0;
   cursor: pointer;
   font-family: "flama medium";
   letter-spacing: 3px;
 }
 
 .navAnchor1 {
-  /* display: flex; */
-  padding-left: 40px;
-  padding-top: 10px;
+  display: flex;
+  padding-left: 94px;
+  padding-right: 50px;
+
+  /* padding-top: 10px; */
   text-decoration: none;
   color: white;
+
+  color: var(--White, #fff);
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 3.6px;
 }
 
 .navAnchor2 {
-  /* display: flex; */
+  display: flex;
   padding-right: 30px;
+  /* padding-right: 30%; */
+
   text-decoration: none;
   color: white;
-  padding-left: 50px;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 650;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  /* padding-left: 50px; */
 }
 
 .shopContainer {
-  display: grid;
-  position: absolute;
-  right: 217px;
+  display: flex;
+  position: relative;
+  /* position: absolute; */
+  /* right: 217px; */
+  left: 65%;
+  align-items: center;
 }
 
 .shopSymbol {
   /* SHAPE */
-  /* display: flex; */
+  display: flex;
 
   width: 149px;
   height: 51px;
@@ -80,26 +103,24 @@
   /* SPACING */
   align-items: center;
   justify-content: center;
-  padding: 14px 42px 15px 42px;
+  /* padding: 14px 42px 15px 42px; */
 
   color: #de6328;
   cursor: pointer;
 }
 
-.shopSymbol:hover{
+.shopSymbol:hover {
   background-color: #de6328;
-  color:black;
+  color: black;
 }
 
 @media screen and (max-width: 800px) {
-  .nav{
+  .nav {
     width: 100%;
   }
 
-  .logoImage{
+  .logoImage {
     width: 20%;
     justify-content: left;
   }
-
-
 }

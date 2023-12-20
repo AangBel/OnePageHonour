@@ -12,8 +12,8 @@
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 40px;
-  padding-bottom:6px;
+  /* padding: 40px; */
+  /* padding-bottom:6px; */
   /* cheat way to get things to align better on laptop */
   /* padding-left: 20%; */
 
