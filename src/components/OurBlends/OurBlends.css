@@ -32,10 +32,13 @@ body {
 /* THE CONTAINER FOR THE BLENDS HEADER TEXT */
 .rectangularSection {
   background-color: #ffffff;
-  height: 100%;
+  width: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
+
   /* padding-left: 100px; */
 }
 /* align-items: center; */
@@ -44,6 +47,8 @@ body {
 /* "OUR BLENDS" HEADER TEXT */
 .accordionHeader {
   background-color: white;
+
+  /* FONT */
   font-family: "flama medium";
   color: #000;
   font-size: 40px;
@@ -52,10 +57,16 @@ body {
   line-height: normal;
   letter-spacing: 8px;
   text-transform: uppercase;
+
+  /* LAYOUT */
+  display: flex;
+  position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
   /* right: 100px; */
-  padding-left: 100px;
+  /* padding-left: 100px; */
+  right:18%;
+  border:2px solid blue;
 }
 /* padding-left: 100px; */
 
