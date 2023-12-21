@@ -46,8 +46,8 @@ flex-shrink: 0;
 .heroContainer {
   position: relative;
   padding: 30px;
-  width: 50%;
-  top: 62px;
+  /* width: 50%; */
+  /* top: 62px; */
   height: auto;
 }
 
@@ -60,9 +60,10 @@ flex-shrink: 0;
   line-height: 85px; /* 113.333% */
   letter-spacing: 15px;
   position: absolute;
-  bottom: 2px;
+  bottom: -113%;
   padding-bottom: 50px;
-
+  width: 50%;
+  left:-5%;
 
 
 }
