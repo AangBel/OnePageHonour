@@ -13,22 +13,58 @@
 }
 /* THE CONTAINER THAT HOLDS THE QUOTE  */
 .quoteSection {
+  /* TEXT */
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 550;
+  line-height: 55px; /* 157.143% */
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+
+  /* LAYOUT */
+  display: flex;
+  position: relative;
+  width: 66%;
   background-color: black;
   color: white;
   font-family: "flama book";
-  text-align: center;
-  padding: 40px;
-  padding-top: 60px;
+  /* text-align: center; */
+  /* padding: 40px; */
+  /* padding-left:300px; */
+  padding-left: 260px;
+
+  /* padding-top: 60px; */
   padding-bottom: 60px;
+
+  overflow:hidden ;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+border:2px blue solid;
+
+
+
 }
 .quoteBox {
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  justify-content: flex-end;
   text-align: center;
   background-color: black;
-  padding: 20 40 20 40;
+  padding: 0 40px 20px 276px;
+  /* text-align: left; */
   text-align: left;
+
   color: white;
   font-family: "flama book";
+
+  border:2px pink solid;
+
+
 }
+
 .quotePText {
   background-color: black;
   /* max-width: 1004px; */
@@ -39,10 +75,20 @@
   font-weight: 550;
   line-height: 55px;
   letter-spacing: 3.5px;
-  padding-left: 260px;
-  padding-right: 176px;
-  margin-top: 150px;
+  padding-left: 276px;
+  padding-top: 122px;
+  /* padding-right: 176px; */
+  /* margin-top: 150px; */
   text-transform: uppercase;
+  /* text-align: center; */
+  /* width:50%; */
+
+  display: flex;
+  position: relative;
+
+  width: 100%;
+  border:2px red solid;
+
   
 }
 
@@ -76,7 +122,7 @@
   font-family: "flama medium";
   font-size: 22px;
   font-weight: 650;
-  padding-top: 0px;
+  /* padding-top: 0px; */
   padding-bottom: 100px;
   margin-left:261px;
   letter-spacing: 4.4;
@@ -99,6 +145,7 @@
   .quoteSection{
     display:flex;
     position: center;
+    align-items: center;
     padding-left:20%;
     font-size: 5rem;
     width:10%;
