@@ -60,6 +60,7 @@ body {
 
   /* LAYOUT */
   display: flex;
+  
   position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
