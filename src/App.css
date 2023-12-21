@@ -12,6 +12,8 @@
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
+  width: 100%;
   /* padding: 40px; */
   /* padding-bottom:6px; */
   /* cheat way to get things to align better on laptop */
@@ -22,9 +24,10 @@
 
 .AppBody{
   background-color: black;
+  width: 100%;
   /* cheat way to get things to align better on laptop */
   /* padding-left: 20%; */
-  /* overflow: hidden; */
+  overflow: hidden;
   
 }
 

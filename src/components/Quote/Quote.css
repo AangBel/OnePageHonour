@@ -24,7 +24,7 @@
   /* LAYOUT */
   display: flex;
   position: relative;
-  width: 66%;
+  width: 75%;
   background-color: black;
   color: white;
   font-family: "flama book";
@@ -76,6 +76,7 @@ border:2px blue solid;
   line-height: 55px;
   letter-spacing: 3.5px;
   padding-left: 276px;
+  padding-right:136px;
   padding-top: 122px;
   /* padding-right: 176px; */
   /* margin-top: 150px; */
