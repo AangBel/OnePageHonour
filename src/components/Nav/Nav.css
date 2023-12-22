@@ -124,4 +124,33 @@
     width: 20%;
     justify-content: left;
   }
+
+  @media screen and (max-width: 800px) {
+    .nav {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px; /* Adjust as needed */
+    }
+  
+    .logoImage {
+      width: 50%; /* Adjust as needed */
+      margin: 10px 0; /* Adjust as needed */
+    }
+  
+    .navAnchors {
+      flex-direction: column;
+      padding: 10px; /* Adjust as needed */
+    }
+  
+    .navAnchor1,
+    .navAnchor2 {
+      padding: 10px 0; /* Adjust as needed */
+      text-align: center;
+    }
+  
+    .shopContainer {
+      left: 50%;
+    }
+  }
+  
 }
