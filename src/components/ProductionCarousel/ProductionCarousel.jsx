@@ -42,7 +42,8 @@ function ProductionCarousel() {
     <div className="carouselContainer">
      <Carousel
         wrapAround={true}
-        slidesToShow={2.5}
+        // slides to show 1.5 or 2.5
+        slidesToShow={1.5}
         cellSpacing={20}
         centerMode={true}
         renderCenterLeftControls={({ previousSlide }) => null}

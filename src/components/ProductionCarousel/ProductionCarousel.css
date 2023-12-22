@@ -40,7 +40,6 @@
   /* justify-content: flex-end; */
 }
 
-
 .arrowLeft,
 .arrowRight {
   background-color: black;
@@ -61,7 +60,7 @@
 
 .carouselImage img {
   /* width: 103px; */
-  position:relative;
+  position: relative;
   width: 100%;
   bottom: 50px;
 }
@@ -90,41 +89,40 @@
   background-color: rgb(0, 0, 0);
 }
 
-
 /* TESTING */
 
 .custom-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  bottom:50px;
+  bottom: 50px;
   padding-top: 20px;
 }
 
 .arrow-button {
   /* background-color: rgb(163, 27, 27); */
   background-color: transparent;
-  color:#fff;
+  color: #fff;
   border: none;
   cursor: pointer;
   padding: 10px;
 }
 
 .arrow-button img {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
   display: block;
 }
 
 .arrow-button:hover {
-  background-color:#DE6328 ;
+  background-color: #de6328;
   border-radius: 50%;
   /* NEED TO GET THIS TO BE A BLACK ARROW */
-  color:rgb(78, 62, 222);
+  color: rgb(78, 62, 222);
 }
 
 .arrow-button:hover img {
- color:black;
+  color: black;
 }
 
 /* .arrows {
