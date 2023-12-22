@@ -102,7 +102,7 @@ body {
   border-left: 2px solid; 
   border-left-color: #a2a8aa;
 
-  padding-right: 100px;
+  /* padding-right: 100px; */
 
 
   overflow: hidden;
@@ -137,7 +137,7 @@ body {
 
   /* LAYOUT */
   height: 500px;
-  padding:0 0 0 50px;
+  /* padding:0 0 0 50px; */
 
 
 }
@@ -173,6 +173,7 @@ body {
   flex: 1;
   /* transform: scaleX(1); */
   transition: flex 0.7s ease-in-out;
+  width:50px;
   /* padding-right:200px; */
 }
 
