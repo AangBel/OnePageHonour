@@ -24,6 +24,7 @@ import Plus from "./Plus.svg";
 function OurBlends() {
   const [activePanel, setActivePanel] = useState(null);
   const [infoVisible, setInfoVisible] = useState(false);
+  const [isPlusClicked, setIsPlusClicked] = useState(false);
 
   const panels = [
     {
@@ -107,7 +108,6 @@ function OurBlends() {
     );
 
     setInfoVisible((prevInfoVisible) => {
-      // ***************************
       const newInfoVisible = {};
 
       Object.keys(prevInfoVisible).forEach((id) => {
@@ -120,7 +120,11 @@ function OurBlends() {
   };
 
   return (
-    <div className="rectangularSection" style={{ width: "100%" }} id="TheBlends">
+    <div
+      className="rectangularSection"
+      style={{ width: "100%" }}
+      id="TheBlends"
+    >
       <div className="accordionHeader">Our Blends</div>
       <div className="accordionContainer">
         {panels.map((panel) => (
@@ -136,7 +140,13 @@ function OurBlends() {
               onClick={handlePanelClick}
               style={{ background: "none", border: "none", padding: 0 }}
             >
-              <img src={Plus} alt="PlusSign" className="plusSign" />
+              <img
+                src={Plus}
+                alt="PlusSign"
+                className={`plusSign ${
+                  activePanel === panel.id ? "rotate" : ""
+                }`}
+              />
             </button>
 
             {infoVisible[panel.id] && (

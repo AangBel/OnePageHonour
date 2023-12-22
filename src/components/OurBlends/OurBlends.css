@@ -81,7 +81,7 @@ body {
   /* removing max width allows for this to be 100% on large monitor for e.g. */
   /* max-width: 1487px; */
   /* padding-left: 10px; */
-
+  padding-bottom: 20px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -171,6 +171,7 @@ body {
 
 
   padding-left: 20px;
+  /* pr 167 */
   padding-right: 150px;
   /* padding: 100px; */
 }
@@ -196,9 +197,7 @@ body {
   opacity: 1;
 }
 
-.panel.active .blendAccordionName {
-  /* opacity: 1; */
-}
+
 
 .panel .blendAccordionName {
   opacity: 1; /* Ensure the blend name is always visible */
@@ -206,11 +205,26 @@ body {
 
 
 
-.plusSign{
+
+.plusSign {
   display: flex;
   position: relative;
-  bottom:671px;
-  right:37px;
+  bottom: 655px;
+  /* right:-29px */
+  right: 37px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.panel.active .plusSign {
+  transform: rotate(45deg);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.panel.active.plusSign{
+  transform: rotate(90deg);
 }
 
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
@@ -234,13 +248,13 @@ body {
   display: flex;
   flex-wrap: wrap;
 
-  border-radius: 12px 0px 0px 0px;
+  border-radius: 12px 0px 0px 12px;
   width: 100%;
   width: 427px;
   height: 338px;
   /* flex-shrink: 0; */
   background: linear-gradient(to bottom, black 50%, #fff200 50%);
-  color: rgb(175, 38, 38);
+  /* color: rgb(175, 38, 38); */
   writing-mode: horizontal-tb;
 
   /* TEXT */
@@ -257,6 +271,7 @@ body {
   padding: 30px;
   box-sizing: border-box;
 }
+
 /* THE BLACK PART OF THE COFFEE INFO CONTAINER */
 .topCoffeeInfo {
   /* TEXT */
@@ -268,6 +283,10 @@ body {
   font-weight: 650;
   line-height: normal;
   letter-spacing: 7px;
+
+  /* LAYOUT */
+  padding-top: 18px;
+  padding-bottom: 15px;
 }
 
 .blendTitle {
@@ -320,8 +339,10 @@ body {
   letter-spacing: 2.4px;
   text-transform: uppercase;
 
-  padding-top: 64px;
-  padding-bottom: 10px;
+  /* LAYOUT */
+  /* 64px pt */
+  padding-top: 61px;
+  padding-bottom: 33px;
 
   display: flex;
   position: relative;
@@ -329,7 +350,7 @@ body {
   justify-content: space-between;
 }
 
-.quickInfoImg {
+.quickInfo img {
   padding-right: 13.75px;
 }
 
