@@ -142,7 +142,9 @@ body {
 
 }
 
-
+.panel img{
+  padding-right: 50px;
+}
 
 .panel.active {
   position: relative;
