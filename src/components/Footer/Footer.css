@@ -58,7 +58,7 @@
   background-color: black;
 
   width: auto;
-  padding: 38px 127px 0 100px;
+  padding: 38px 100px 0 100px;
   /* padding-top: 38px;
   padding-left: 100px; */
   align-items: flex-start;
@@ -140,7 +140,7 @@
   align-items: center;
   background-color: black;
   color: white;
-  padding: 0 20px 30px 20px;
+  padding: 0 75px 30px 0;
 }
 
 .legaleseFooter {
@@ -178,7 +178,9 @@
 
   background-color: black;
   color: white;
-
+  /* padding-right: 100px; */
+  /* width: 100px; */
+  /* TEXT */
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -189,7 +191,9 @@
 
 .socialLinks svg {
   /* padding: 24px; */
-  padding-right: 113px;
+  /* padding-right: 113px; */
+  padding-right: 25px;
+
 }
 
 @media screen and (max-width: 800px) {
