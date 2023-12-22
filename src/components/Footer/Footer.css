@@ -58,7 +58,7 @@
   background-color: black;
 
   width: auto;
-  padding: 38px 100px 0 100px;
+  padding: 46px 100px 0 100px;
   /* padding-top: 38px;
   padding-left: 100px; */
   align-items: flex-start;
@@ -73,6 +73,7 @@
 
 .linksAndLogo img {
   padding-left: 219px;
+  padding-top: 10px;
   /* position: relative; */
 }
 
