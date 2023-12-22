@@ -40,7 +40,7 @@ function ProductionCarousel() {
 
   return (
     <div className="carouselContainer">
-     <Carousel
+      <Carousel
         wrapAround={true}
         // slides to show 1.5 or 2.5
         slidesToShow={1.5}
@@ -49,15 +49,10 @@ function ProductionCarousel() {
         renderCenterLeftControls={({ previousSlide }) => null}
         renderCenterRightControls={({ nextSlide }) => null}
         sliderControlBottomCenter={null}
-      
-        renderBottomRightControls={(props) => (
-          <CustomControls {...props} />
-        )}
+        renderBottomRightControls={(props) => <CustomControls {...props} />}
         renderBottomCenterControls={false}
         // renderCenterBottomControls={(props) => null}
-      
       >
-      
         {carouselImages.map((image, index) => (
           <img
             key={index}

@@ -14,7 +14,6 @@ body {
   justify-content: center;
 }
 
-
 @font-face {
   font-family: "flama book";
   src: url("/public/Fonts/flama book_1596466159.otf") format("opentype");
@@ -60,13 +59,13 @@ body {
 
   /* LAYOUT */
   display: flex;
-  
+
   position: relative;
   margin-top: 60px;
   margin-bottom: 60px;
   /* right: 100px; */
   /* padding-left: 100px; */
-  right:31%;
+  right: 31%;
   /* border:2px solid blue; */
 }
 /* padding-left: 100px; */
@@ -99,11 +98,10 @@ body {
   /* background-position:left; */
   background-repeat: no-repeat;
   transition: flex 0.7s ease-in-out;
-  border-left: 2px solid; 
+  border-left: 2px solid;
   border-left-color: #a2a8aa;
 
   /* padding-right: 100px; */
-
 
   overflow: hidden;
 
@@ -112,10 +110,6 @@ body {
   justify-content: space-around;
 
   box-sizing: border-box;
-
-
-
-
 }
 
 .panel img {
@@ -144,17 +138,15 @@ body {
   position: absolute;
   left: 265px;
   /* border:2px solid purple; */
-  padding-top:20px;
+  padding-top: 20px;
 
   /* padding:0 0 0 50px; */
 
   /* opacity: 100%; */
   z-index: 1;
-
-
 }
 
-.panel img{
+.panel img {
   padding-right: 50px;
 }
 
@@ -168,7 +160,6 @@ body {
   transform: scaleX(1);
   transition: transform 0.7s ease-in-out, transform 0.7s ease-in-out;
   max-width: 562px;
-
 
   padding-left: 20px;
   /* pr 167 */
@@ -189,7 +180,7 @@ body {
   flex: 1;
   /* transform: scaleX(1); */
   transition: flex 0.7s ease-in-out;
-  width:50px;
+  width: 50px;
   /* padding-right:200px; */
 }
 
@@ -197,14 +188,9 @@ body {
   opacity: 1;
 }
 
-
-
 .panel .blendAccordionName {
   opacity: 1; /* Ensure the blend name is always visible */
 }
-
-
-
 
 .plusSign {
   display: flex;
@@ -223,7 +209,7 @@ body {
   transform: rotate(45deg);
 }
 
-.panel.active.plusSign{
+.panel.active.plusSign {
   transform: rotate(90deg);
 }
 
@@ -354,7 +340,6 @@ body {
   padding-right: 13.75px;
 }
 
-
 @media screen and (max-width: 1200px) {
   .panel {
     flex: 1; /* Adjust as needed for smaller screens */
@@ -373,7 +358,6 @@ body {
   }
 }
 
-
 @media screen and (max-width: 800px) {
   /* body {
     margin: 0;
@@ -382,15 +366,15 @@ body {
     padding-left:30%;
   } */
 
-  .rectangularSection{
+  .rectangularSection {
     width: 100%;
     display: flex;
     justify-content: center;
     font-size: 50%vw;
   }
 
-  .accordionHeader{
-    width:100%;
+  .accordionHeader {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding-right: 10%;
@@ -406,8 +390,8 @@ body {
     /* max-width: 1467px; */
   }
 
-  .panel{
-    border-bottom: 1px solid; 
+  .panel {
+    border-bottom: 1px solid;
     border-left-color: #a2a8aa;
     display: flex;
     position: relative;
@@ -418,52 +402,49 @@ body {
     /* border-width: 90%vw; */
   }
 
-  .panel img{
+  .panel img {
     display: flex;
     justify-content: center;
-    padding:0;
+    padding: 0;
   }
 
-  .panel.active{
+  .panel.active {
     display: flex;
-    padding:10%;
+    padding: 10%;
     width: 100%;
     justify-content: center;
     align-items: center;
     max-width: 100%;
-  
-}
+  }
 
-.panel.active img {
-  opacity: 100%;
-  display: flex;
-  justify-content: center;
-  width: 50%vw;
-}
+  .panel.active img {
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    width: 50%vw;
+  }
 
-.blendName{
-  font-size:20%;
-  /* transform: rotate(1.0 turn); */
-  /* writing-mode: horizontal-tb; */
-  text-orientation: upright;
+  .blendName {
+    font-size: 20%;
+    /* transform: rotate(1.0 turn); */
+    /* writing-mode: horizontal-tb; */
+    text-orientation: upright;
+  }
 
-}
+  .blendAccordionName {
+    text-orientation: upright;
+    transform: rotate(360deg);
+    writing-mode: horizontal-tb;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
 
-.blendAccordionName{
-  text-orientation: upright;
-  transform: rotate(360deg);
-  writing-mode: horizontal-tb;
-  display: flex;
-  position: relative;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-
-}
-
-.coffeeInfoBox{
-  display: flex;
-  justify-content: center;
-  top:70%;
-}
+  .coffeeInfoBox {
+    display: flex;
+    justify-content: center;
+    top: 70%;
+  }
 }
