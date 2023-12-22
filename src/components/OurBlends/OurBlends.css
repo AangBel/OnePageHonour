@@ -205,6 +205,14 @@ body {
 }
 
 
+
+.plusSign{
+  display: flex;
+  position: relative;
+  bottom:671px;
+  right:37px;
+}
+
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
 .blendName {
   font-weight: normal;
