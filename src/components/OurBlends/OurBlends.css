@@ -108,10 +108,13 @@ body {
   overflow: hidden;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: space-around;
 
   box-sizing: border-box;
+
+
+
 
 }
 
@@ -126,18 +129,27 @@ body {
   color: #000;
   writing-mode: vertical-lr;
   text-transform: uppercase;
-  text-orientation: mixed;
-  text-combine-upright: none;
+  /* text-orientation: mixed; */
+  /* text-combine-upright: none; */
   transform: rotate(180deg);
   font-size: 18px;
   font-style: normal;
   font-weight: 650;
-  line-height: normal;
+  /* line-height: normal; */
   letter-spacing: 3.6px;
 
   /* LAYOUT */
-  height: 500px;
+  /* height: 500px; */
+  display: flex;
+  position: absolute;
+  left: 265px;
+  /* border:2px solid purple; */
+  padding-top:20px;
+
   /* padding:0 0 0 50px; */
+
+  /* opacity: 100%; */
+  z-index: 1;
 
 
 }
@@ -168,7 +180,7 @@ body {
 }
 /* just quick fix for now */
 .panel.active .blendAccordionName {
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .panel:not(.inactive) {
@@ -178,6 +190,15 @@ body {
   width:50px;
   /* padding-right:200px; */
 }
+
+.panel.active .blendAccordionName {
+  opacity: 1;
+}
+
+.panel .blendAccordionName {
+  opacity: 1; /* Ensure the blend name is always visible */
+}
+
 
 /* THE P TEXT THAT HOLDS THE INDIVIDUAL NAMES OF THE BLENDS */
 .blendName {
