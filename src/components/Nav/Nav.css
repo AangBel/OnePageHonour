@@ -129,22 +129,22 @@
     .nav {
       flex-direction: column;
       align-items: center;
-      padding: 10px; /* Adjust as needed */
+      padding: 10px; 
     }
   
     .logoImage {
-      width: 50%; /* Adjust as needed */
-      margin: 10px 0; /* Adjust as needed */
+      width: 50%; 
+      margin: 10px 0; 
     }
   
     .navAnchors {
       flex-direction: column;
-      padding: 10px; /* Adjust as needed */
+      padding: 10px; 
     }
   
     .navAnchor1,
     .navAnchor2 {
-      padding: 10px 0; /* Adjust as needed */
+      padding: 10px 0; 
       text-align: center;
     }
   
