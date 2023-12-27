@@ -15,28 +15,27 @@ function Hero() {
   }, []);
 
   return (
-
-    <div className="heroImageContainer">
-
-    <div className={`hero ${loaded ? "loaded" : ""}`}>
-      <img
-        id="heroImage"
-        src={HomeHeroImage}
-        alt="Hero image of a coffee bag and a cup full of coffee"
-      />
+    <>
+      <div className="heroImageContainer">
+        <div className={`hero ${loaded ? "loaded" : ""}`}>
+          <img
+            id="heroImage"
+            src={HomeHeroImage}
+            alt="Hero image of a coffee bag and a cup full of coffee"
+          />
+          <div className="vapour">
+            <span style={{ "--v": 1 }}></span>
+            <span style={{ "--v": 2 }}></span>
+            <span style={{ "--v": 3 }}></span>
+            <span style={{ "--v": 4 }}></span>
+            <span style={{ "--v": 5 }}></span>
+          </div>
+        </div>
+      </div>
       <div className="heroContainer">
         <h1 className="heroText">START YOUR DAY WITH HONOUR</h1>
       </div>
-      <div className="vapour">
-        <span style={{ "--v": 1 }}></span>
-        <span style={{ "--v": 2 }}></span>
-        <span style={{ "--v": 3 }}></span>
-        <span style={{ "--v": 4 }}></span>
-        <span style={{ "--v": 5 }}></span>
-      </div>
-    </div>
-
-    </div>
+    </>
   );
 }
 
