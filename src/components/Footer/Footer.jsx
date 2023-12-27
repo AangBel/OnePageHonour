@@ -3,7 +3,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faTwitter,
+  faXTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -59,7 +59,8 @@ function Footer() {
 
         <div className="socialLinks">
           <FontAwesomeIcon icon={faFacebookF} />
-          <FontAwesomeIcon icon={faTwitter} />
+          {/* <FontAwesomeIcon icon={faTwitter} /> */}
+          <FontAwesomeIcon icon={faXTwitter} />
           <FontAwesomeIcon icon={faYoutube} />
         </div>
       </div>
