@@ -142,20 +142,20 @@
   .quoteSection {
     /* padding: 40px 20px; */
     width: 100%;
-    padding-left: 40%;
+    padding-left: 15%;
   }
     .quoteBox {
       /* padding: 0 20px 20px 20px; */
       /* padding-right: 20%; */
-      padding-top: 20%;
-      width: 80%;
+      padding-top: 8%;
+      width: 100%;
     }
 
     .quotePText {
       /* font-size: 24px; */
 
       line-height: 36px;
-      padding-top: 20px;
+      padding-top: 30%;
       padding-right: 20px;
     }
 
