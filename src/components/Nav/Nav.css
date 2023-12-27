@@ -38,8 +38,10 @@
 
 .navAnchor1 {
   display: flex;
-  padding-left: 94px;
-  padding-right: 50px;
+  /* padding-left: 94px; */
+  margin-left: 94px;
+  margin-right: 50px;
+  /* padding-right: 50px; */
 
   /* padding-top: 10px; */
   text-decoration: none;
@@ -52,12 +54,29 @@
   font-weight: 650;
   line-height: normal;
   letter-spacing: 3.6px;
+
+  /* UNDERLINE */
+  /* https://stackoverflow.com/questions/54616139/how-to-animate-underline-from-left-to-right */
+
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#ffffff 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.navAnchor1:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
 }
 
 .navAnchor2 {
   display: flex;
-  padding-right: 30px;
+  /* padding-right: 30px; */
   /* padding-right: 30%; */
+  margin-right: 30px;
 
   text-decoration: none;
   color: white;
@@ -68,6 +87,22 @@
   line-height: normal;
   letter-spacing: 3.6px;
   /* padding-left: 50px; */
+
+  /* UNDERLINE */
+  /* https://stackoverflow.com/questions/54616139/how-to-animate-underline-from-left-to-right */
+
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#ffffff 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.navAnchor2:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
 }
 
 .shopContainer {
