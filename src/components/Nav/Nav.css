@@ -149,22 +149,84 @@
   color: black;
 }
 
+
+
+/* TESTING */
+.menu {
+  display: none; /* Hide by default on desktop view */
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Animation for hamburger bars */
+.bar.animate:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.animate:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.animate:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
 @media screen and (max-width: 800px) {
   .nav {
     width: 100%;
     padding-left: 50%;
   }
 
-  .logoImage {
-    width: 20%;
+  .logo {
+    width: 50%;
     justify-content: left;
+    margin-left: 17%;
+
   }
 
   @media screen and (max-width: 800px) {
+
+    .menu {
+      display: block;
+    }
+
+    .mobileMenu{
+      height:40%;
+      /* padding-top:20%; */
+      margin-top: 20%;
+    }
+
+    /* .logoImage {
+      width: 20%;
+      justify-content: left;
+     margin-left: 17%;
+    } */
+  
+    .navAnchors {
+      display: none; /* Hide anchor links in mobile view */
+    }
+  
+    .shopContainer {
+      display: none; /* Hide shop button in mobile view */
+    }
+
+
     .nav {
       flex-direction: column;
       align-items: center;
       padding: 10px;
+      display: flex;
+      flex-direction: row;
     }
 
     .logoImage {
