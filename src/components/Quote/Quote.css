@@ -67,7 +67,7 @@
   letter-spacing: 3.5px;
   /* padding-left: 276px; */
   padding-right: 136px;
-  padding-top: 122px;
+  padding-top: 166px;
   /* padding-right: 176px; */
   /* margin-top: 150px; */
   text-transform: uppercase;
@@ -143,40 +143,41 @@
     /* padding: 40px 20px; */
     width: 100%;
     padding-left: 17%;
-    top:30%;
+    top: 30%;
     display: flex;
     position: relative;
   }
-    .quoteBox {
-      /* padding: 0 20px 20px 20px; */
-      /* padding-right: 20%; */
-      padding-top: 8%;
-      width: 100%;
-    }
-
-    .quotePText {
-      /* font-size: 24px; */
-
-      line-height: 36px;
-      /* padding-top: 30%; */
-      padding-right: 5%;
-    }
-
-    .ownerNameTitleBox {
-      margin-top: 20px;
-    }
-
-    .quoteEllipse {
-      margin-top: 20px;
-    }
-
-    .quoteAuthorText {
-      font-size: 18px;
-      padding-bottom: 20px;
-    }
-
-    .quoteAuthorTitle {
-      font-size: 18px;
-      padding-left: 5px;
-    }
+  .quoteBox {
+    /* padding: 0 20px 20px 20px; */
+    /* padding-right: 20%; */
+    padding-top: 8%;
+    padding-bottom: 11%;
+    width: 100%;
   }
+
+  .quotePText {
+    /* font-size: 24px; */
+
+    line-height: 36px;
+    padding-top: 44%;
+    padding-right: 5%;
+  }
+
+  .ownerNameTitleBox {
+    margin-top: 20px;
+  }
+
+  .quoteEllipse {
+    margin-top: 20px;
+  }
+
+  .quoteAuthorText {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .quoteAuthorTitle {
+    font-size: 18px;
+    padding-left: 5px;
+  }
+}
