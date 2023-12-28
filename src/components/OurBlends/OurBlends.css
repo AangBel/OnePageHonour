@@ -340,6 +340,10 @@ body {
   padding-right: 13.75px;
 }
 
+
+
+/* MOBILE---------------------------------------------------------------------------------------------------- */
+
 @media screen and (max-width: 1200px) {
   .panel {
     flex: 1; /* Adjust as needed for smaller screens */
@@ -372,7 +376,7 @@ body {
     justify-content: center;
     font-size: 50%vw;
     /* border: 2px solid yellow; */
-    padding-left: 45%;
+    padding-left: 41%;
   }
 
   .accordionHeader {
@@ -389,6 +393,7 @@ body {
     /* box-shadow: none; */
     width: 100%;
     overflow: visible;
+    left:-1%;
     /* height: auto; */
     /* max-width: 1467px; */
     /* border: 2px solid yellow; */
@@ -403,7 +408,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     flex-direction: row-reverse;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     /* border-width: 90%vw; */
   }
 
@@ -411,6 +416,12 @@ body {
     display: flex;
     justify-content: center;
     padding: 0;
+  }
+
+  .panel.panel:not(.inactive){
+    width:100%;
+    /* padding-left: 10%; */
+    margin-left:-37%;
   }
 
   .panel.active {
