@@ -14,26 +14,23 @@
   /* SPACING */
   padding: 126px 753px 100px 100px;
 }
-
+/* MOBILE ----------------------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
-  .excellenceTextBox{
+  .excellenceTextBox {
     display: flex;
     justify-content: center;
-    font-size:50%vw;
+    font-size: 50%vw;
     width: 100%;
 
-  
-
-  /* same with this if i remove padding left 50% then the text dissapears off to the left i presume but if i put it back then it throws things off to the right */
-    padding-left:50%;
-
+    /* same with this if i remove padding left 50% then the text dissapears off to the left i presume but if i put it back then it throws things off to the right */
+    padding-left: 50%;
   }
 
-  .excellenceTextBox h2{
+  .excellenceTextBox h2 {
     display: flex;
     justify-content: center;
     /* font-size: 100%; */
-    font-size: 50%;
+    font-size: 112%;
     /* padding-left:80%; */
   }
 }
