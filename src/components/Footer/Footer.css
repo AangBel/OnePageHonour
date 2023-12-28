@@ -195,7 +195,7 @@
   padding: 24px;
 }
 
-/* MOBILE------------------------------------------ */
+/* MOBILE------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 800px) {
   .footerTopHalf {
@@ -208,7 +208,8 @@
     position: relative;
     width: 100%;
 
-    padding-left: 40%;
+    padding-left: 29%;
+    padding-right: 0%;
   }
 
   .footerLeftTextAndEmail{
