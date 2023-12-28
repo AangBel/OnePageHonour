@@ -170,6 +170,11 @@
   padding: 10px 562px 100px 217px;
 }
 
+
+
+
+/* MOBILE ----------------------------------------------------------------------------------- */
+
 @media screen and (max-width: 800px) {
   .carouselContainer {
     width: 100%vw;
@@ -184,24 +189,38 @@
 
   .sourcedTitleBox {
     display: flex;
-    justify-content: center;
-    font-size: 100%;
-    width: 100%;
+    position: relative;
+    /* justify-content: center; */
+    /* font-size: 100%; */
+    width: 28%;
+    padding:0;
+    /* padding-top:10%; */
+    margin-left:35%;
     /* max-width: 100%; */
     /* text appears when padding left 45% but it also throws off stuff to the right side  */
     /* padding-left: 45%; */
     overflow: hidden;
-  }
-  .sourcedTitleBox h3 {
-    font-size: 100%;
-    /* width: 100%; */
+    /* border:2px solid white; */
   }
 
-  .sourcedPText {
+  .sourcedTitleBox h3 {
+    /* font-size: 100%; */
+    font-size: 15%vw;
     width: 100%;
+    /* border:2px solid red; */
+    padding-top:10%;
+
+    /* left:200%; */
+
+  }
+
+
+  /* THE LOREM IPSUM TEXT UNDER THE SOURCED H3 */
+  .sourcedPText {
+    /* width: 100%; */
     display: flex;
     justify-content: center;
-    font-size: 100%;
-    padding-left: 40%;
+    padding-left: 35%;
+    padding-right:34%;
   }
 }
