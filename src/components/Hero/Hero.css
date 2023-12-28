@@ -150,13 +150,42 @@
   body {
     margin: 0;
   }
-  .heroImage {
+  /* .heroImage {
     flex-direction: column;
-    width: auto;
+    width: 50%;
     display: flex;
     justify-content: center;
     /* padding:10%; */
+  /* } */ 
+
+  .heroLoaded{
+    /* overflow: hidden; */
+    width: 50%;
+
   }
+
+  #heroImage{
+    width: 51%;
+    height:106%;
+    /* margin-left:33%; */
+    margin-left:49%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:2px solid orange;
+
+
+  }
+
+  .heroImageContainer{
+    width: 67%;
+    display: flex;
+    position:center;
+    border:2px solid rgb(48, 20, 191);
+
+  }
+
 
   .heroContainer {
     /* padding: 0; */
