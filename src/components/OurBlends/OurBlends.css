@@ -377,6 +377,7 @@ body {
     font-size: 50%vw;
     /* border: 2px solid yellow; */
     padding-left: 41%;
+    overflow: hidden;
   }
 
   .accordionHeader {
@@ -391,9 +392,10 @@ body {
     flex-direction: column;
     /* height: 700px; */
     /* box-shadow: none; */
-    width: 100%;
+    /* width: 100%; */
     overflow: visible;
     left:-1%;
+    margin:0;
     /* height: auto; */
     /* max-width: 1467px; */
     /* border: 2px solid yellow; */
@@ -420,13 +422,14 @@ body {
 
   .panel.panel:not(.inactive){
     width:100%;
-    /* padding-left: 10%; */
     margin-left:-37%;
   }
 
   .panel.active {
     display: flex;
-    padding: 10%;
+    flex-wrap: wrap;
+    /* padding: 10%; */
+    padding-left: 4%;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -447,6 +450,7 @@ body {
     text-orientation: upright;
   }
 
+
   .blendAccordionName {
     text-orientation: upright;
     transform: rotate(360deg);
@@ -458,9 +462,15 @@ body {
     flex-direction: column-reverse;
   }
 
+  /* .panel.blendAccordionName{
+    border:2px solid orange;
+  } */
+
   .coffeeInfoBox {
     display: flex;
+    position: relative;
     justify-content: center;
     top: 70%;
+    z-index: 1;
   }
 }
