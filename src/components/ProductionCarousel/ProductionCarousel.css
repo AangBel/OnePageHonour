@@ -177,13 +177,20 @@
 
 @media screen and (max-width: 800px) {
   .carouselContainer {
-    width: 100%vw;
-    max-width: 100%vw;
+    /* width: 100%vw; */
+    width: 32%;
+    position: center;
+    margin-left:34%;
+    flex-direction: row-reverse;
+
+
+    /* max-width: 100%vw; */
   }
   .carouselSlide img {
     display: flex;
     position: center;
-    width: 100%;
+    width: 50%;
+
   }
 
 

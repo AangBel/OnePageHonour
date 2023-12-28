@@ -150,30 +150,17 @@
 
 /* TESTING */
 .menu {
-  display: none; /* Hide by default on desktop view */
+  display: none;
   cursor: pointer;
 }
 
-.bar {
+/* .bar {
   width: 25px;
   height: 3px;
   background-color: white;
   margin: 6px 0;
   transition: 0.4s;
-}
-
-/* Animation for hamburger bars */
-.bar.animate:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.bar.animate:nth-child(2) {
-  opacity: 0;
-}
-
-.bar.animate:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
+} */
 
 /* MOBILE---------------------------------------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
@@ -191,12 +178,16 @@
   @media screen and (max-width: 800px) {
     .menu {
       display: block;
+      border: 2px solid white;
+      z-index: 1;
     }
 
     .mobileMenu {
       height: 40%;
-      /* padding-top:20%; */
+      padding-top: 20%;
       margin-top: 20%;
+      border: 2px solid rgb(123, 36, 36);
+      z-index: 1;
     }
 
     .logoImage {

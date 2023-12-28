@@ -40,8 +40,6 @@ function Nav() {
         <>
           <div className="menu" onClick={toggleMenu}>
             MENU
-          </div>
-
           <div className="mobileMenu">
             <a href="#TheBlends" className="navAnchor1">
               THE BLENDS
@@ -53,6 +51,8 @@ function Nav() {
               <p className="shopSymbol">SHOP</p>
             </div>
           </div>
+          </div>
+
         </>
       )}
     </div>

@@ -43,7 +43,8 @@ function ProductionCarousel() {
       <Carousel
         wrapAround={true}
         // slides to show 1.5 or 2.5
-        slidesToShow={1.5}
+        // slidesToShow={1.5}
+        slidesToShow={window.innerWidth > 800 ? 2 : 1}
         cellSpacing={20}
         centerMode={true}
         renderCenterLeftControls={({ previousSlide }) => null}
