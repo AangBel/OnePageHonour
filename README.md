@@ -6,7 +6,8 @@ This was a coding challenge that was part of my application. I was provided with
 The Figma File- Desktop edition
 --
 ![large figma](https://github.com/AangBel/OnePageHonour/assets/119378254/c6a24822-dc0c-4cd6-b2f7-cb9d02ee60cc)
-![desktop recording ](https://github.com/AangBel/OnePageHonour/assets/119378254/54b75dcf-12ac-4b91-bca6-a5e2b38190a9)
+![large screen desktop project](https://github.com/AangBel/OnePageHonour/assets/119378254/28b9efc9-3115-43ec-bed3-c2ba3a465bde)
+
 
 --
 What I made-Desktop edition
