@@ -297,7 +297,7 @@
     align-content: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
 
     padding-left: 0;
 
@@ -308,12 +308,15 @@
 
   .legaleseFooter p{
     padding-left: 0;
+    padding-bottom: 2.5%;
   }
 
   .copyrightText {
     display: flex;
     justify-content: center;
     font-size: 100%;
+    padding-bottom: 2.5%;
+
     /* padding-left: 50%; */
   }
   .socialLinks {
@@ -322,5 +325,6 @@
     justify-content: center;
     font-size: 100%;
     padding-right: 5%;
+    padding-bottom: 10%;
   }
 }
