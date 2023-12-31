@@ -210,6 +210,7 @@
 
     padding-left: 29%;
     padding-right: 0%;
+    border-top:none;
   }
 
   .footerLeftTextAndEmail{
@@ -279,21 +280,34 @@
 
   .bottomLineFooterContent {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     font-size: 100%;
     /* padding-left: 50%; */
     width: 100%;
+    margin-bottom: 100px;
     /* border: 2px solid yellow; */
-
+    padding-right: 15%;
   }
 
   .legaleseFooter {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 100px;
+
+    padding-left: 0;
+
 
     /* font-size: 100%; */
     /* padding-left: 50%; */
+  }
+
+  .legaleseFooter p{
+    padding-left: 0;
   }
 
   .copyrightText {
@@ -304,8 +318,9 @@
   }
   .socialLinks {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     font-size: 100%;
-    /* padding-left: 50%; */
+    padding-right: 5%;
   }
 }
