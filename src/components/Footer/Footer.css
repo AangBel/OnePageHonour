@@ -234,15 +234,24 @@
 
     border-top:1px solid #AAA;
     padding-left:12%;
+    order:2;
     /* border: 2px solid orangered; */
     /* padding-left: 45%; */
+  }
+
+
+  .secondaryLogoDiv{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    order:1;
   }
 
   .footerEmailInput {
     display: flex;
     width: 30%;
     flex-direction: column;
-    
+    order:3;
   }
 
   .footerEmailInput img {
@@ -287,6 +296,8 @@
     width: 100%;
     /* padding-left: 50%; */
     justify-content: center;
+
+    order:4;
     
   }
 
@@ -305,11 +316,12 @@
     flex-direction: column-reverse;
     justify-content: center;
     font-size: 100%;
-    /* padding-left: 50%; */
+    padding-left: 2%;
     width: 100%;
     /* margin-bottom: 100px; */
     /* border: 2px solid yellow; */
     padding-right: 15%;
+    order:5;
   }
 
   .legaleseFooter {
