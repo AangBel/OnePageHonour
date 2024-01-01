@@ -224,7 +224,7 @@
   }
 
   .footerHonourText {
-    width: 102%;
+    width: 105%;
     font-size: 181%;
     display: flex;
     flex-direction: column;
@@ -232,7 +232,7 @@
     justify-content: flex-start;
 
     border-top: 1px solid #aaa;
-    padding-left: 12%;
+    padding-left: 14%;
     order: 2;
     /* border: 2px solid orangered; */
     /* padding-left: 45%; */
