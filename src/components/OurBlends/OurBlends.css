@@ -7,12 +7,7 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "flama book";
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* removing body{} */
 
 @font-face {
   font-family: "flama book";
