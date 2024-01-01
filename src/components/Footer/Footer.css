@@ -78,7 +78,7 @@
   /* position: relative; */
 }
 
-.secondaryLogoDiv{
+.secondaryLogoDiv {
   padding-top: 3.5%;
   padding-right: 7%;
 }
@@ -216,12 +216,11 @@
 
     padding-left: 29%;
     padding-right: 0%;
-    border-top:none;
+    border-top: none;
   }
 
-  .footerLeftTextAndEmail{
+  .footerLeftTextAndEmail {
     width: 50%;
-
   }
 
   .footerHonourText {
@@ -232,30 +231,33 @@
 
     justify-content: flex-start;
 
-    border-top:1px solid #AAA;
-    padding-left:12%;
-    order:2;
+    border-top: 1px solid #aaa;
+    padding-left: 12%;
+    order: 2;
     /* border: 2px solid orangered; */
     /* padding-left: 45%; */
   }
 
-
-  .secondaryLogoDiv{
+  .secondaryLogoDiv {
     display: flex;
     position: relative;
     justify-content: center;
-    order:1;
+    order: 1;
   }
 
   .footerEmailInput {
     display: flex;
-    width: 30%;
+    /* width: 30%; */
+    width: 82%;
+
     flex-direction: column;
-    order:3;
+    margin-left:17%;
+    order: 3;
   }
 
   .footerEmailInput img {
-    width: 10%;
+    /* width: 10%; */
+
     padding-left: 50%;
     font-size: 100%;
     margin: auto;
@@ -270,7 +272,6 @@
     /* padding-left: 10%; */
     width: 50%;
     font-size: 100%;
-
   }
 
   .linksAndLogo img {
@@ -284,31 +285,34 @@
     display: flex;
     position: relative;
     justify-content: flex-start;
-    padding-top:20%;
+    padding-top: 20%;
   }
   .contactLinks {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 20%;
+    /* padding-top: 20%; */
 
     width: 100%;
+    padding-top: 0;
+
     /* padding-left: 50%; */
     justify-content: center;
 
-    order:4;
-    
+    order: 4;
   }
 
-  .helpDeskLink h3{
-    padding-top: 20%;
-
+  .contactLinks h3 {
+    padding-top: 0;
   }
 
-  .contactLinks h3{
-    padding-top: 20%;
+  .footerLinks {
+    padding-left: 9%;
+  }
 
+  .helpDeskLink h3 {
+    padding-top: 20%;
   }
 
   .bottomLineFooterContent {
@@ -321,7 +325,7 @@
     /* margin-bottom: 100px; */
     /* border: 2px solid yellow; */
     padding-right: 15%;
-    order:5;
+    order: 5;
   }
 
   .legaleseFooter {
@@ -335,12 +339,11 @@
 
     padding-left: 0;
 
-
     /* font-size: 100%; */
     /* padding-left: 50%; */
   }
 
-  .legaleseFooter p{
+  .legaleseFooter p {
     padding-left: 0;
     padding-bottom: 2.5%;
   }
@@ -361,8 +364,6 @@
     padding-right: 5%;
     padding-left: 1%;
     padding-bottom: 10%;
-    width:20%;
+    width: 20%;
   }
-
-
 }
