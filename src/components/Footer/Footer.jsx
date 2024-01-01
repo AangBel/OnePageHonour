@@ -39,13 +39,16 @@ function Footer() {
             <img src={ArrowSvg} className="emailArrow"></img>
           </div>
         </div>
-
-        <div className="linksAndLogo">
+        {/* previously linksAndLogo div */}
+        <div className="footerLinks">
           <div className="contactLinks">
             <h3 className="helpDeskLink">Help Desk</h3>
             <h3>Press</h3>
             <h3>Carry Us</h3>
           </div>
+        </div>
+
+        <div className="secondaryLogoDiv">
           <img src={SecondaryLogo}></img>
         </div>
       </div>
