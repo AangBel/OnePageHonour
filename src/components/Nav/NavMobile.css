@@ -1,0 +1,72 @@
+/* MOBILE---------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+  .nav {
+    width: 100%;
+    padding-left: 50%;
+  }
+
+  .menu {
+    display: block;
+    border: 2px solid white;
+    z-index: 1;
+  }
+
+  .mobileMenu {
+    height: 40%;
+    padding-top: 20%;
+    margin-top: 20%;
+    border: 2px solid rgb(123, 36, 36);
+    z-index: 1;
+  }
+
+  /* logo container */
+  .logo {
+    /* width changing from 50% */
+    /* width: 100%; */
+    justify-content: left;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .logoImage {
+    width: 100%;
+
+    /* justify-content: left; */
+    padding-left: 2%;
+    /* margin-left: 20%; 
+   }
+
+  .navAnchors {
+    display: none; /* Hide anchor links in mobile view */
+  }
+
+  .shopContainer {
+    display: none; /* Hide shop button in mobile view */
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+  .navAnchors {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navAnchor1,
+  .navAnchor2 {
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .shopContainer {
+    left: 50%;
+  }
+}

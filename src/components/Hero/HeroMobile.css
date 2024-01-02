@@ -1,0 +1,56 @@
+/* MOBILE--------------------------------------------------------------------------------------- */
+/* creating reviewed css for mobile */
+@media screen and (max-width: 800px) {
+  
+  
+    .heroImageContainer{
+        /* max-width: 100%; */
+        width: 100%;
+        display: flex;
+        position: relative;
+        object-fit: contain;
+    }
+
+  #heroImage {
+    /* width: 100%; */
+    /* max-width: 90%;
+    max-height: 90%; */
+    padding-left: 5%;
+    padding-right: 5%;
+    /* object-fit: scale-down; */
+    /* height: 100%;  */
+  }
+
+  .heroTextContainer{
+    width: 90%;
+    justify-content: left;
+    display: flex;
+    position: relative;
+}
+
+.heroText {
+    /* width: 30%; */
+    width: 98%;
+
+    /* padding-left:60%; */
+    margin-left: 20%;
+    padding-right: 3%;
+    /* padding-top:70%; */
+    /* font-size: 10vh; */
+    font-size: 5vh;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* position: absolute; */
+    /* width: 100%; */
+    z-index: 1;
+    /* top: -65%; */
+
+    /* FONT */
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 650;
+    line-height: 50px; /* 125% */
+    letter-spacing: 8px;
+  }
+}
