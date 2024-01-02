@@ -81,6 +81,7 @@
 .secondaryLogoDiv {
   padding-top: 3.5%;
   padding-right: 7%;
+
 }
 
 .contactLinks {
@@ -207,22 +208,25 @@
   .footerTopHalf {
     background-color: black;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    padding: 10%;
+    /* padding: 10%; */
     /* justify-content: left; */
     position: relative;
     width: 100%;
 
-    padding-left: 29%;
+    /* padding-left: 29%; */
     padding-right: 0%;
     border-top: none;
+    border-top: 1px solid #aaa;
+
   }
 
   .footerLeftTextAndEmail {
     width: 50%;
   }
 
+  /* "start your day with honour" */
   .footerHonourText {
     width: 105%;
     font-size: 181%;
@@ -231,7 +235,7 @@
 
     justify-content: flex-start;
 
-    border-top: 1px solid #aaa;
+    /* border-top: 1px solid #aaa; */
     padding-left: 14%;
     order: 2;
     /* border: 2px solid orangered; */
@@ -241,7 +245,7 @@
   .secondaryLogoDiv {
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: flex-end;
     order: 1;
   }
 
