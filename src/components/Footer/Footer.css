@@ -329,6 +329,7 @@
     /* padding-left: 2%; */
     width: 100%;
     margin-bottom: 100px;
+    padding-right: 45%;
     /* border: 2px solid yellow; */
     /* padding-right: 15%; */
     order: 5;
@@ -346,7 +347,8 @@
     padding-left: 0;
 
     /* font-size: 100%; */
-    padding-left: 5%;
+    padding-left: 9%;
+    padding-bottom: 10%;
   }
 
   .legaleseFooter p {
