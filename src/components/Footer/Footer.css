@@ -229,7 +229,7 @@
 
   /* "start your day with honour" */
   .footerHonourText {
-    width: 105%;
+    width: 100%;
     font-size: 181%;
     display: flex;
     flex-direction: column;
@@ -314,6 +314,7 @@
 
   .footerLinks {
     padding-left: 5%;
+    padding-bottom: 5%;
   }
 
   .helpDeskLink h3 {
@@ -325,11 +326,11 @@
     flex-direction: column-reverse;
     justify-content: center;
     font-size: 100%;
-    padding-left: 2%;
+    /* padding-left: 2%; */
     width: 100%;
-    /* margin-bottom: 100px; */
+    margin-bottom: 100px;
     /* border: 2px solid yellow; */
-    padding-right: 15%;
+    /* padding-right: 15%; */
     order: 5;
   }
 
@@ -337,7 +338,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
     justify-content: center;
     width: 100%;
     /* margin-bottom: 100px; */
@@ -345,7 +346,7 @@
     padding-left: 0;
 
     /* font-size: 100%; */
-    /* padding-left: 50%; */
+    padding-left: 5%;
   }
 
   .legaleseFooter p {
