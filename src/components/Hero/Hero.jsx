@@ -24,13 +24,13 @@ function Hero() {
             src={HomeHeroImage}
             alt="Hero image of a coffee bag and a cup full of coffee"
           />
-          <div className="vapour">
+          {/* <div className="vapour">
             <span style={{ "--v": 1 }}></span>
-            <span style={{ "--v": 2 }}></span>
+            <span style={{ "--v": 2 }}></span> */}
             {/* <span style={{ "--v": 3 }}></span>
             <span style={{ "--v": 4 }}></span>
             <span style={{ "--v": 5 }}></span> */}
-          </div>
+          {/* </div> */}
         </div>
       </div>
       <div className="heroTextContainer">

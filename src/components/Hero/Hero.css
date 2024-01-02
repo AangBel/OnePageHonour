@@ -81,15 +81,15 @@
 /* }  */
 
 
-  .vapour {
+  /* .vapour {
     position: absolute;
     top: 50px;
     left: 61%;
     transform: translateX(-50%);
     z-index: 2;
-  } 
+  }  */
 
-  .vapour span {
+  /* .vapour span {
     position: relative;
     bottom: 50px;
     display: block;
@@ -101,10 +101,10 @@
     animation: animate 5s linear infinite;
     opacity: 0;
     filter: blur(8px);
-
-    /* ORIGINALLY 0.5s */
-/* animation-delay: calc(var(--v) * 0.5s); */
-}
+  } */
+  
+      /* ORIGINALLY 0.5s */
+  /* animation-delay: calc(var(--v) * 0.5s); */
 
 /* .hero.loaded .vapour span { */
 /* originally 1 */
