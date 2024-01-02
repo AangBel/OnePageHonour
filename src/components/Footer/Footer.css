@@ -223,7 +223,8 @@
   }
 
   .footerLeftTextAndEmail {
-    width: 50%;
+    width: 100%;
+    order:1;
   }
 
   /* "start your day with honour" */
@@ -236,7 +237,7 @@
     justify-content: flex-start;
 
     /* border-top: 1px solid #aaa; */
-    padding-left: 14%;
+    padding-left: 5%;
     order: 2;
     /* border: 2px solid orangered; */
     /* padding-left: 45%; */
@@ -255,7 +256,7 @@
     width: 82%;
 
     flex-direction: column;
-    margin-left:17%;
+    margin-left:5%;
     order: 3;
   }
 
@@ -312,7 +313,7 @@
   }
 
   .footerLinks {
-    padding-left: 9%;
+    padding-left: 5%;
   }
 
   .helpDeskLink h3 {
