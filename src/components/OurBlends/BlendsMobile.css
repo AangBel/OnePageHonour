@@ -100,7 +100,7 @@
     margin-left: -29%;
     display: flex;
     /* if i remove flex-direction column then the image is misaligned but the blend name at the bottom re-appears */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .panel.active {

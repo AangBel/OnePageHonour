@@ -27,11 +27,14 @@
   }
 
   .heroText {
-    /* width: 30%; */
-    width: 98%;
+    /* width: 98%; */
+    width: 91%;
+
 
     /* padding-left:60%; */
-    margin-left: 20%;
+    /* margin-left: 20%; */
+    margin-left: 13%;
+
     padding-right: 3%;
     /* padding-top:70%; */
     /* font-size: 10vh; */
