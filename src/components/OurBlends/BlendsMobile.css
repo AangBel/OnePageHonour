@@ -98,6 +98,8 @@
   .panel.panel:not(.inactive) {
     width: 100%;
     margin-left: -29%;
+    display: flex;
+    flex-direction: column;
   }
 
   .panel.active {
@@ -117,6 +119,11 @@
     display: flex;
     justify-content: center;
     width: 50%vw;
+  }
+
+  .panel.active.plusSign{
+    /* opacity: 0; */
+    display: none;
   }
 
   .blendName {
