@@ -39,6 +39,7 @@ function Nav() {
 
       {showMenu && (
         <>
+        
           <div className="menu" onClick={toggleMenu}>
             MENU
           <div className="mobileMenu">

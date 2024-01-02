@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import HomeHeroImage from "./Home_Hero_x2.jpg";
 import "./Hero.css";
+import "./HeroMobile.css";
 
 function Hero() {
   const [loaded, setLoaded] = useState(false);
@@ -32,7 +33,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="heroContainer">
+      <div className="heroTextContainer">
         <h1 className="heroText">START YOUR DAY WITH HONOUR</h1>
       </div>
     </>
