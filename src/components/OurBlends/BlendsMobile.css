@@ -4,6 +4,7 @@
   .panel {
     flex: 1; /* Adjust as needed for smaller screens */
     padding-right: 50px; /* Adjust padding for smaller screens */
+    height: auto;
   }
 
   .panel.active {
@@ -146,11 +147,17 @@
     justify-content: center;
     top: 70%;
     z-index: 1;
+    /* height: auto; */
   }
 
   .topCoffeeInfo {
     padding-top: 0;
     padding-bottom: 10%;
+  }
+
+  #1.bottomCoffeeInfo{
+    padding-top:2%;
+
   }
 
   .bottomCoffeeInfo {

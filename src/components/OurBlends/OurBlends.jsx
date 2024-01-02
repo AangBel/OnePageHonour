@@ -122,14 +122,13 @@ function OurBlends() {
 
   return (
     <>
-    
-    <div
-      className="rectangularSection"
-      style={{ width: "100%" }}
-      id="TheBlends"
-    >
-      <div className="accordionHeader">Our Blends</div>
-    </div>
+      <div
+        className="rectangularSection"
+        style={{ width: "100%" }}
+        id="TheBlends"
+      >
+        <div className="accordionHeader">Our Blends</div>
+      </div>
 
       <div className="accordionContainer">
         {panels.map((panel) => (
