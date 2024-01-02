@@ -170,23 +170,18 @@
   padding: 10px 562px 100px 217px;
 
   /* border: 2px solid red; */
-
 }
-
-
-
 
 /* MOBILE ----------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 800px) {
   .carouselContainer {
     /* width: 100%vw; */
-    width: 32%;
+    width: 100%;
     position: center;
-    margin-left:34%;
+    /* margin-left:34%; */
     flex-direction: row-reverse;
     /* overflow: hidden; */
-
 
     /* max-width: 100%vw; */
   }
@@ -195,9 +190,7 @@
     position: center;
     width: 50%;
     /* overflow: hidden; */
-
   }
-
 
   .sourcedTitleBox {
     display: flex;
@@ -205,9 +198,9 @@
     /* justify-content: center; */
     /* font-size: 100%; */
     width: 86%;
-    padding:0;
+    padding: 0;
     /* padding-top:10%; */
-    margin-left:4%;
+    margin-left: 4%;
     /* max-width: 100%; */
     /* text appears when padding left 45% but it also throws off stuff to the right side  */
     /* padding-left: 45%; */
@@ -220,12 +213,10 @@
     font-size: 84%;
     width: 100%;
     /* border:2px solid red; */
-    padding-top:10%;
+    padding-top: 10%;
 
     /* left:200%; */
-
   }
-
 
   /* THE LOREM IPSUM TEXT UNDER THE SOURCED H3 */
   .sourcedPText {
@@ -233,7 +224,7 @@
     display: flex;
     justify-content: center;
     padding-left: 4%;
-    padding-right:9%;
-    padding-top:10%;
+    padding-right: 9%;
+    padding-top: 10%;
   }
 }

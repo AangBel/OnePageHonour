@@ -475,16 +475,17 @@
 
   .topCoffeeInfo{
     padding-top: 0;
+    padding-bottom: 10%;
   }
 
   .bottomCoffeeInfo{
     display: flex;
     flex-direction: column;
     position: relative;
-    padding-top: 4%;
+    /* padding-top: 4%; */
   }
 
   .quickInfo{
-    padding-top: 10%;
+    padding-top: 0;
   }
 }
