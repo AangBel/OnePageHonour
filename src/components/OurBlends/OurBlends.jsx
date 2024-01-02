@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./OurBlends.css";
+import "./BlendsMobile.css";
 
 // BLEND ANIMAL IMAGES
 import Apex from "./BlendIconography/Apex.svg";
@@ -120,12 +121,16 @@ function OurBlends() {
   };
 
   return (
+    <>
+    
     <div
       className="rectangularSection"
       style={{ width: "100%" }}
       id="TheBlends"
     >
       <div className="accordionHeader">Our Blends</div>
+    </div>
+
       <div className="accordionContainer">
         {panels.map((panel) => (
           <div
@@ -192,7 +197,7 @@ function OurBlends() {
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

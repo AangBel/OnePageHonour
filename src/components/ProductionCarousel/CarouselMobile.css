@@ -1,0 +1,58 @@
+
+/* MOBILE ----------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    .carouselContainer {
+      /* width: 100%vw; */
+      width: 100%;
+      position: center;
+      /* margin-left:34%; */
+      flex-direction: row-reverse;
+      /* overflow: hidden; */
+  
+      /* max-width: 100%vw; */
+    }
+    .carouselSlide img {
+      display: flex;
+      position: center;
+      width: 50%;
+      /* overflow: hidden; */
+    }
+  
+    .sourcedTitleBox {
+      display: flex;
+      position: relative;
+      /* justify-content: center; */
+      /* font-size: 100%; */
+      width: 86%;
+      padding: 0;
+      /* padding-top:10%; */
+      margin-left: 4%;
+      /* max-width: 100%; */
+      /* text appears when padding left 45% but it also throws off stuff to the right side  */
+      /* padding-left: 45%; */
+      overflow: hidden;
+      /* border:2px solid white; */
+    }
+  
+    .sourcedTitleBox h3 {
+      /* font-size: 100%; */
+      font-size: 84%;
+      width: 100%;
+      /* border:2px solid red; */
+      padding-top: 10%;
+  
+      /* left:200%; */
+    }
+  
+    /* THE LOREM IPSUM TEXT UNDER THE SOURCED H3 */
+    .sourcedPText {
+      /* width: 100%; */
+      display: flex;
+      justify-content: center;
+      padding-left: 4%;
+      padding-right: 9%;
+      padding-top: 10%;
+    }
+  }
+  

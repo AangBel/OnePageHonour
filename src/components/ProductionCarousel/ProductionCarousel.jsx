@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "nuka-carousel";
 import "./ProductionCarousel.css";
+import "./CarouselMobile.css"; 
+
 import CustomControls from "./CustomControls";
 
 // IMAGES
