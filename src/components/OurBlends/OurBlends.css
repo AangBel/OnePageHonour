@@ -368,10 +368,11 @@
   .rectangularSection {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    font-size: 50%vw;
+    /* font-size: 50%vw; */
     /* border: 2px solid yellow; */
-    padding-left: 41%;
+    /* padding-left: 27%; */
     overflow: hidden;
   }
 
@@ -418,13 +419,14 @@
 
   .panel.panel:not(.inactive){
     width:100%;
-    margin-left:-37%;
+    margin-left:-29%;
   }
 
   .panel.active {
     display: flex;
     flex-wrap: wrap;
     /* padding: 10%; */
+    padding-right: 0;
     padding-left: 4%;
     width: 100%;
     justify-content: center;
@@ -437,6 +439,7 @@
     display: flex;
     justify-content: center;
     width: 50%vw;
+
   }
 
   .blendName {
@@ -468,5 +471,20 @@
     justify-content: center;
     top: 70%;
     z-index: 1;
+  }
+
+  .topCoffeeInfo{
+    padding-top: 0;
+  }
+
+  .bottomCoffeeInfo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 4%;
+  }
+
+  .quickInfo{
+    padding-top: 10%;
   }
 }
