@@ -27,9 +27,9 @@ function Hero() {
           <div className="vapour">
             <span style={{ "--v": 1 }}></span>
             <span style={{ "--v": 2 }}></span>
-            <span style={{ "--v": 3 }}></span>
+            {/* <span style={{ "--v": 3 }}></span>
             <span style={{ "--v": 4 }}></span>
-            <span style={{ "--v": 5 }}></span>
+            <span style={{ "--v": 5 }}></span> */}
           </div>
         </div>
       </div>

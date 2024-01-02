@@ -1,15 +1,13 @@
 /* MOBILE--------------------------------------------------------------------------------------- */
 /* creating reviewed css for mobile */
 @media screen and (max-width: 800px) {
-  
-  
-    .heroImageContainer{
-        /* max-width: 100%; */
-        width: 100%;
-        display: flex;
-        position: relative;
-        object-fit: contain;
-    }
+  .heroImageContainer {
+    /* max-width: 100%; */
+    width: 100%;
+    display: flex;
+    position: relative;
+    object-fit: contain;
+  }
 
   #heroImage {
     /* width: 100%; */
@@ -21,14 +19,14 @@
     /* height: 100%;  */
   }
 
-  .heroTextContainer{
+  .heroTextContainer {
     width: 90%;
     justify-content: left;
     display: flex;
     position: relative;
-}
+  }
 
-.heroText {
+  .heroText {
     /* width: 30%; */
     width: 98%;
 
