@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Nav.css";
 
 import HONOUR_PRIMARY_logo from "./HONOUR_PRIMARY_logo.svg";
-import "./Nav.css";
 import "./NavMobile.css";
 
 function Nav() {
@@ -39,7 +38,6 @@ function Nav() {
 
       {showMenu && (
         <>
-        
           <div className="menu" onClick={toggleMenu}>
             MENU
           <div className="mobileMenu">

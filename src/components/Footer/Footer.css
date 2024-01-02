@@ -247,6 +247,7 @@
     display: flex;
     position: relative;
     justify-content: flex-end;
+    padding-top: 10%;
     order: 1;
   }
 
@@ -328,7 +329,7 @@
     font-size: 100%;
     /* padding-left: 2%; */
     width: 100%;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     padding-right: 45%;
     /* border: 2px solid yellow; */
     /* padding-right: 15%; */
