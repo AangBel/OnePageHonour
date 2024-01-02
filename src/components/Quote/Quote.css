@@ -60,7 +60,8 @@
   /* max-width: 1004px; */
   color: white;
   font-family: "flama book";
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: 100%;
   font-style: normal;
   font-weight: 550;
   line-height: 55px;
